@@ -1,0 +1,45 @@
+fileFormatVersion: 2
+guid: 07db8e84e44214fdaa87a0a9c5a57003
+timeCreated: 1495451063
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n
+    \  xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   width=\"100mm\"\n
+    \  height=\"100mm\"\n   viewBox=\"0 0 100 100\"\n   version=\"1.1\"\n   id=\"svg8\"\n
+    \  inkscape:version=\"0.92.1 r15371\"\n   sodipodi:docname=\"HajTandFarve.svg\">\n
+    \ <defs\n     id=\"defs2\">\n    <path\n       id=\"egDACT6Jl\"\n       d=\"m
+    396.41,389.98 c 31.82,-29.62 49.92,-60.91 54.28,-93.86 l -156.07,-4.19 c 6.42,26.37
+    10.43,51.72 12.04,76.06 2.41,36.5 -8.77,66.78 -2.4,69.97 6.38,3.19 44.42,-3.55
+    92.15,-47.98 z\"\n       inkscape:connector-curvature=\"0\" />\n    <path\n       id=\"f1vk8IGwuz\"\n
+    \      d=\"m 374.72,256.65 c 35.97,-23.58 59.65,-31.42 71.03,-23.53 17.06,11.83
+    11,50.02 6.37,70.86 -4.63,20.83 -151.1,-1.23 -157.5,-2.97 -6.4,-1.73 -10.24,-20.68
+    -11.1,-32.52 -0.86,-11.83 -4.12,-33.15 12.96,-42.89 11.39,-6.5 37.47,3.85 78.24,31.05
+    z\"\n       inkscape:connector-curvature=\"0\" />\n  </defs>\n  <sodipodi:namedview\n
+    \    id=\"base\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n     borderopacity=\"1.0\"\n
+    \    inkscape:pageopacity=\"0.0\"\n     inkscape:pageshadow=\"2\"\n     inkscape:zoom=\"0.35\"\n
+    \    inkscape:cx=\"400\"\n     inkscape:cy=\"560\"\n     inkscape:document-units=\"mm\"\n
+    \    inkscape:current-layer=\"layer1\"\n     showgrid=\"false\"\n     inkscape:window-width=\"1600\"\n
+    \    inkscape:window-height=\"871\"\n     inkscape:window-x=\"-9\"\n     inkscape:window-y=\"-9\"\n
+    \    inkscape:window-maximized=\"1\" />\n  <metadata\n     id=\"metadata5\">\n
+    \   <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n
+    \       <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\"\n
+    \    transform=\"translate(0,-197)\">\n    <g\n       id=\"g4499\"\n       transform=\"matrix(0.57350106,0,0,0.46528661,-162.12965,92.906343)\"\n
+    \      style=\"stroke-width:0.08003043\">\n      <g\n         id=\"g4497\"\n         style=\"stroke-width:0.08003043\">\n
+    \       <g\n           id=\"g4491\"\n           style=\"stroke-width:0.08003043\">\n
+    \         <use\n             id=\"use4489\"\n             xlink:href=\"#egDACT6Jl\"\n
+    \            style=\"opacity:1;fill:#cec1b6;fill-opacity:1;stroke-width:0.08003043\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n        </g>\n        <g\n           id=\"g4495\"\n           style=\"stroke-width:0.08003043\">\n
+    \         <use\n             id=\"use4493\"\n             xlink:href=\"#f1vk8IGwuz\"\n
+    \            style=\"opacity:1;fill:#9a918c;fill-opacity:1;stroke-width:0.08003043\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n        </g>\n      </g>\n    </g>\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

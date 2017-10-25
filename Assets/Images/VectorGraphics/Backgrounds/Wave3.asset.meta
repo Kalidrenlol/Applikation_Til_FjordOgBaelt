@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 65ef0424d6a9928408cdfa20a38e0f92
+timeCreated: 1493976445
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="100" height="100"><defs><path
+    d="M0 640L640 640L640.36 411.42C608.42 358.47 564.89 352.38 509.8 393.15C487.48
+    409.66 459.21 412.28 424.99 401.02C415.01 398.96 391.99 386.45 355.93 363.5C295.33
+    324.94 176.68 339.5 0 407.19L0 640Z" id="f7a4CDKnF"></path></defs><g><g><g><use
+    xlink:href="#f7a4CDKnF" opacity="1" fill="#ffffff" fill-opacity="1"></use></g></g></g></svg>'
+  assetBundleName: 
+  assetBundleVariant: 

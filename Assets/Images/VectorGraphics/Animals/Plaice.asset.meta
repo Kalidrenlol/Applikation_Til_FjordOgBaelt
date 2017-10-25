@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: cc08870d6f321c842bec1d9324b2a656
+timeCreated: 1493237398
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n
+    \  xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n
+    \  xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  version=\"1.1\"\n   preserveAspectRatio=\"xMidYMid meet\"\n   viewBox=\"0 0
+    640 640\"\n   width=\"500\"\n   height=\"500\"\n   id=\"svg481\"\n   sodipodi:docname=\"R\xF8dsp\xE6tte.svg\"\n
+    \  inkscape:version=\"0.92.1 r15371\">\n  <metadata\n     id=\"metadata485\">\n
+    \   <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n
+    \       <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <sodipodi:namedview\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n
+    \    borderopacity=\"1\"\n     objecttolerance=\"10\"\n     gridtolerance=\"10\"\n
+    \    guidetolerance=\"10\"\n     inkscape:pageopacity=\"0\"\n     inkscape:pageshadow=\"2\"\n
+    \    inkscape:window-width=\"1366\"\n     inkscape:window-height=\"715\"\n     id=\"namedview483\"\n
+    \    showgrid=\"false\"\n     inkscape:zoom=\"0.472\"\n     inkscape:cx=\"250\"\n
+    \    inkscape:cy=\"250\"\n     inkscape:window-x=\"-8\"\n     inkscape:window-y=\"-8\"\n
+    \    inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"svg481\" />\n
+    \ <defs\n     id=\"defs339\">\n    <path\n       d=\"M135.48 267.62L116.43 259.29C108.49
+    252.54 102.14 250.16 97.38 252.14C92.62 254.13 89.44 260.48 87.86 271.19L84.29
+    291.43L83.1 311.67L84.29 333.1C83.69 347.78 85.67 356.9 90.24 360.48C94.8 364.05
+    101.94 362.06 111.67 354.52L130.71 345L149.76 335.48L161.67 327.14L154.52 296.19L149.76
+    273.87L135.48 267.62Z\"\n       id=\"i3iuEZJq5a\" />\n    <path\n       d=\"M488.2
+    279.56L482.25 259.32C479.28 252.77 475.7 246.82 471.54 241.47C467.37 236.11 463.64
+    231.35 460.34 227.18L448.57 210.51C442.86 201.49 437.43 194.59 432.27 189.83C427.11
+    185.07 420.36 180.85 412.01 177.18L392.97 169.44C386.82 166.76 380.47 164.58 373.92
+    162.89C364.1 160.36 363.8 160.51 353.68 159.32C346.93 158.53 340.19 158.13 333.44
+    158.13C327.09 158.13 319.95 159.72 312.01 162.89C300.11 167.66 296.43 170.02 285.42
+    175.97C274.41 181.92 276.26 180.4 267.43 185.76C258.6 191.13 258.14 191.17 250.11
+    197.42C242.07 203.67 242.71 203.56 235.82 209.52C228.93 215.48 229.44 215.01 222.54
+    221.26C217.95 225.43 213.19 230.14 208.26 235.39L192.97 250.99C184.63 260.12 180.66
+    267.26 181.06 272.42C181.46 277.58 186.22 282.34 195.35 286.7L214.39 277.18L233.44
+    267.66L252.49 259.32L276.3 243.85L291.78 230.75L309.63 221.23L328.68 210.51L347.73
+    202.18L367.97 200.99L388.2 203.37L406.06 212.89L428.68 224.8L445.35 236.7L462.01
+    248.61L488.2 279.56\"\n       id=\"a1K6YnAtF1\" />\n    <path\n       d=\"M186.3
+    315.97L202.14 331.9L218.81 346.19L233.1 365.24L252.14 379.52L262.86 391.43L280.71
+    398.57L299.76 405.71L320 411.67L340.24 416.43L358.1 422.38L378.33 422.38L411.67
+    423.57L398.02 440.36C391.05 446.55 384.48 451.83 378.33 456.2C372.18 460.56 366.7
+    464.01 361.87 466.55C358.68 468.15 353.8 469.94 347.26 471.93C337.44 474.91 331.15
+    475.24 325.49 475.38C319.84 475.51 313.34 477.16 303.52 475.38C293.7 473.59 293.45
+    474.17 284.23 470C275 465.83 268.9 463.04 261.76 456.2C257 451.63 253.79 447.11
+    252.14 442.62C248.97 436.87 245 430.91 240.24 424.76C235.48 418.61 229.92 412.84
+    223.57 407.46L209.29 393.61C203.62 388.58 198.1 381.51 192.75 372.38C184.71 358.69
+    179.91 351.48 177.14 336.67C175.3 326.79 179.14 318.95 188.68 313.14\"\n       id=\"ax2ga3lW\"
+    />\n    <path\n       d=\"M437.86 402.64C433.69 409.64 430.52 416.87 428.33 424.33C425.06
+    435.52 421.79 445.35 424.76 447.38C427.74 449.41 434.29 441.62 440.24 432.47C444.21
+    426.37 446.98 419.13 448.57 410.77L437.86 402.64Z\"\n       id=\"aVYgIChxh\" />\n
+    \   <path\n       d=\"M159.64 328.51L180.93 322.36L204.74 339.03L234.5 367.6C260.69
+    390.62 278.55 404.9 288.07 410.46C302.36 418.79 333.31 424.74 366.64 427.13C399.98
+    429.51 419.03 424.74 440.45 416.41C454.74 410.86 466.64 400.14 476.17 384.27L495.22
+    344.98C498.39 320.97 498.39 301.53 495.22 286.65C492.04 271.77 485.69 261.45 476.17
+    255.7C457.12 235.46 436.49 220.78 414.26 211.65C380.93 197.96 372.6 198.26 342.83
+    200.93C322.99 202.72 296.8 212.08 264.26 229.01L228.55 257.58C207.12 273.79 191.25
+    282.28 180.93 283.08C170.61 283.87 160.19 280.79 149.67 273.84L159.64 328.51Z\"\n
+    \      id=\"j4yrFALc8\" />\n    <path\n       d=\"M496.92 286.7C490.37 281.35
+    491.62 282.5 483.58 277.14C475.55 271.79 472.04 270.12 461.92 269.52C455.17 269.13
+    448.9 270.87 443.11 274.76C435.33 281 430.57 287.48 428.82 294.18C427.07 300.89
+    427.07 307.83 428.82 314.99L428.82 321.04L432.27 330.07L433.58 336.67C437.31 347.64
+    441.56 355.31 446.32 359.67C453.47 366.22 456.97 369.69 467.53 373.15C478.09 376.62
+    480.76 375.73 490.73 373.15C500.69 370.58 502.04 370.6 509.77 362.86C517.51 355.12
+    516.92 354.23 523.46 345.3C530.01 336.38 531.8 336.67 533.58 327.14C535.37 317.62
+    534.77 312.86 528.82 305.71C522.87 298.57 518.11 297.16 509.77 294.18C501.44 291.21
+    503.46 292.06 496.92 286.7Z\"\n       id=\"bz49FxFhR\" />\n    <path\n       d=\"M428.79
+    311.56L432.27 331.34C426.32 332.35 419.3 332.35 411.21 331.34C399.08 329.83 403.24
+    332.58 395.82 324.06C388.41 315.55 384.56 303.45 388.13 297.27C390.51 293.15 395.27
+    293.15 402.42 297.27L422.2 307.54L428.79 311.56Z\"\n       id=\"a7Heze8RP\" />\n
+    \   <path\n       d=\"M222.2 314.99C222.2 318.33 219.74 321.04 216.7 321.04C213.67
+    321.04 211.21 318.33 211.21 314.99C211.21 311.66 213.67 308.95 216.7 308.95C219.74
+    308.95 222.2 311.66 222.2 314.99Z\"\n       id=\"f69Acp3Bt\" />\n    <path\n       d=\"M261.76
+    281.51C261.76 285.01 258.8 287.86 255.16 287.86C251.53 287.86 248.57 285.01 248.57
+    281.51C248.57 278.01 251.53 275.16 255.16 275.16C258.8 275.16 261.76 278.01 261.76
+    281.51Z\"\n       id=\"aDJGSrCCh\" />\n    <path\n       d=\"M294.4 326.05C294.4
+    329.38 291.03 332.09 286.87 332.09C282.72 332.09 279.34 329.38 279.34 326.05C279.34
+    322.71 282.72 320 286.87 320C291.03 320 294.4 322.71 294.4 326.05Z\"\n       id=\"a8fBbdsUHC\"
+    />\n    <path\n       d=\"M156.26 289.07C156.26 291.89 153.31 294.18 149.67 294.18C146.03
+    294.18 143.08 291.89 143.08 289.07C143.08 286.25 146.03 283.96 149.67 283.96C153.31
+    283.96 156.26 286.25 156.26 289.07Z\"\n       id=\"d1qzi9P398\" />\n    <path\n
+    \      d=\"M261.76 380.11C261.76 384.66 258.8 388.35 255.16 388.35C251.53 388.35
+    248.57 384.66 248.57 380.11C248.57 375.56 251.53 371.87 255.16 371.87C258.8 371.87
+    261.76 375.56 261.76 380.11Z\"\n       id=\"j7BhHIu7YL\" />\n    <path\n       d=\"M310.11
+    222.42C310.11 226.06 307.16 229.01 303.52 229.01C299.88 229.01 296.92 226.06 296.92
+    222.42C296.92 218.78 299.88 215.82 303.52 215.82C307.16 215.82 310.11 218.78 310.11
+    222.42Z\"\n       id=\"b27wnRjFkG\" />\n    <path\n       d=\"M323.25 261.98C323.25
+    264.4 320.3 266.37 316.68 266.37C313.05 266.37 310.11 264.4 310.11 261.98C310.11
+    259.55 313.05 257.58 316.68 257.58C320.3 257.58 323.25 259.55 323.25 261.98Z\"\n
+    \      id=\"btGqe8fGN\" />\n    <path\n       d=\"M381.54 210.33C381.54 213.36
+    378.34 215.82 374.4 215.82C370.45 215.82 367.25 213.36 367.25 210.33C367.25 207.3
+    370.45 204.84 374.4 204.84C378.34 204.84 381.54 207.3 381.54 210.33Z\"\n       id=\"a2o3mbQIRE\"
+    />\n    <path\n       d=\"M323.25 373.79C323.25 377.28 321.77 380.11 319.96 380.11C318.15
+    380.11 316.68 377.28 316.68 373.79C316.68 370.3 318.15 367.47 319.96 367.47C321.77
+    367.47 323.25 370.3 323.25 373.79Z\"\n       id=\"b2CPHQWMA\" />\n    <path\n
+    \      d=\"M337.58 432.77C337.58 435.55 334.87 437.8 331.54 437.8C328.2 437.8
+    325.49 435.55 325.49 432.77C325.49 429.99 328.2 427.74 331.54 427.74C334.87 427.74
+    337.58 429.99 337.58 432.77Z\"\n       id=\"a8P5j88gS\" />\n    <path\n       d=\"M356.26
+    331.38C356.26 334.32 353.31 336.7 349.67 336.7C346.03 336.7 343.08 334.32 343.08
+    331.38C343.08 328.43 346.03 326.05 349.67 326.05C353.31 326.05 356.26 328.43 356.26
+    331.38Z\"\n       id=\"aMcE4LtdM\" />\n    <path\n       d=\"M411.67 259.26C411.67
+    263.19 407.62 266.37 402.65 266.37C397.67 266.37 393.63 263.19 393.63 259.26C393.63
+    255.33 397.67 252.14 402.65 252.14C407.62 252.14 411.67 255.33 411.67 259.26Z\"\n
+    \      id=\"c5v6ju6d5\" />\n    <path\n       d=\"M381.54 398.24C381.54 400.67
+    378.34 402.64 374.4 402.64C370.45 402.64 367.25 400.67 367.25 398.24C367.25 395.82
+    370.45 393.85 374.4 393.85C378.34 393.85 381.54 395.82 381.54 398.24Z\"\n       id=\"awuxfMsKA\"
+    />\n    <path\n       d=\"M411.67 360.88C411.67 364.52 408.61 367.47 404.84 367.47C401.08
+    367.47 398.02 364.52 398.02 360.88C398.02 357.24 401.08 354.29 404.84 354.29C408.61
+    354.29 411.67 357.24 411.67 360.88Z\"\n       id=\"a15jCMSecv\" />\n    <path\n
+    \      d=\"M441.98 398.24C441.98 400.67 439.8 402.64 437.12 402.64C434.45 402.64
+    432.27 400.67 432.27 398.24C432.27 395.82 434.45 393.85 437.12 393.85C439.8 393.85
+    441.98 395.82 441.98 398.24Z\"\n       id=\"c4zX086n97\" />\n    <path\n       d=\"M495.85
+    316.13C501.87 305.2 491.35 292.91 479.12 291.55C465.03 289.99 455.91 307.11 462.55
+    317.47C467.57 325.31 477.74 328.37 486.62 324.14C491.2 321.96 494.17 319.16 495.85
+    316.13\"\n       id=\"cKwE5izXw\" />\n    <path\n       d=\"M484.91 298.25C474.43
+    299.1 471.24 312.85 480.28 318.47C488.33 323.47 499.08 315.39 495.49 305.98C493.69
+    301.25 490.15 297.83 484.91 298.25\"\n       id=\"a1TSuvWAz3\" />\n    <path\n
+    \      d=\"M492.88 306.75C488.98 304.85 484.06 308.62 486.05 312.22C487.64 315.09
+    492.05 316.19 494.11 313.47C495.82 311.2 495.92 308.23 492.88 306.75\"\n       id=\"e1HRMxGWDL\"
+    />\n    <path\n       d=\"M507.24 356.6C514.04 344.63 502.17 331.16 488.37 329.67C472.49
+    327.96 462.2 346.72 469.69 358.08C475.35 366.66 486.82 370.02 496.84 365.38C502
+    362.99 505.35 359.93 507.24 356.6\"\n       id=\"b715ohlH0p\" />\n    <path\n
+    \      d=\"M494.92 335.66C483.16 336.64 479.58 352.32 489.73 358.73C498.76 364.44
+    510.82 355.22 506.8 344.48C504.78 339.09 500.8 335.18 494.92 335.66\"\n       id=\"htyLGzunR\"
+    />\n    <path\n       d=\"M502.75 340.78C498.84 338.57 493.93 342.96 495.91 347.14C497.5
+    350.48 501.92 351.77 503.97 348.6C505.68 345.96 505.78 342.5 502.75 340.78\"\n
+    \      id=\"b2ws2Q7tt\" />\n  </defs>\n  <g\n     id=\"g479\"\n     transform=\"matrix(0.2835826,0,0,0.40242613,-23.565714,448.36435)\">\n
+    \   <g\n       id=\"g477\">\n      <g\n         id=\"g343\">\n        <use\n           xlink:href=\"#i3iuEZJq5a\"\n
+    \          id=\"use341\"\n           style=\"opacity:1;fill:#978946;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g347\">\n        <use\n           xlink:href=\"#a1K6YnAtF1\"\n
+    \          id=\"use345\"\n           style=\"opacity:1;fill:#978946;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g351\">\n        <use\n           xlink:href=\"#ax2ga3lW\"\n
+    \          id=\"use349\"\n           style=\"opacity:1;fill:#978946;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g355\">\n        <use\n           xlink:href=\"#aVYgIChxh\"\n
+    \          id=\"use353\"\n           style=\"opacity:1;fill:#978946;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g359\">\n        <use\n           xlink:href=\"#j4yrFALc8\"\n
+    \          id=\"use357\"\n           style=\"opacity:1;fill:#897e46;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g363\">\n        <use\n           xlink:href=\"#bz49FxFhR\"\n
+    \          id=\"use361\"\n           style=\"opacity:1;fill:#7d7341;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g367\">\n        <use\n           xlink:href=\"#a7Heze8RP\"\n
+    \          id=\"use365\"\n           style=\"opacity:1;fill:#978946;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g371\">\n        <use\n           xlink:href=\"#f69Acp3Bt\"\n
+    \          id=\"use369\"\n           style=\"opacity:1;fill:#9a302f;fill-opacity:0.6\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g375\">\n        <use\n           xlink:href=\"#aDJGSrCCh\"\n
+    \          id=\"use373\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g379\">\n        <use\n           xlink:href=\"#a8fBbdsUHC\"\n
+    \          id=\"use377\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g383\">\n        <use\n           xlink:href=\"#d1qzi9P398\"\n
+    \          id=\"use381\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g387\">\n        <use\n           xlink:href=\"#j7BhHIu7YL\"\n
+    \          id=\"use385\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g391\">\n        <use\n           xlink:href=\"#b27wnRjFkG\"\n
+    \          id=\"use389\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g395\">\n        <use\n           xlink:href=\"#btGqe8fGN\"\n
+    \          id=\"use393\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g399\">\n        <use\n           xlink:href=\"#a2o3mbQIRE\"\n
+    \          id=\"use397\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g403\">\n        <use\n           xlink:href=\"#b2CPHQWMA\"\n
+    \          id=\"use401\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g407\">\n        <use\n           xlink:href=\"#a8P5j88gS\"\n
+    \          id=\"use405\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g411\">\n        <use\n           xlink:href=\"#aMcE4LtdM\"\n
+    \          id=\"use409\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g415\">\n        <use\n           xlink:href=\"#c5v6ju6d5\"\n
+    \          id=\"use413\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g419\">\n        <use\n           xlink:href=\"#awuxfMsKA\"\n
+    \          id=\"use417\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g423\">\n        <use\n           xlink:href=\"#a15jCMSecv\"\n
+    \          id=\"use421\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g427\">\n        <use\n           xlink:href=\"#c4zX086n97\"\n
+    \          id=\"use425\"\n           style=\"opacity:1;fill:#934f38;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n      </g>\n      <g\n         id=\"g435\">\n        <use\n           xlink:href=\"#cKwE5izXw\"\n
+    \          id=\"use429\"\n           style=\"opacity:1;fill:#ffffff;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n        <g\n           id=\"g433\">\n          <use\n             xlink:href=\"#cKwE5izXw\"\n
+    \            id=\"use431\"\n             style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:0.04;stroke-opacity:0\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n        </g>\n      </g>\n      <g\n         id=\"g443\">\n        <use\n
+    \          xlink:href=\"#a1TSuvWAz3\"\n           id=\"use437\"\n           style=\"opacity:1;fill:#100f0d;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n        <g\n           id=\"g441\">\n          <use\n             xlink:href=\"#a1TSuvWAz3\"\n
+    \            id=\"use439\"\n             style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:0.04;stroke-opacity:0\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n        </g>\n      </g>\n      <g\n         id=\"g451\">\n        <use\n
+    \          xlink:href=\"#e1HRMxGWDL\"\n           id=\"use445\"\n           style=\"opacity:1;fill:#ffffff;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n        <g\n           id=\"g449\">\n          <use\n             xlink:href=\"#e1HRMxGWDL\"\n
+    \            id=\"use447\"\n             style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:0.04;stroke-opacity:0\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n        </g>\n      </g>\n      <g\n         id=\"g459\">\n        <use\n
+    \          xlink:href=\"#b715ohlH0p\"\n           id=\"use453\"\n           style=\"opacity:1;fill:#ffffff;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n        <g\n           id=\"g457\">\n          <use\n             xlink:href=\"#b715ohlH0p\"\n
+    \            id=\"use455\"\n             style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:0.04;stroke-opacity:0\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n        </g>\n      </g>\n      <g\n         id=\"g467\">\n        <use\n
+    \          xlink:href=\"#htyLGzunR\"\n           id=\"use461\"\n           style=\"opacity:1;fill:#100f0d;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n        <g\n           id=\"g465\">\n          <use\n             xlink:href=\"#htyLGzunR\"\n
+    \            id=\"use463\"\n             style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:0.04;stroke-opacity:0\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n        </g>\n      </g>\n      <g\n         id=\"g475\">\n        <use\n
+    \          xlink:href=\"#b2ws2Q7tt\"\n           id=\"use469\"\n           style=\"opacity:1;fill:#ffffff;fill-opacity:1\"\n
+    \          x=\"0\"\n           y=\"0\"\n           width=\"100%\"\n           height=\"100%\"
+    />\n        <g\n           id=\"g473\">\n          <use\n             xlink:href=\"#b2ws2Q7tt\"\n
+    \            id=\"use471\"\n             style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:0.04;stroke-opacity:0\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n        </g>\n      </g>\n    </g>\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 9eb35b19963d5a64a9f18c97c7c15708
+timeCreated: 1493225140
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n
+    \  id=\"svg2228\"\n   inkscape:version=\"0.92.1 r15371\"\n   sodipodi:docname=\"Taleboble.svg\">\n
+    \ <defs\n     id=\"defs2222\">\n    <linearGradient\n       id=\"linearGradient1072\"\n
+    \      spreadMethod=\"pad\"\n       gradientTransform=\"matrix(0,-99.999989,-81.976811,0,50.000237,297.00008)\"\n
+    \      gradientUnits=\"userSpaceOnUse\"\n       y2=\"0\"\n       x2=\"1\"\n       y1=\"0\"\n
+    \      x1=\"0\">\n      <stop\n         id=\"stop1068\"\n         offset=\"0\"\n
+    \        style=\"stop-opacity:1;stop-color:#ffffff\" />\n      <stop\n         id=\"stop1070\"\n
+    \        offset=\"1\"\n         style=\"stop-opacity:1;stop-color:#e6e7e8\" />\n
+    \   </linearGradient>\n  </defs>\n  <sodipodi:namedview\n     id=\"base\"\n     pagecolor=\"#ffffff\"\n
+    \    bordercolor=\"#666666\"\n     borderopacity=\"1.0\"\n     inkscape:pageopacity=\"0.0\"\n
+    \    inkscape:pageshadow=\"2\"\n     inkscape:zoom=\"0.35\"\n     inkscape:cx=\"400\"\n
+    \    inkscape:cy=\"560\"\n     inkscape:document-units=\"mm\"\n     inkscape:current-layer=\"layer1\"\n
+    \    showgrid=\"false\"\n     inkscape:window-width=\"1366\"\n     inkscape:window-height=\"715\"\n
+    \    inkscape:window-x=\"-8\"\n     inkscape:window-y=\"-8\"\n     inkscape:window-maximized=\"1\"
+    />\n  <metadata\n     id=\"metadata2225\">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n
+    \       <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n
+    \   <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path1074\"\n
+    \      style=\"fill:url(#linearGradient1072);stroke:none;stroke-width:0.86229557\"\n
+    \      d=\"m 0,236.98572 c 0,22.08189 22.385915,39.98476 50.00039,39.98476 v 0
+    c 5.115353,0 10.049575,-0.61715 14.697267,-1.75905 v 0 c 0.340403,0.57333 0.674552,1.20761
+    0.994654,1.91619 v 0 C 70.265839,287.24096 60.902523,297 60.902523,297 v 0 c 0,0
+    17.865482,-5.83238 17.808484,-20.42095 v 0 c -0.01018,-2.63144 -0.737792,-4.51332
+    -1.912787,-5.84477 v 0 C 90.741304,263.63906 100,251.18095 100,236.98572 v 0 C
+    100,214.90192 77.61486,197 50.00039,197 v 0 C 22.385915,197 0,214.90192 0,236.98572\"
+    />\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

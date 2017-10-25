@@ -1,0 +1,97 @@
+fileFormatVersion: 2
+guid: b250640e90ad7486689f43e25c349143
+timeCreated: 1495223706
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  width=\"100mm\"\n   height=\"100mm\"\n   viewBox=\"0 0 100 100\"\n   version=\"1.1\"\n
+    \  id=\"svg5692\"\n   inkscape:version=\"0.92.1 r15371\"\n   sodipodi:docname=\"Trophy.svg\">\n
+    \ <defs\n     id=\"defs5686\">\n    <linearGradient\n       x1=\"0\"\n       y1=\"0\"\n
+    \      x2=\"1\"\n       y2=\"0\"\n       gradientUnits=\"userSpaceOnUse\"\n       gradientTransform=\"matrix(-2.1731111e-6,49.680635,-49.680636,-2.173111e-6,-51.629729,26.159827)\"\n
+    \      spreadMethod=\"pad\"\n       id=\"linearGradient148\">\n      <stop\n         style=\"stop-opacity:1;stop-color:#f7eb1a\"\n
+    \        offset=\"0\"\n         id=\"stop144\" />\n      <stop\n         style=\"stop-opacity:1;stop-color:#f9d118\"\n
+    \        offset=\"1\"\n         id=\"stop146\" />\n    </linearGradient>\n    <linearGradient\n
+    \      x1=\"0\"\n       y1=\"0\"\n       x2=\"1\"\n       y2=\"0\"\n       gradientUnits=\"userSpaceOnUse\"\n
+    \      gradientTransform=\"matrix(-2.1731111e-6,49.680635,-49.680636,-2.173111e-6,-51.629729,26.159827)\"\n
+    \      spreadMethod=\"pad\"\n       id=\"linearGradient116\">\n      <stop\n         style=\"stop-opacity:1;stop-color:#f8df19\"\n
+    \        offset=\"0\"\n         id=\"stop112\" />\n      <stop\n         style=\"stop-opacity:1;stop-color:#fbc016\"\n
+    \        offset=\"1\"\n         id=\"stop114\" />\n    </linearGradient>\n    <linearGradient\n
+    \      x1=\"0\"\n       y1=\"0\"\n       x2=\"1\"\n       y2=\"0\"\n       gradientUnits=\"userSpaceOnUse\"\n
+    \      gradientTransform=\"matrix(-2.1731109e-6,49.680635,-49.680636,-2.173111e-6,78.015392,150.52172)\"\n
+    \      spreadMethod=\"pad\"\n       id=\"linearGradient852\">\n      <stop\n         style=\"stop-opacity:1;stop-color:#f9c717\"\n
+    \        offset=\"0\"\n         id=\"stop848\" />\n      <stop\n         style=\"stop-opacity:1;stop-color:#f6ad18\"\n
+    \        offset=\"1\"\n         id=\"stop850\" />\n    </linearGradient>\n    <linearGradient\n
+    \      x1=\"0\"\n       y1=\"0\"\n       x2=\"1\"\n       y2=\"0\"\n       gradientUnits=\"userSpaceOnUse\"\n
+    \      gradientTransform=\"matrix(-2.1731109e-6,49.680635,-49.680636,-2.173111e-6,78.015392,150.52172)\"\n
+    \      spreadMethod=\"pad\"\n       id=\"linearGradient820\">\n      <stop\n         style=\"stop-opacity:1;stop-color:#fab417\"\n
+    \        offset=\"0\"\n         id=\"stop816\" />\n      <stop\n         style=\"stop-opacity:1;stop-color:#f79518\"\n
+    \        offset=\"1\"\n         id=\"stop818\" />\n    </linearGradient>\n  </defs>\n
+    \ <sodipodi:namedview\n     id=\"base\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n
+    \    borderopacity=\"1.0\"\n     inkscape:pageopacity=\"0.0\"\n     inkscape:pageshadow=\"2\"\n
+    \    inkscape:zoom=\"1\"\n     inkscape:cx=\"78.759099\"\n     inkscape:cy=\"266.59653\"\n
+    \    inkscape:document-units=\"mm\"\n     inkscape:current-layer=\"layer1\"\n
+    \    showgrid=\"false\"\n     inkscape:window-width=\"1600\"\n     inkscape:window-height=\"821\"\n
+    \    inkscape:window-x=\"-9\"\n     inkscape:window-y=\"-9\"\n     inkscape:window-maximized=\"1\"
+    />\n  <metadata\n     id=\"metadata5689\">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n
+    \       <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\"\n
+    \    transform=\"translate(0,-197)\">\n    <g\n       id=\"g6918\"\n       transform=\"matrix(3.2333161,0,0,3.9788326,0,185.47331)\"\n
+    \      style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\">\n
+    \     <g\n         id=\"g6862\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6864\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6866\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6868\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6870\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6872\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6874\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6876\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6878\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6880\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6882\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6884\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6886\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6888\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6890\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n      <g\n         id=\"g6892\"\n         style=\"stroke-width:0.07376673;fill:#000000;fill-opacity:0.98000002\"
+    />\n    </g>\n    <g\n       transform=\"matrix(0.99402329,0,0,0.99260093,0.29883553,1.8275798)\"\n
+    \      id=\"layer1-5\"\n       inkscape:label=\"Layer 1\"\n       style=\"stroke-width:1.00673366;stroke:none\">\n
+    \     <g\n         style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \        transform=\"matrix(3.2333161,0,0,3.9788326,0,185.47331)\"\n         id=\"g6918-7\">\n
+    \       <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6862-1\">\n          <path\n             style=\"fill:#eeaf0c;fill-opacity:0.98000004;stroke:none;stroke-width:0.18665271;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.88999999\"\n
+    \            inkscape:connector-curvature=\"0\"\n             d=\"M 24.791,4.451
+    C 24.811,3.503 24.775,2.904 24.775,2.904 L 15.511,2.897 v 0 h -0.047 -0.047 v
+    0 L 6.152,2.904 c 0,0 -0.035,0.599 -0.015,1.547 H 0 v 1.012 c 0,0.231 0.039,5.68
+    3.402,8.665 1.403,1.245 3.153,1.871 5.216,1.872 0.312,0 0.633,-0.021 0.958,-0.049
+    1.172,1.605 2.526,2.729 4.049,3.289 v 4.445 H 9.154 v 2.784 H 7.677 v 1.561 h
+    7.74 0.094 7.74 v -1.56 h -1.478 v -2.784 h -4.471 v -4.445 c 1.522,-0.56 2.877,-1.684
+    4.049,-3.289 0.327,0.028 0.648,0.048 0.96,0.048 2.062,-0.002 3.812,-0.627 5.215,-1.873
+    3.363,-2.985 3.402,-8.434 3.402,-8.665 V 4.451 Z M 4.752,12.619 C 2.831,10.919
+    2.263,8.009 2.095,6.475 h 4.158 c 0.176,1.911 0.59,4.292 1.545,6.385 0.175,0.384
+    0.359,0.748 0.547,1.104 C 6.912,13.909 5.706,13.462 4.752,12.619 Z m 21.424,0
+    c -0.953,0.844 -2.16,1.29 -3.592,1.345 0.188,-0.355 0.372,-0.72 0.547,-1.104 0.955,-2.093
+    1.369,-4.474 1.544,-6.385 h 4.158 c -0.168,1.533 -0.735,4.443 -2.657,6.144 z\"\n
+    \            id=\"path6860\" />\n        </g>\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6864-3\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6866-8\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6868-3\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6870-2\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6872-0\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6874-1\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6876-9\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6878-2\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6880-9\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6882-0\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6884-8\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6886-3\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6888-8\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6890-7\" />\n        <g\n           style=\"fill:#000000;fill-opacity:0.98000004;stroke-width:0.07426345;stroke:none\"\n
+    \          id=\"g6892-3\" />\n      </g>\n    </g>\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

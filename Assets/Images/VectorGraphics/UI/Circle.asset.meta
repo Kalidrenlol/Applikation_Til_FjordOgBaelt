@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 9b5de4decf7ce084aa0dfb4d09495c6d
+timeCreated: 1493976544
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n
+    \  xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   width=\"100mm\"\n
+    \  height=\"100mm\"\n   viewBox=\"0 0 100 100\"\n   version=\"1.1\"\n   id=\"svg8\"\n
+    \  inkscape:version=\"0.92.1 r15371\"\n   sodipodi:docname=\"circle.svg\">\n  <defs\n
+    \    id=\"defs2\">\n    <path\n       id=\"bcaFfSldn\"\n       d=\"M 270.75,521.97
+    C 269.4,586.49 216.1,637.78 151.81,636.43 87.51,635.08 36.41,581.6 37.77,517.08
+    39.12,452.55 92.42,401.26 156.71,402.61 c 64.3,1.35 115.4,54.83 114.04,119.36
+    z\"\n       inkscape:connector-curvature=\"0\" />\n  </defs>\n  <sodipodi:namedview\n
+    \    id=\"base\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n     borderopacity=\"1.0\"\n
+    \    inkscape:pageopacity=\"0.0\"\n     inkscape:pageshadow=\"2\"\n     inkscape:zoom=\"0.35\"\n
+    \    inkscape:cx=\"400\"\n     inkscape:cy=\"560\"\n     inkscape:document-units=\"mm\"\n
+    \    inkscape:current-layer=\"layer1\"\n     showgrid=\"false\"\n     inkscape:window-width=\"1600\"\n
+    \    inkscape:window-height=\"871\"\n     inkscape:window-x=\"-9\"\n     inkscape:window-y=\"-9\"\n
+    \    inkscape:window-maximized=\"1\" />\n  <metadata\n     id=\"metadata5\">\n
+    \   <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n
+    \       <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\"\n
+    \    transform=\"translate(0,-197)\">\n    <g\n       id=\"g3689\"\n       transform=\"matrix(0.42912366,0,0,0.42758414,-16.196617,24.861485)\"\n
+    \      style=\"stroke-width:0.09651183\">\n      <g\n         id=\"g3687\"\n         style=\"stroke-width:0.09651183\">\n
+    \       <g\n           id=\"g3685\"\n           style=\"stroke-width:0.09651183\">\n
+    \         <use\n             id=\"use3683\"\n             xlink:href=\"#bcaFfSldn\"\n
+    \            style=\"opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:0.09651183\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n        </g>\n      </g>\n    </g>\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

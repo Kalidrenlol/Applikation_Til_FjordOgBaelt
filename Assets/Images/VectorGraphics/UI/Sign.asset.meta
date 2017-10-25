@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 25a634199ed8d2740b6fecaf8bcb1a30
+timeCreated: 1495191033
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n
+    \  id=\"svg774\"\n   sodipodi:docname=\"sign.svg\"\n   inkscape:version=\"0.92.2
+    (5c3e80d, 2017-08-06)\">\n  <defs\n     id=\"defs768\" />\n  <sodipodi:namedview\n
+    \    id=\"base\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n     borderopacity=\"1.0\"\n
+    \    inkscape:pageopacity=\"0.0\"\n     inkscape:pageshadow=\"2\"\n     inkscape:zoom=\"0.35\"\n
+    \    inkscape:cx=\"400\"\n     inkscape:cy=\"674.28571\"\n     inkscape:document-units=\"mm\"\n
+    \    inkscape:current-layer=\"layer1\"\n     showgrid=\"false\"\n     inkscape:window-width=\"1920\"\n
+    \    inkscape:window-height=\"1027\"\n     inkscape:window-x=\"-8\"\n     inkscape:window-y=\"-8\"\n
+    \    inkscape:window-maximized=\"1\" />\n  <metadata\n     id=\"metadata771\">\n
+    \   <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n
+    \       <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n
+    \   <g\n       transform=\"matrix(1.0302799,0,0,-4.7296978,100,197)\"\n       id=\"g464\">\n
+    \     <path\n         inkscape:connector-curvature=\"0\"\n         id=\"path466\"\n
+    \        style=\"fill:#fecc81;fill-opacity:1;fill-rule:nonzero;stroke:none\"\n
+    \        d=\"m 0,0 h -97.061 v -9.04 l 4.536,-1.532 -4.536,-1.532 v -9.039 H 0
+    v 2.438 L -6.355,-17.897 0,-17.09 V -6.224 L -4.619,-4.797 0,-3.369 Z\" />\n    </g>\n
+    \ </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 
