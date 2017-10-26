@@ -70,6 +70,10 @@ public class IntroductionController : MonoBehaviour {
 		bobble.GetComponent<WaterBobble>().speed = Random.Range(2, 4);
 		float size = Random.Range(0.7f, 1.1f);
 		bobble.transform.localScale = new Vector3(size, size, 0);
-		StartCoroutine(CreateWaterBobble());
+
+
+		if (GameObject.FindGameObjectWithTag ("Canvas").transform.Find ("WaterBobbles").transform.childCount < 10) {
+			StartCoroutine(CreateWaterBobble());
+		}
 	}
 }
