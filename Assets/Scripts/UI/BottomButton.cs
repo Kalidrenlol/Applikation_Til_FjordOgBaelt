@@ -7,13 +7,12 @@ using UnityEngine.UI.Extensions;
 public class BottomButton : MonoBehaviour {
 
 	GameObject gameController; 
-	GameObject screenController;
+	//GameObject screenController;
 	public int screenNo;
 
-	// Use this for initialization
 	void Start () {
 		gameController = GameObject.FindGameObjectWithTag("GameController");
-		screenController = GameObject.FindGameObjectWithTag("ScreenController");
+		//screenController = GameObject.FindGameObjectWithTag("ScreenController");
 		GetComponent<Button>().onClick.AddListener(delegate {
 			GoToPage(screenNo);
 		});

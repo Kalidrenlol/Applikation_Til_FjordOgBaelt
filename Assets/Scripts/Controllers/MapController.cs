@@ -14,7 +14,7 @@ public class MapController : MonoBehaviour {
 		foreach(GameObject pointer in pointers) {
 			GameObject p = Instantiate (pointer);
 			p.name = pointer.name;
-			p.transform.SetParent(ParentMap.transform.GetChild (0).GetChild(1), false);
+			p.transform.SetParent(ParentMap.transform.GetChild (0), false);
 
 			switch (p.gameObject.name) {
 				case "Starfish":
