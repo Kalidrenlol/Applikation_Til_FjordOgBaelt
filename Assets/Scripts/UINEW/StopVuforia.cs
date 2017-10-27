@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
 
-public class stopVuforia : MonoBehaviour {
+public class StopVuforia : MonoBehaviour {
 		
 	void Start () {
 		VuforiaBehaviour.Instance.enabled = false;

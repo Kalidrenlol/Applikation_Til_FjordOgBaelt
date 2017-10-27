@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class WaterBobble : MonoBehaviour {
 
-	public int speed = 1;
+	public int speed;
 
 	void Update () {
-		transform.position = transform.position + new Vector3(0, 0.3f * speed, 0);
+		transform.position = transform.position + new Vector3(0, (Screen.height/500), 0);
 
-		if (transform.position.y > 1400) {
+		speed = (Screen.height / 500);
+
+		if (transform.position.y > Screen.height + 50) {
 			Destroy(gameObject);
 		}
 	}

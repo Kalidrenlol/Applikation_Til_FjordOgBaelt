@@ -16,6 +16,7 @@ public class IntroductionController : MonoBehaviour {
 	[SerializeField] GameObject waterBobblePrefab;
 
 	int introCounter = 1;
+	public int bobbleCounter = 0;
 
 	void Awake() {
 		nextBtn.onClick.AddListener(delegate {
@@ -27,6 +28,7 @@ public class IntroductionController : MonoBehaviour {
 		introPage.gameObject.SetActive (false);
 		greetingPage.gameObject.SetActive (true);
 
+		SpawnInitialBobblesRandom();
 		StartCoroutine(CreateWaterBobble());
 
 		var se = new InputField.SubmitEvent();
@@ -35,7 +37,6 @@ public class IntroductionController : MonoBehaviour {
 	}
 
 	void IntroUpdate() {
-		
 		switch (introCounter) {
 		case 1:
 			introText_1.text = "Hej " + PlayerName + "! \nVelkommen til Fjord & Bælt!";
@@ -45,10 +46,9 @@ public class IntroductionController : MonoBehaviour {
 			introText_1.text = "I Fjord & Bælt har vi mange dyr, som alle har brug for din hjælp!\n\nSe om du kan finde dem!";
 			introCounter += 1;
 				break;
-
-			case 3:
-				SceneManager.LoadScene("Main");
-				break;
+		case 3:
+			SceneManager.LoadScene("Main");
+			break;
 		}
 	}
 
@@ -58,22 +58,29 @@ public class IntroductionController : MonoBehaviour {
 		PlayerPrefs.SetString("Playername", PlayerName);
 		greetingPage.gameObject.SetActive (false);
 		introPage.gameObject.SetActive (true);
+		SpawnInitialBobblesRandom();
 		IntroUpdate();
 	}
 
 	IEnumerator CreateWaterBobble() {
-		yield return new WaitForSeconds(Random.Range(1f,3f));
-
+		yield return new WaitForSeconds(Random.Range(2f,5f));
 		GameObject bobble = Instantiate(waterBobblePrefab, GameObject.FindGameObjectWithTag("Canvas").transform.Find("WaterBobbles"));
 		float posx = Random.Range(0,Screen.width);
 		bobble.transform.position = new Vector3(posx, 0, 0);
-		bobble.GetComponent<WaterBobble>().speed = Random.Range(2, 4);
 		float size = Random.Range(0.7f, 1.1f);
 		bobble.transform.localScale = new Vector3(size, size, 0);
+		StartCoroutine(CreateWaterBobble());
+	}
 
-
-		if (GameObject.FindGameObjectWithTag ("Canvas").transform.Find ("WaterBobbles").transform.childCount < 10) {
-			StartCoroutine(CreateWaterBobble());
+	public void SpawnInitialBobblesRandom()
+	{
+		for (int i = 0; i < 6; i++) {
+			Vector3 screenPosition = new Vector3 (Random.Range (0, Screen.width), Random.Range (0, Screen.height), 0);
+			GameObject bobble = Instantiate(waterBobblePrefab, GameObject.FindGameObjectWithTag("Canvas").transform.Find("WaterBobbles"));
+			bobble.transform.position = screenPosition;
+			float size = Random.Range(0.7f, 1.1f);
+			bobble.transform.localScale = new Vector3(size, size, 0);
+			bobbleCounter++;
 		}
 	}
 }

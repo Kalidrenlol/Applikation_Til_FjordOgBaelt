@@ -21,12 +21,10 @@ public class GameController : MonoBehaviour {
 
 	void Start() {
 		ShowCamera(false);
-		Debug.Log ("LOL");
 	}
 
 	public void ShowCamera(bool _bool) {
 		GetComponent<ScreenController>().ShowCamera(_bool);
-		Debug.Log ("asdasd");
 
 		if(_bool) {
 			flash = false;
