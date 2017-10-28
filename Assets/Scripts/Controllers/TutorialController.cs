@@ -321,7 +321,7 @@ public class TutorialController : MonoBehaviour {
 	public void Game_Plaice(bool _done) {
 		string _text = "";
 
-		GetComponent<Animator>().SetTrigger("Attend");
+		//GetComponent<Animator>().SetTrigger("Attend");
 		switch (_done) {
 		case true:
 			_text = "Sådan! Nu er Riggi klar til at hoppe i vandet igen. Godt klaret!";

@@ -95,7 +95,7 @@ public class Game_Plaice : MonoBehaviour {
 		controller.GetComponent<ScreenController>().ScreenTask.SetActive(false);
 		controller.GetComponent<ScreenController>().GoToPage(1);
 		controller.GetComponent<AnimalsController>().DiscoverAnimal("Plaice");
-		Destroy(transform.parent.gameObject);
+		Destroy(transform.parent.parent.gameObject);
 	}
 
 	public void DestroyGame() {
