@@ -23,10 +23,8 @@ public class AnimalsController : MonoBehaviour {
 	bool hackUpdate = false;
 	[SerializeField] Text animalsHelpedTxt;
 
-	// Use this for initialization
 	void Awake () {
 		SetLastCount();
-
 		CreateAnimals();
 	}
 
@@ -39,7 +37,6 @@ public class AnimalsController : MonoBehaviour {
 			hackUpdate = true;
 			UpdateAnimals();
 		}
-
 	}
 
 	void SetLastCount() {
@@ -128,8 +125,6 @@ public class AnimalsController : MonoBehaviour {
 		if (!hasBeenHelped) {
 			Debug.LogError(_name + " skulle være hjulpet, men blev ikke fundet");
 		}
-
-
         UpdateAnimals();
 	}
 }
