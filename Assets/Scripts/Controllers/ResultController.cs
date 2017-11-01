@@ -19,16 +19,17 @@ public class ResultController : MonoBehaviour {
 
 		if (_correct) {
 			GetComponent<Animator>().SetTrigger("Correct");
+
 			foreach(Text text in statusTextWrapper.GetComponentsInChildren<Text>()){
 				text.text = "Rigtigt!";	
 			}
+
 			foreach(Text txt in achievementText.GetComponentsInChildren<Text>()) {
 				txt.text = "Du har hjulpet dyret";
 			}
 
 			resultBtn.GetComponentInChildren<Text>().text = "Sådan!";
 		}
-
 	}
 
 	public void PlaySound() {

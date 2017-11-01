@@ -17,19 +17,18 @@ public class Animal : MonoBehaviour {
 	public string itemNeeded;
 	public Animal_Question question;
 
-
 	public void Setup() {
 		string _hasSeen = danishName + "_hasSeen";
+
 		if (!PlayerPrefs.HasKey(_hasSeen)) {
 			PlayerPrefs.SetInt(_hasSeen, 0);
 			HasSeen = false;
-		} else if (PlayerPrefs.GetInt(_hasSeen) == 1) {
+		} 
+		else if (PlayerPrefs.GetInt(_hasSeen) == 1) {
 			HasSeen = true;
-		} else {
+		}
+		else {
 			HasSeen = false;
 		}
 	}
-
-
-
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class PrizeController : MonoBehaviour {
 
     GameObject gameController;
-
     [SerializeField] GameObject content;
 
 	public void Setup(int _count) {
@@ -21,8 +20,6 @@ public class PrizeController : MonoBehaviour {
             child.GetComponent<PrizeItem>().Setup(i, _show, sec);
             i++;
         }
-
 		gameController.GetComponent<AnimalsController>().SetLastCount(_count);
-
     }
 }

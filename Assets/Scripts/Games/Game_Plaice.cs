@@ -95,11 +95,11 @@ public class Game_Plaice : MonoBehaviour {
 		controller.GetComponent<ScreenController>().ScreenTask.SetActive(false);
 		controller.GetComponent<ScreenController>().GoToPage(1);
 		controller.GetComponent<AnimalsController>().DiscoverAnimal("Plaice");
-		Destroy(transform.parent.parent.gameObject);
+		DestroyGame ();
 	}
 
 	public void DestroyGame() {
-		Destroy(transform.parent.gameObject);
+		Destroy(transform.gameObject);
 	}
 
 }

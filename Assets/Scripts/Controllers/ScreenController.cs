@@ -55,7 +55,6 @@ public class ScreenController : MonoBehaviour {
 
 	public void GoToPage(int _index) {
 		ScreenAnimal.GetComponent<AnimalView>().ShowPage(false);
-		//ShowHorizontalScrollSnap();
 		MenuObject.GoToScreen(_index);
 		CheckCurrentPage();
 	}
@@ -138,6 +137,7 @@ public class ScreenController : MonoBehaviour {
 	public void GoToScene(string _scenename) {
 		SceneManager.LoadScene(_scenename);
 	}
+
 	void DeactivateAll() {
 		ScreenPrize.GetComponent<Animator>().SetBool("Show", false);
 		ScreenSettings.GetComponent<Animator>().SetBool("Show", false);

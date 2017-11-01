@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour {
 		if(_bool) {
 			flash = false;
 			GetComponent<ScreenController>().ShowTask(false);
+
 			if (LoadedGame) {
 				Destroy(LoadedGame);
 			}
@@ -37,15 +38,15 @@ public class GameController : MonoBehaviour {
 
 	public void Update() {
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
-			ShowAnimal("Shark");
+			ShowAnimal("Plaice");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
-			ShowAnimal("Vertebra");
+			ShowAnimal("HarbourPorpoise");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
-			ShowAnimal("Tooth");
+			ShowAnimal("HarbourPorpoise2");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {

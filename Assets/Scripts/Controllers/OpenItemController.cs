@@ -49,7 +49,6 @@ public class OpenItemController : MonoBehaviour {
 			GameObject controller = GameObject.FindGameObjectWithTag("GameController");
 			controller.GetComponent<ItemController>().DiscoverItem(item);
 			controller.GetComponent<ScreenController>().GoToPage(2);
-
 			gameObject.SetActive(false);
 		});
 	}

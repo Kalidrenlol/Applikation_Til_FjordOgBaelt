@@ -88,11 +88,9 @@ public class TaskController : MonoBehaviour {
 
 	void SetupNewAchievement() {
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
-
 		controller.GetComponent<ScreenController>().ScreenTask.SetActive(false);
 		controller.GetComponent<ScreenController>().GoToPage(1);
 		controller.GetComponent<AnimalsController>().DiscoverAnimal(headerText.text);
-
 	}
 
 /*	void ResetAnimation() {
