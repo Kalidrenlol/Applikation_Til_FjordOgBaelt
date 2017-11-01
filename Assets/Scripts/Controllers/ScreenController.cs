@@ -12,6 +12,7 @@ public class ScreenController : MonoBehaviour {
 
 	[Header("Pages")]
 	public GameObject TopBar;
+	public GameObject BottomBar;
 	[SerializeField] GameObject HorizontalScrollGO;
 	public GameObject ScreenPrize;
 	public GameObject ScreenSettings;
@@ -61,6 +62,7 @@ public class ScreenController : MonoBehaviour {
 
 	public void ShowPrize(bool _bool) {
 		TopBar.GetComponent<Animator>().SetBool("Show", !_bool);
+		BottomBar.GetComponent<Animator>().SetBool("Show", !_bool);
 		ScreenPrize.GetComponent<Animator>().SetBool("Show", _bool);
 
 		if (ScreenPrize.GetComponent<Animator>().GetBool("Show") == true) {
@@ -80,6 +82,7 @@ public class ScreenController : MonoBehaviour {
 
 	public void ShowSettings(bool _bool) {
 		TopBar.GetComponent<Animator>().SetBool("Show", !_bool);
+		BottomBar.GetComponent<Animator>().SetBool("Show", !_bool);
 		ScreenSettings.GetComponent<Animator>().SetBool("Show", _bool);
 	}
 
