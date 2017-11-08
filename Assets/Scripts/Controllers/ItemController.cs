@@ -88,7 +88,7 @@ public class ItemController : MonoBehaviour {
 		}
 	}
 	
-	void UpdateItems() {
+	public void UpdateItems() {
 		foreach(Transform child in itemContent) {
 			Destroy(child.gameObject);
 		}

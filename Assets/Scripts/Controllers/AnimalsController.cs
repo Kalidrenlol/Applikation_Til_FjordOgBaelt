@@ -81,7 +81,7 @@ public class AnimalsController : MonoBehaviour {
 		}
 	}
 	
-	void UpdateAnimals() {
+	public void UpdateAnimals() {
 		foreach(Transform child in animalContent) {
 			Destroy(child.gameObject);
 		}
