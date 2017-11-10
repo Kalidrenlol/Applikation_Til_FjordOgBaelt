@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 23768ecfd2e6ced48acdf04f2cb4e2fb
+timeCreated: 1510300383
+licenseType: Free
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  width=\"100mm\"\n   height=\"100mm\"\n   viewBox=\"0 0 99.999996 99.999996\"\n
+    \  version=\"1.1\"\n   id=\"svg4221\"\n   inkscape:version=\"0.92.2 (5c3e80d,
+    2017-08-06)\"\n   sodipodi:docname=\"BobbelBl\xE5.svg\">\n  <defs\n     id=\"defs4215\"
+    />\n  <sodipodi:namedview\n     id=\"base\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n
+    \    borderopacity=\"1.0\"\n     inkscape:pageopacity=\"0.0\"\n     inkscape:pageshadow=\"2\"\n
+    \    inkscape:zoom=\"0.35\"\n     inkscape:cx=\"400\"\n     inkscape:cy=\"560\"\n
+    \    inkscape:document-units=\"mm\"\n     inkscape:current-layer=\"layer1\"\n
+    \    showgrid=\"false\"\n     units=\"mm\"\n     inkscape:window-width=\"1366\"\n
+    \    inkscape:window-height=\"705\"\n     inkscape:window-x=\"-8\"\n     inkscape:window-y=\"-8\"\n
+    \    inkscape:window-maximized=\"1\" />\n  <metadata\n     id=\"metadata4218\">\n
+    \   <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n
+    \       <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\"\n
+    \    transform=\"translate(0,-197)\">\n    <path\n       d=\"m 100,246.99996 c
+    0,27.61418 -22.385887,50.00002 -50.000022,50.00002 C 22.385842,296.99998 0,274.61414
+    0,246.99996 0,219.38583 22.385842,196.99998 49.999978,196.99998 77.614113,196.99998
+    100,219.38583 100,246.99996\"\n       style=\"fill:#75d2f4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03527777\"\n
+    \      id=\"path1526\"\n       inkscape:connector-curvature=\"0\" />\n    <path\n
+    \      d=\"m 49.934023,284.59396 c -20.828255,0 -37.715176,-16.88536 -37.715176,-37.71357
+    0,-20.82821 16.886921,-37.71518 37.715176,-37.71518 20.82821,0 37.713569,16.88697
+    37.713569,37.71518 0,20.82821 -16.885359,37.71357 -37.713569,37.71357\"\n       style=\"fill:#b3e6f7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.03527777\"\n
+    \      id=\"path1528\"\n       inkscape:connector-curvature=\"0\" />\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

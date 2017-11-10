@@ -9,7 +9,8 @@ public class PrizeItem : MonoBehaviour {
     [SerializeField] Text txt;
     [SerializeField] SVGImage img;
 
-	public void Setup (int _no, bool _show, float _waitSeconds) {
+	public void Setup (int _no, bool _show, float _waitSeconds, string animalName) {
+		Debug.Log (animalName);
         txt.text = _no.ToString();
        
         if (!_show) {

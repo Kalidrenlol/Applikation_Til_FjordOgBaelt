@@ -53,14 +53,23 @@ public class AnimalsController : MonoBehaviour {
 		PlayerPrefs.SetInt("AnimalsLastSeen", _count);
 	}
 
-    public int GetAnimalSeen() {
+	public List<string> GetAnimalSeen() {
         int i = 0;
-        foreach(GameObject ani in animals) {
+        /*foreach(GameObject ani in animals) {
             if (ani.GetComponent<Animal>().HasSeen) {
                 i++;
             }
         }
-        return i;
+        return i;*/
+
+		List<string> foundAnimals = new List<string> (12);
+		foreach(GameObject ani in animals) {
+			if (ani.GetComponent<Animal>().HasSeen) {
+				i++;
+				foundAnimals.Add(ani.gameObject.name);
+			}
+		}
+		return foundAnimals;
     }
 
 	public Animal GetAnimal(string _animal) {

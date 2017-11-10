@@ -26,9 +26,9 @@ public class AnimalView : MonoBehaviour{
 	public void ShowPage(bool _bool) {
 		anim.SetBool("Show", _bool);
 		GameObject.FindGameObjectWithTag("GameController").GetComponent<ScreenController>().TopBar.GetComponent<Animator>().SetBool("Show", !_bool);
-		int animalsSeen = GameObject.FindGameObjectWithTag("GameController").GetComponent<AnimalsController>().GetAnimalSeen();
+		List<string> animalsSeen = GameObject.FindGameObjectWithTag("GameController").GetComponent<AnimalsController>().GetAnimalSeen();
 
-		if (!_bool && PlayerPrefs.GetInt("ShowTutorial") == 7 && animalsSeen > 0) {
+		if (!_bool && PlayerPrefs.GetInt("ShowTutorial") == 7 && animalsSeen.Count > 0) {
 			GameObject tut = GameObject.FindGameObjectWithTag("GameController").GetComponent<ScreenController>().tutorialGO;
 			tut.SetActive(true);
 			tut.GetComponent<TutorialController>().GoToState(10);
