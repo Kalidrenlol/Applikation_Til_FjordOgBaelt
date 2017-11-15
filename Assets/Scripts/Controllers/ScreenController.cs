@@ -34,11 +34,11 @@ public class ScreenController : MonoBehaviour {
 
 
 	void Awake() {
-		tutorialGO = (GameObject) Instantiate(TutorialPrefab, GameObject.FindGameObjectWithTag("Canvas").transform);
+		/*tutorialGO = (GameObject) Instantiate(TutorialPrefab, GameObject.FindGameObjectWithTag("Canvas").transform);
 
 		if (PlayerPrefs.GetInt("ShowTutorial") != 0) {
 			tutorialGO.SetActive(false);
-		}
+		}*/
 	}
 
 	void Start() {

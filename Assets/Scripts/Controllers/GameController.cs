@@ -74,7 +74,6 @@ public class GameController : MonoBehaviour {
 			GetComponent<AnimalsController>().DiscoverAnimal("Shark");
 			GetComponent<AnimalsController>().DiscoverAnimal("Spermwhale");
 			GetComponent<AnimalsController>().DiscoverAnimal("Starfish");
-			GetComponent<AnimalsController>().DiscoverAnimal("Starfish2");
 		}
 	}
 

@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SVGImporter;
 
 public class PrizeController : MonoBehaviour {
 
     GameObject gameController;
     [SerializeField] GameObject content;
+	[SerializeField] SVGImage[] _animalList;
 
 	public void Setup(List<string> _list) {
 		gameController = GameObject.FindGameObjectWithTag("GameController");
@@ -17,7 +19,7 @@ public class PrizeController : MonoBehaviour {
 			bool _show = (_list.Count >= i) ? true : false;
             if (_show && i > lastCount) sec+= 0.5f;
 
-			child.GetComponent<PrizeItem>().Setup(i, _show, sec, _list[i-1]);
+			child.GetComponent<PrizeItem>().Setup(i, _show, sec, _list, _animalList);
             i++;
         }
 		gameController.GetComponent<AnimalsController>().SetLastCount(_list.Count);
