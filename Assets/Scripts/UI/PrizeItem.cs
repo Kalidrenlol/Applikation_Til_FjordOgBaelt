@@ -9,16 +9,17 @@ public class PrizeItem : MonoBehaviour {
     [SerializeField] Text txt;
     [SerializeField] SVGImage img;
 
-	public void Setup (int _no, bool _show, float _waitSeconds, List<string> aniSeen, SVGImage[] aniAll) {
+	public void Setup (int _no, bool _show, float _waitSeconds, List<string> animalsFound, SVGImage[] animalsList) {
         txt.text = _no.ToString();
        
         if (!_show) {
 			img.color = Color.black;
             txt.color = Color.gray;
         } else {
-			for(int i=0; i < aniAll.Length; i++) {
-				if (aniSeen[_no-1] == aniAll[i].name) {
-					img.vectorGraphics = aniAll[i].vectorGraphics;
+			for(int i=0; i < animalsList.Length; i++) {
+				//Debug.Log (animalsList[i].name);
+				if (animalsFound[_no-1] == animalsList[i].name) {
+					img.vectorGraphics = animalsList[i].vectorGraphics;
 				}
 			}
 

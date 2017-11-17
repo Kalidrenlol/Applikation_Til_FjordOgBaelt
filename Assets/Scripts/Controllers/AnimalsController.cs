@@ -22,6 +22,7 @@ public class AnimalsController : MonoBehaviour {
 	public Transform juicynessFolder;
 	bool hackUpdate = false;
 	[SerializeField] Text animalsHelpedTxt;
+	int animalsHelped;
 
 	void Awake () {
 		SetLastCount();
@@ -63,7 +64,9 @@ public class AnimalsController : MonoBehaviour {
         return i;*/
 
 		List<string> foundAnimals = new List<string> (12);
+
 		foreach(GameObject ani in animals) {
+			Debug.Log (ani.name);
 			if (ani.GetComponent<Animal>().HasSeen) {
 				i++;
 				foundAnimals.Add(ani.gameObject.name);
@@ -107,6 +110,7 @@ public class AnimalsController : MonoBehaviour {
 		}
 		int total = animals.Length;
 		animalsHelpedTxt.text = "Dyr hjulpet: " + helped + " / " + total;
+		animalsHelped = helped;
 	}
 
 	public void DiscoverAnimal(string _name) {
@@ -123,9 +127,15 @@ public class AnimalsController : MonoBehaviour {
             if (ani.GetComponent<Animal>().englishName == _name) {
                 PlayerPrefs.SetInt(_name + "_hasSeen", 1);
 				PlayerPrefs.SetInt(_name + "_newDiscover", 1);
+				int animalsHelpedIndex = animalsHelped + 1;
+
+				PlayerPrefs.SetInt ("A_" + _name + "_seenIndex", animalsHelpedIndex);
+				ani.GetComponent<Animal> ().seenIndex = PlayerPrefs.GetInt ("A_" + _name + "_seenIndex");
+
 				hasBeenHelped = true;
                 ani.GetComponent<Animal>().HasSeen = true;
                 ani.GetComponent<Animal>().NewDiscover = true;
+
                 break;
             }
         }

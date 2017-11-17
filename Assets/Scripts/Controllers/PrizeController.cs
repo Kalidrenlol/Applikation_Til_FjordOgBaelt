@@ -7,21 +7,21 @@ public class PrizeController : MonoBehaviour {
 
     GameObject gameController;
     [SerializeField] GameObject content;
-	[SerializeField] SVGImage[] _animalList;
+	[SerializeField] SVGImage[] animalList;
 
-	public void Setup(List<string> _list) {
+	public void Setup(List<string> animalsFound) {
 		gameController = GameObject.FindGameObjectWithTag("GameController");
 		int lastCount = gameController.GetComponent<AnimalsController>().lastCount;
 		int i = 1;
         float sec = 0f;
 
         foreach (Transform child in content.transform) {
-			bool _show = (_list.Count >= i) ? true : false;
+			bool _show = (animalsFound.Count >= i) ? true : false;
             if (_show && i > lastCount) sec+= 0.5f;
 
-			child.GetComponent<PrizeItem>().Setup(i, _show, sec, _list, _animalList);
+			child.GetComponent<PrizeItem>().Setup(i, _show, sec, animalsFound, animalList);
             i++;
         }
-		gameController.GetComponent<AnimalsController>().SetLastCount(_list.Count);
+		gameController.GetComponent<AnimalsController>().SetLastCount(animalsFound.Count);
     }
 }

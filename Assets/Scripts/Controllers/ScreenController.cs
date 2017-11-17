@@ -65,8 +65,14 @@ public class ScreenController : MonoBehaviour {
 		ScreenPrize.GetComponent<Animator>().SetBool("Show", _bool);
 
 		if (ScreenPrize.GetComponent<Animator>().GetBool("Show") == true) {
-			List<string> prizedAnimals = GetComponent<AnimalsController>().GetAnimalSeen();
-			ScreenPrize.GetComponent<PrizeController>().Setup(prizedAnimals);
+			List<string> animalsFound = GetComponent<AnimalsController>().GetAnimalSeen();
+
+			for (int i = 0; i < animalsFound.Count; i++) {
+				Debug.Log (animalsFound [i]);
+			}
+			Debug.Log ("---------------------------");
+
+			ScreenPrize.GetComponent<PrizeController>().Setup(animalsFound);
 			AllAnimalsSeen(true);
 			/*int count = GetComponent<AnimalsController>().GetAnimalSeen();
 			ScreenPrize.GetComponent<PrizeController>().Setup(count);

@@ -10,6 +10,7 @@ public class Animal : MonoBehaviour {
 	public SVGAsset assetOpen;
 	public SVGAsset assetClose;
 	public bool HasSeen;
+	public int seenIndex = -1;
 	public bool NewDiscover = false;
 
 	[Tooltip("Hvis der er et spil til dyret, kryds af")]
@@ -19,10 +20,13 @@ public class Animal : MonoBehaviour {
 
 	public void Setup() {
 		string _hasSeen = danishName + "_hasSeen";
+		string _seenIndex = "A_" + englishName + "_seenIndex";
+		print (_seenIndex);
 
 		if (!PlayerPrefs.HasKey(_hasSeen)) {
 			PlayerPrefs.SetInt(_hasSeen, 0);
-			HasSeen = false;
+			PlayerPrefs.SetInt(_seenIndex, 0);
+			HasSeen = false;	
 		} 
 		else if (PlayerPrefs.GetInt(_hasSeen) == 1) {
 			HasSeen = true;
@@ -30,5 +34,6 @@ public class Animal : MonoBehaviour {
 		else {
 			HasSeen = false;
 		}
+		seenIndex = PlayerPrefs.GetInt (_seenIndex);
 	}
 }
