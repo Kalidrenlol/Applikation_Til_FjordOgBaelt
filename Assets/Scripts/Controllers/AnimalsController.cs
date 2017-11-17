@@ -126,7 +126,6 @@ public class AnimalsController : MonoBehaviour {
 				hasBeenHelped = true;
                 ani.GetComponent<Animal>().HasSeen = true;
                 ani.GetComponent<Animal>().NewDiscover = true;
-				print(_name);
                 break;
             }
         }

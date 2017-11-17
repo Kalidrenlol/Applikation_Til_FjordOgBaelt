@@ -14,7 +14,7 @@ public class PrizeController : MonoBehaviour {
 		int lastCount = gameController.GetComponent<AnimalsController>().lastCount;
 		int i = 1;
         float sec = 0f;
-		Debug.Log (_list.Count);
+
         foreach (Transform child in content.transform) {
 			bool _show = (_list.Count >= i) ? true : false;
             if (_show && i > lastCount) sec+= 0.5f;
