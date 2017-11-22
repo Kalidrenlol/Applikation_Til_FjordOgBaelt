@@ -38,27 +38,27 @@ public class GameController : MonoBehaviour {
 
 	public void Update() {
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
-			ShowAnimal("Plaice");
+			GetComponent<AnimalsController>().DiscoverAnimal("Crab");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
-			ShowAnimal("HarbourPorpoise");
+			GetComponent<AnimalsController>().DiscoverAnimal("HarbourPorpoise");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
-			ShowAnimal("HarbourPorpoise2");
+			GetComponent<AnimalsController>().DiscoverAnimal("Crab2");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
-			ShowAnimal("Feather");
+			GetComponent<AnimalsController>().DiscoverAnimal("Shark");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha5)) {
-			ShowAnimal("BucketFish");
+			GetComponent<AnimalsController>().DiscoverAnimal("Killerwhale");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha6)) {
-			ShowAnimal("Anchor");
+			GetComponent<AnimalsController>().DiscoverAnimal("Starfish");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha7)) {

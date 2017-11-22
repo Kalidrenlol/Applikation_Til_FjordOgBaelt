@@ -55,22 +55,19 @@ public class AnimalsController : MonoBehaviour {
 	}
 
 	public List<string> GetAnimalSeen() {
-        int i = 0;
-        /*foreach(GameObject ani in animals) {
-            if (ani.GetComponent<Animal>().HasSeen) {
-                i++;
-            }
-        }
-        return i;*/
 
-		List<string> foundAnimals = new List<string> (12);
+		SortedDictionary<int, GameObject> sortedAnimals = new SortedDictionary<int, GameObject>();
+		List<string> foundAnimals = new List<string> ();
 
-		foreach(GameObject ani in animals) {
-			Debug.Log (ani.name);
-			if (ani.GetComponent<Animal>().HasSeen) {
-				i++;
-				foundAnimals.Add(ani.gameObject.name);
+		foreach (GameObject ani in animals) {
+			if (ani.GetComponent<Animal> ().HasSeen) {			
+				sortedAnimals.Add (ani.GetComponent<Animal> ().seenIndex-1, ani);
 			}
+		}
+
+		foreach(KeyValuePair<int, GameObject> ani in sortedAnimals)
+		{
+			foundAnimals.Add (ani.Value.gameObject.name);
 		}
 		return foundAnimals;
     }

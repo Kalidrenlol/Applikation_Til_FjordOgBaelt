@@ -17,7 +17,6 @@ public class PrizeItem : MonoBehaviour {
             txt.color = Color.gray;
         } else {
 			for(int i=0; i < animalsList.Length; i++) {
-				//Debug.Log (animalsList[i].name);
 				if (animalsFound[_no-1] == animalsList[i].name) {
 					img.vectorGraphics = animalsList[i].vectorGraphics;
 				}
