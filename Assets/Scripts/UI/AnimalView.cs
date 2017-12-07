@@ -10,6 +10,7 @@ public class AnimalView : MonoBehaviour{
 	Animator anim;
 
 	[SerializeField] Text txtName;
+	[SerializeField] Text txtInfo;
 	[SerializeField] SVGImage imgSprite;
 	[SerializeField] GameObject NoSeen;
 	[SerializeField] Button NoSeenBtn;
@@ -42,6 +43,7 @@ public class AnimalView : MonoBehaviour{
 			NoSeen.SetActive(false);
 			Seen.SetActive(true);
 			txtName.text = ani.danishName;
+			txtInfo.text = ani.aboutAnimal;
 			imgSprite.color = Color.white;
 		} else {
 			NoSeenBtn.onClick.RemoveAllListeners();
