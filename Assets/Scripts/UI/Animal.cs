@@ -7,6 +7,7 @@ public class Animal : MonoBehaviour {
 
 	public string danishName;
 	public string englishName;
+	public string aboutAnimal;
 	public SVGAsset assetOpen;
 	public SVGAsset assetClose;
 	public bool HasSeen;
