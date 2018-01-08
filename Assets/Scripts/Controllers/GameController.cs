@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
-			GetComponent<AnimalsController>().DiscoverAnimal("Crab2");
+			GetComponent<AnimalsController>().DiscoverAnimal("Starfish2");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
@@ -63,7 +63,7 @@ public class GameController : MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.Alpha7)) {
 			GetComponent<AnimalsController>().DiscoverAnimal("Crab");
-			GetComponent<AnimalsController>().DiscoverAnimal("Crab2");
+			GetComponent<AnimalsController>().DiscoverAnimal("Starfish2");
 			GetComponent<AnimalsController>().DiscoverAnimal("HarbourPorpoise");
 			GetComponent<AnimalsController>().DiscoverAnimal("HarbourPorpoise2");
 			GetComponent<AnimalsController>().DiscoverAnimal("Plaice");

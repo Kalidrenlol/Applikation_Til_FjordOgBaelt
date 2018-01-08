@@ -21,7 +21,6 @@ public class AnimalsController : MonoBehaviour {
 	public GameObject starPrefab;
 	public Transform juicynessFolder;
 	bool hackUpdate = false;
-	[SerializeField] Text animalsHelpedTxt;
 	int animalsHelped;
 
 	void Awake () {
@@ -85,6 +84,14 @@ public class AnimalsController : MonoBehaviour {
 	void CreateAnimals() {
 		animals = Resources.LoadAll("Animals");
 
+		for (var i = animals.Length - 1; i > 0; i--) {
+				var r = Random.Range(0, i);
+				Object tmp = animals[i];
+				animals[i] = animals[r];
+				animals[r] = tmp;
+			}
+
+
 		foreach(GameObject ani in animals) {
 			ani.GetComponent<Animal>().Setup();
 		}
@@ -106,7 +113,6 @@ public class AnimalsController : MonoBehaviour {
 			}
 		}
 		int total = animals.Length;
-		animalsHelpedTxt.text = "Dyr hjulpet: " + helped + " / " + total;
 		animalsHelped = helped;
 	}
 

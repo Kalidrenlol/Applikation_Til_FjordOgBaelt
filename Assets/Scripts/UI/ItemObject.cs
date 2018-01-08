@@ -9,7 +9,7 @@ public class ItemObject : MonoBehaviour {
 	Item item;
 	Animator animator;
 
-	[SerializeField] Text txtName;
+	//[SerializeField] Text txtName;
 	[SerializeField] SVGImage imgImage;
 
 	void OnEnable() {
@@ -22,14 +22,14 @@ public class ItemObject : MonoBehaviour {
 		item = _item;
 		imgImage.vectorGraphics = _item.asset;
 		animator = GetComponent<Animator>();
-		txtName.text = _item.danishName;
+		//txtName.text = _item.danishName;
 
 		if (_item.NewDiscover) {
 			animator.SetTrigger("Discover");
 		} else if (_item.HasSeen) {
 			animator.SetBool("Discovered", true);
 		} else {
-			txtName.gameObject.SetActive(false);
+			//txtName.gameObject.SetActive(false);
 			imgImage.color = Color.black;
 			animator.SetBool("Discovered", false);
 		}
