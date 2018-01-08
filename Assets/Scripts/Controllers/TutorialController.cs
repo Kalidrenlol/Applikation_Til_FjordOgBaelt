@@ -178,7 +178,7 @@ public class TutorialController : MonoBehaviour {
 
 		switch (_no) {
 		case 0:
-			_text = "Dette er en søstjerne";
+			_text = "Dette er en søstjerne. Der er en silhouette.";
 			btn.onClick.RemoveAllListeners();
 			btn.onClick.AddListener(delegate {
 				if (GameObject.FindGameObjectWithTag("GameController").GetComponent<ItemController>().GetItem("Anchor").HasSeen) {

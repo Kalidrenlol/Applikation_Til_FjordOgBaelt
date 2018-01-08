@@ -9,7 +9,7 @@ public class DebugController : MonoBehaviour {
 	[SerializeField] GameObject OtherScreens;
 	[SerializeField] GameObject HorizontalContent;
 	[SerializeField] GameObject TaskScreen;
-   // [SerializeField] GameObject TutorialScreen;
+    [SerializeField] GameObject TutorialScreen;
 	[SerializeField] GameObject AnimalView;
 
 	// Use this for initialization
@@ -18,7 +18,7 @@ public class DebugController : MonoBehaviour {
 		GetComponent<ScreenController>().ScreenSettings.SetActive(true);
 		OtherScreens.SetActive(true);
 		TaskScreen.SetActive(false);
-        //TutorialScreen.SetActive(false);
+        TutorialScreen.SetActive(false);
 		AnimalView.SetActive(true);
 		foreach(Transform child in HorizontalContent.transform) {
 			child.gameObject.SetActive(true);

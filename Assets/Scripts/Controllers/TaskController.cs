@@ -22,7 +22,7 @@ public class TaskController : MonoBehaviour {
 	ResultController resultController;
 
 	[Header("Loader")]
-	//[SerializeField] Animator LoaderAnimator;
+	[SerializeField] Animator LoaderAnimator;
 
 	GameObject chosenAnswer;
 
@@ -102,7 +102,7 @@ public class TaskController : MonoBehaviour {
 		if (resultBox == null) {
 		}
 
-		//LoaderAnimator.SetTrigger("Play");
+		LoaderAnimator.SetTrigger("Play");
 		chosenAnswer = null;
 		//ResetAnimation();
 		MiddleWrapper.GetComponent<Animator>().SetBool("ShowTip", false);
