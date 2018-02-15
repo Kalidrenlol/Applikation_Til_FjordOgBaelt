@@ -9,7 +9,7 @@ public class MapController : MonoBehaviour {
 
 	void Start () {
 
-		GameObject ParentMap = GameObject.FindGameObjectWithTag ("Map");
+		/*GameObject ParentMap = GameObject.FindGameObjectWithTag ("Map");
 
 		foreach(GameObject pointer in pointers) {
 			GameObject p = Instantiate (pointer);
@@ -60,7 +60,7 @@ public class MapController : MonoBehaviour {
 
 			p.GetComponent<SVGImage> ().color = new Color (1, 1, 1, 0.5f);
 			p.transform.GetChild(0).GetComponent<SVGImage>().color = new Color (1, 1, 1, 0.5f);
-		}
+		}*/
 	}
 
 	void Update () {

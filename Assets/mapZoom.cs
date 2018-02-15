@@ -16,10 +16,8 @@ public class mapZoom : MonoBehaviour {
 		
 		if (!anim.GetBool ("ZoomTo1")) {
 			anim.SetBool ("ZoomTo1", true);
-			topBar.GetComponent<Animator>().SetBool("Show", false);
 		} else if(anim.GetBool("ZoomTo1")) {
 			anim.SetBool ("ZoomTo1", false);
-			topBar.GetComponent<Animator>().SetBool("Show", true);
 		}
 	}
 
@@ -60,14 +58,6 @@ public class mapZoom : MonoBehaviour {
 			anim.SetBool ("ZoomTo6", true);
 		} else if(anim.GetBool("ZoomTo6")) {
 			anim.SetBool ("ZoomTo6", false);
-		}
-	}
-
-	public void ZoomTo7() {
-		if (!anim.GetBool ("ZoomTo7")) {
-			anim.SetBool ("ZoomTo7", true);
-		} else if(anim.GetBool("ZoomTo7")) {
-			anim.SetBool ("ZoomTo7", false);
 		}
 	}
 }
