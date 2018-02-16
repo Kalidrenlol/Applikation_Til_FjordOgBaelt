@@ -1,0 +1,44 @@
+fileFormatVersion: 2
+guid: 0d5a319742de0764c816c1c1665d7403
+timeCreated: 1518787816
+licenseType: Free
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n
+    \  id=\"svg8\"\n   inkscape:version=\"0.92.2 (5c3e80d, 2017-08-06)\"\n   sodipodi:docname=\"pointer.svg\">\n
+    \ <defs\n     id=\"defs2\" />\n  <sodipodi:namedview\n     id=\"base\"\n     pagecolor=\"#ffffff\"\n
+    \    bordercolor=\"#666666\"\n     borderopacity=\"1.0\"\n     inkscape:pageopacity=\"0.0\"\n
+    \    inkscape:pageshadow=\"2\"\n     inkscape:zoom=\"0.98994949\"\n     inkscape:cx=\"385.75309\"\n
+    \    inkscape:cy=\"521.01984\"\n     inkscape:document-units=\"mm\"\n     inkscape:current-layer=\"g3805\"\n
+    \    showgrid=\"false\"\n     inkscape:window-width=\"1366\"\n     inkscape:window-height=\"705\"\n
+    \    inkscape:window-x=\"-8\"\n     inkscape:window-y=\"-8\"\n     inkscape:window-maximized=\"1\"
+    />\n  <metadata\n     id=\"metadata5\">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n
+    \       <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n
+    \   <g\n       id=\"g3805\"\n       transform=\"matrix(0.26458333,0,0,0.26458333,6.5205675,96.701391)\">\n
+    \     <g\n         id=\"g3733\">\n        <g\n           id=\"g3731\" />\n      </g>\n
+    \     <g\n         id=\"g3735\" />\n      <g\n         id=\"g3737\" />\n      <g\n
+    \        id=\"g3739\" />\n      <g\n         id=\"g3741\" />\n      <g\n         id=\"g3743\"
+    />\n      <g\n         id=\"g3745\" />\n      <g\n         id=\"g3747\" />\n      <g\n
+    \        id=\"g3749\" />\n      <g\n         id=\"g3751\" />\n      <g\n         id=\"g3753\"
+    />\n      <g\n         id=\"g3755\" />\n      <g\n         id=\"g3757\" />\n      <g\n
+    \        id=\"g3759\" />\n      <g\n         id=\"g3761\" />\n      <g\n         id=\"g3763\"
+    />\n      <path\n         style=\"fill:#ffffff;stroke-width:5.66929141;stroke:#000000;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none\"\n
+    \        d=\"M 251.96842,806.58185 C 191.72168,754.87311 144.66245,696.47495 118.20875,640.59274
+    101.41761,605.12223 96.112709,582.22141 97.382875,550.68917 100.18828,481.04418
+    145.62587,420.84128 212.17861,398.58964 c 24.87973,-8.31843 55.38929,-10.62754
+    80.92408,-6.12471 59.09708,10.42124 108.63125,51.97001 129.0212,108.22169 7.10236,19.59395
+    9.72275,35.02004 9.69496,57.07362 -0.041,32.56324 -6.6749,55.78396 -27.20839,95.23854
+    -21.68934,41.6755 -51.26198,80.25664 -93.57421,122.07905 -16.47173,16.28105 -44.77161,41.78653
+    -46.36468,41.78653 -0.39755,0 -6.11397,-4.62713 -12.70315,-10.28251 z\"\n         id=\"path3830\"\n
+    \        inkscape:connector-curvature=\"0\"\n         transform=\"translate(-24.644665,-365.48558)\"
+    />\n    </g>\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

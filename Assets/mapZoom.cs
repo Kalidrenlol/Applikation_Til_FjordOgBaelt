@@ -6,14 +6,32 @@ public class mapZoom : MonoBehaviour {
 
 	public Animator anim;
 	public GameObject topBar;
+	public GameObject mapBasement;
+	public GameObject mapGround;
+	public GameObject mapFirst;
 
 	void Update()
 	{
 		
 	}
 
+	public void changeFloor(string floor) {
+		if (floor == "-1") {
+			mapBasement.SetActive (true);
+			mapGround.SetActive (false);
+			mapFirst.SetActive (false);
+		} else if (floor == "0") {
+			mapBasement.SetActive (false);
+			mapGround.SetActive (true);
+			mapFirst.SetActive (false);
+		} else if (floor == "1") {
+			mapBasement.SetActive (false);
+			mapGround.SetActive (false);
+			mapFirst.SetActive (true);
+		}
+	}
+
 	public void ZoomTo1() {
-		
 		if (!anim.GetBool ("ZoomTo1")) {
 			anim.SetBool ("ZoomTo1", true);
 		} else if(anim.GetBool("ZoomTo1")) {
