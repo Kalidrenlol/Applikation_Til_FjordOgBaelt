@@ -15,7 +15,7 @@ public class AnimalsController : MonoBehaviour {
 	[Header("Image Target")]
 	List<GameObject> imageTargets = new List<GameObject>();
 	[SerializeField] Transform imageTargetParent;
-	[SerializeField] GameObject imageTargetPrefab;
+	//[SerializeField] GameObject imageTargetPrefab;
 
 	[HideInInspector] public int lastCount;
 	public GameObject starPrefab;
@@ -23,6 +23,8 @@ public class AnimalsController : MonoBehaviour {
 	bool hackUpdate = false;
 	[SerializeField] Text animalsHelpedTxt;
 	int animalsHelped;
+
+	public GameObject mapcontrol;
 
 	void Awake () {
 		SetLastCount();
@@ -103,6 +105,7 @@ public class AnimalsController : MonoBehaviour {
 			obj.GetComponent<AnimalObject>().Setup(animal.GetComponent<Animal>(), obj);
 			if (animal.GetComponent<Animal>().HasSeen) {
 				helped++;
+				mapcontrol.GetComponent<MapController> ().changePointerToFound (animal.name);
 			}
 		}
 		int total = animals.Length;

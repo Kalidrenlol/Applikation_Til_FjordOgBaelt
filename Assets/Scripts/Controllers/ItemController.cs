@@ -21,6 +21,7 @@ public class ItemController : MonoBehaviour {
 	[SerializeField] Image iconTrophy;
 
 	bool hackAnimation = false;
+	public GameObject mapcontrol;
 
 	// Use this for initialization
 	void Awake () {
@@ -97,6 +98,10 @@ public class ItemController : MonoBehaviour {
 			GameObject obj = Instantiate(itemObjectPrefab, itemContent, false);
 			obj.name = item.name;
 			obj.GetComponent<ItemObject>().Setup(item.GetComponent<Item>());
+
+			if (item.GetComponent<Item>().HasSeen) {
+				mapcontrol.GetComponent<MapController> ().changePointerToFound (item.name);
+			}
 		}
 	}
 

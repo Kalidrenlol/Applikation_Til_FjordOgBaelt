@@ -50,10 +50,6 @@ public class AnimalView : MonoBehaviour{
 			NoSeenBtn.onClick.AddListener(delegate {
 				ShowPage(false);
 				GameObject.FindGameObjectWithTag("GameController").GetComponent<ScreenController>().MenuObject.GoToScreen(0);
-				GameObject.FindGameObjectWithTag("GameController").GetComponent<ScreenController>().MenuObject.GoToScreen(0);
-				Map.gameObject.GetComponent<MapController>().highlightAnimal(ani.englishName);
-				Debug.Log(ani.englishName);
-				Debug.Log(Map.gameObject.GetComponent<MapController>());
 			});
 			NoSeen.SetActive(true);
 			Seen.SetActive(false);

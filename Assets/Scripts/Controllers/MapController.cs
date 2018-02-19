@@ -1,75 +1,103 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using SVGImporter;
 
 public class MapController : MonoBehaviour {
+	Animator animFirst;
+	Animator animGround;
+	Animator animBasement;
 
-	[SerializeField] Object[] pointers;
+	public GameObject mapFirst;
+	public GameObject mapGround;
+	public GameObject mapBasement;
+
+	public GameObject buttonFirst;
+	public GameObject buttonGround;
+	public GameObject buttonBasement;
+
+	public GameObject buttons;
+	public GameObject infoBox;
+
+	public GameObject[] pointers;
+
+	private Color selectedColor = new Color32 (186, 255, 201, 255);
 
 	void Start () {
+		animFirst = mapFirst.GetComponent<Animator> ();
+		animGround = mapGround.GetComponent<Animator> ();
+		animBasement = mapBasement.GetComponent<Animator> ();
+	}
 
-		/*GameObject ParentMap = GameObject.FindGameObjectWithTag ("Map");
+	void Update () { }
 
-		foreach(GameObject pointer in pointers) {
-			GameObject p = Instantiate (pointer);
-			p.name = pointer.name;
-			p.transform.SetParent(ParentMap.transform.GetChild (0), false);
+	public void changeFloor(string floor) {
+		if (floor == "-1") {
+			mapBasement.SetActive (true);
+			mapGround.SetActive (false);
+			mapFirst.SetActive (false);
+			buttonFirst.GetComponent<Image> ().color = Color.white;
+			buttonGround.GetComponent<Image> ().color = Color.white;
+			buttonBasement.GetComponent<Image> ().color = selectedColor;
+		} else if (floor == "0") {
+			mapBasement.SetActive (false);
+			mapGround.SetActive (true);
+			mapFirst.SetActive (false);
+			buttonFirst.GetComponent<Image> ().color = Color.white;
+			buttonGround.GetComponent<Image> ().color = selectedColor;
+			buttonBasement.GetComponent<Image> ().color = Color.white;
+		} else if (floor == "1") {
+			mapBasement.SetActive (false);
+			mapGround.SetActive (false);
+			mapFirst.SetActive (true);
+			buttonFirst.GetComponent<Image> ().color = selectedColor;
+			buttonGround.GetComponent<Image> ().color = Color.white;
+			buttonBasement.GetComponent<Image> ().color = Color.white;
+		}
+	}
 
-			switch (p.gameObject.name) {
-				case "Starfish":
-					p.transform.localPosition = new Vector3 (152, 195, 0);
-					break;
-				case "Starfish2":
-					p.transform.localPosition = new Vector3 (-131, 389, 0);
-				break;
-				case "Crap":
-					p.transform.localPosition = new Vector3 (227, 275, 0);
-					break;
-				case "Crap2":
-					p.transform.localPosition = new Vector3 (152, 250, 0);
-					break;
-				case "Seal":
-					p.transform.localPosition = new Vector3 (51, 262, 0);
-					break;
-				case "Seal2":
-					p.transform.localPosition = new Vector3 (-260, 136, 0);
-					break;
-				case "HarbourPorpoise":
-					p.transform.localPosition = new Vector3 (-206, 32, 0);
-					break;
-				case "HarbourPorpoise2":
-					p.transform.localPosition = new Vector3 (37, 389, 0);
-					break;
-				case "SeaGull":
-					p.transform.localPosition = new Vector3 (150, 315, 0);
-					break;
-				case "Plaice":
-					p.transform.localPosition = new Vector3 (-174, 299, 0);
-					break;
-				case "Shark":
-					p.transform.localPosition = new Vector3 (282, 352, 0);
-					break;
-				case "Spermwhale":
-					p.transform.localPosition = new Vector3 (-37, 365, 0);
-					break;
-				case "Killerwhale":
-					p.transform.localPosition = new Vector3 (152, -76, 0);
-					break;
+	public void ZoomToFirst(int room) {
+		if (!animFirst.GetBool ("ZoomTo"+room)) {
+			animFirst.SetBool ("ZoomTo"+room, true);
+			buttons.SetActive (false);
+			infoBox.SetActive (false);
+		} else if(animFirst.GetBool("ZoomTo"+room)) {
+			animFirst.SetBool ("ZoomTo"+room, false);
+			buttons.SetActive (true);
+			infoBox.SetActive (true);
+		}
+	}
+
+	public void ZoomToGround(int room) {
+		if (!animGround.GetBool ("ZoomTo"+room)) {
+			animGround.SetBool ("ZoomTo"+room, true);
+			buttons.SetActive (false);
+			infoBox.SetActive (false);
+		} else if(animGround.GetBool("ZoomTo"+room)) {
+			animGround.SetBool ("ZoomTo"+room, false);
+			buttons.SetActive (true);
+			infoBox.SetActive (true);
+		}
+	}
+
+	public void ZoomToBasement(int room) {
+		if (!animBasement.GetBool ("ZoomTo"+room)) {
+			animBasement.SetBool ("ZoomTo"+room, true);
+			buttons.SetActive (false);
+			infoBox.SetActive (false);
+		} else if(animBasement.GetBool("ZoomTo"+room)) {
+			animBasement.SetBool ("ZoomTo"+room, false);
+			buttons.SetActive (true);
+			infoBox.SetActive (true);
+		}
+	}
+
+	public void changePointerToFound(string name) {
+		for (int i = 0; i < pointers.Length-1; i++) {
+			if (pointers [i].name == name) {
+				pointers [i].gameObject.transform.GetChild(2).gameObject.GetComponent<SVGImage> ().color = Color.white;
 			}
-
-			p.GetComponent<SVGImage> ().color = new Color (1, 1, 1, 0.5f);
-			p.transform.GetChild(0).GetComponent<SVGImage>().color = new Color (1, 1, 1, 0.5f);
-		}*/
-	}
-
-	void Update () {
-		
-	}
-
-	public void highlightAnimal(string animal) {
-		GameObject ParentMap = GameObject.FindGameObjectWithTag ("Map");
-		Transform p = ParentMap.transform.GetChild (0).GetChild (1).Find (animal);
-		p.GetComponent<SVGImage> ().color = new Color (1, 1, 1, 1);
+		}
 	}
 }

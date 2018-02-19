@@ -75,6 +75,19 @@ public class GameController : MonoBehaviour {
 			GetComponent<AnimalsController>().DiscoverAnimal("Spermwhale");
 			GetComponent<AnimalsController>().DiscoverAnimal("Starfish");
 		}
+
+		if (Input.GetKeyDown (KeyCode.Alpha8)) {
+			GetComponent<ItemController> ().DiscoverItem ("Feather");
+		}
+
+
+		if (Input.GetKeyDown (KeyCode.Alpha9)) {
+			GetComponent<ItemController> ().DiscoverItem ("Anchor");
+			GetComponent<ItemController> ().DiscoverItem ("BucketFish");
+			GetComponent<ItemController> ().DiscoverItem ("Feather");
+			GetComponent<ItemController> ().DiscoverItem ("Tooth");
+			GetComponent<ItemController> ().DiscoverItem ("Vertebra");
+		}
 	}
 
 	public void LoadGame(string name) {
