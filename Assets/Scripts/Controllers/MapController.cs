@@ -23,6 +23,7 @@ public class MapController : MonoBehaviour {
 	public GameObject[] pointers;
 
 	private Color selectedColor = new Color32 (186, 255, 201, 255);
+	private Color PointerFoundColor  = new Color32(154, 184, 244, 255);
 
 	void Start () {
 		animFirst = mapFirst.GetComponent<Animator> ();
@@ -94,9 +95,14 @@ public class MapController : MonoBehaviour {
 	}
 
 	public void changePointerToFound(string name) {
+		Debug.Log (name);
+
 		for (int i = 0; i < pointers.Length-1; i++) {
+			//Debug.Log (pointers [i].name);
 			if (pointers [i].name == name) {
+				Debug.Log ("found");
 				pointers [i].gameObject.transform.GetChild(2).gameObject.GetComponent<SVGImage> ().color = Color.white;
+				pointers [i].gameObject.transform.GetChild(0).gameObject.GetComponent<SVGImage> ().color = PointerFoundColor;
 			}
 		}
 	}

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: d9ae6b9a414605647adaff55de4dabdd
+timeCreated: 1519215790
+licenseType: Free
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg
+    xmlns=\"http://www.w3.org/2000/svg\" width=\"500\" height=\"500\">\r\n<circle
+    cx=\"250\" cy=\"250\" r=\"210\" fill=\"#fff\" stroke=\"#000\" stroke-width=\"8\"/>\r\n</svg>"
+  assetBundleName: 
+  assetBundleVariant: 
