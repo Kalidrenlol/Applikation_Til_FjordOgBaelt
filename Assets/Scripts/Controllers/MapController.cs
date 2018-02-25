@@ -95,14 +95,11 @@ public class MapController : MonoBehaviour {
 	}
 
 	public void changePointerToFound(string name) {
-		Debug.Log (name);
-
-		for (int i = 0; i < pointers.Length-1; i++) {
-			//Debug.Log (pointers [i].name);
+		for (int i = 0; i < pointers.Length; i++) {
 			if (pointers [i].name == name) {
-				Debug.Log ("found");
 				pointers [i].gameObject.transform.GetChild(2).gameObject.GetComponent<SVGImage> ().color = Color.white;
 				pointers [i].gameObject.transform.GetChild(0).gameObject.GetComponent<SVGImage> ().color = PointerFoundColor;
+				break;
 			}
 		}
 	}
