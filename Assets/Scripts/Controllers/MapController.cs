@@ -20,6 +20,8 @@ public class MapController : MonoBehaviour {
 	public GameObject buttons;
 	public GameObject infoBox;
 
+	public GameObject touchBox;
+
 	public GameObject[] pointers;
 
 	private Color selectedColor = new Color32 (186, 255, 201, 255);
@@ -63,10 +65,7 @@ public class MapController : MonoBehaviour {
 			animFirst.SetBool ("ZoomTo"+room, true);
 			buttons.SetActive (false);
 			infoBox.SetActive (false);
-		} else if(animFirst.GetBool("ZoomTo"+room)) {
-			animFirst.SetBool ("ZoomTo"+room, false);
-			buttons.SetActive (true);
-			infoBox.SetActive (true);
+			touchBox.SetActive (true);
 		}
 	}
 
@@ -75,10 +74,7 @@ public class MapController : MonoBehaviour {
 			animGround.SetBool ("ZoomTo"+room, true);
 			buttons.SetActive (false);
 			infoBox.SetActive (false);
-		} else if(animGround.GetBool("ZoomTo"+room)) {
-			animGround.SetBool ("ZoomTo"+room, false);
-			buttons.SetActive (true);
-			infoBox.SetActive (true);
+			touchBox.SetActive (true);
 		}
 	}
 
@@ -87,11 +83,23 @@ public class MapController : MonoBehaviour {
 			animBasement.SetBool ("ZoomTo"+room, true);
 			buttons.SetActive (false);
 			infoBox.SetActive (false);
-		} else if(animBasement.GetBool("ZoomTo"+room)) {
-			animBasement.SetBool ("ZoomTo"+room, false);
-			buttons.SetActive (true);
-			infoBox.SetActive (true);
+			touchBox.SetActive (true);
 		}
+	}
+
+	public void ZoomOut() {
+		animFirst.SetBool ("ZoomTo"+8, false);
+		animGround.SetBool ("ZoomTo"+1, false);
+		animGround.SetBool ("ZoomTo"+2, false);
+		animGround.SetBool ("ZoomTo"+3, false);
+		animGround.SetBool ("ZoomTo"+4, false);
+		animGround.SetBool ("ZoomTo"+5, false);
+		animGround.SetBool ("ZoomTo"+6, false);
+		animBasement.SetBool ("ZoomTo"+7, false);
+		animBasement.SetBool ("ZoomTo"+8, false);
+		touchBox.SetActive (false);
+		buttons.SetActive (true);
+		infoBox.SetActive (true);
 	}
 
 	public void changePointerToFound(string name) {
@@ -99,6 +107,22 @@ public class MapController : MonoBehaviour {
 			if (pointers [i].name == name) {
 				pointers [i].gameObject.transform.GetChild(2).gameObject.GetComponent<SVGImage> ().color = Color.white;
 				pointers [i].gameObject.transform.GetChild(0).gameObject.GetComponent<SVGImage> ().color = PointerFoundColor;
+				break;
+			}
+		}
+	}
+
+	public void highlightPointer(string pointer) {
+		for (int i = 0; i < pointers.Length; i++) {
+			if (pointers [i].name == pointer) {
+				if (pointers [i].name == "Animal_Killerwhale") {
+					changeFloor ("1");
+				} else if(pointers [i].name == "Animal_Plaice" || pointers [i].name == "Animal_Seal2" || pointers [i].name == "BucketFish" || pointers [i].name == "Anchor" || pointers [i].name == "Tooth") {
+					changeFloor ("-1");
+				} else {
+					changeFloor ("0");
+				}
+				pointers [i].gameObject.GetComponent<Animator> ().SetBool("highlight", true);
 				break;
 			}
 		}

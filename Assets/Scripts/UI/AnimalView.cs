@@ -50,6 +50,7 @@ public class AnimalView : MonoBehaviour{
 			NoSeenBtn.onClick.AddListener(delegate {
 				ShowPage(false);
 				GameObject.FindGameObjectWithTag("GameController").GetComponent<ScreenController>().MenuObject.GoToScreen(0);
+				Map.GetComponent<MapController> ().highlightPointer(ani.name);
 			});
 			NoSeen.SetActive(true);
 			Seen.SetActive(false);
@@ -73,6 +74,7 @@ public class AnimalView : MonoBehaviour{
 			NoSeenBtn.onClick.AddListener(delegate {
 				ShowPage(false);
 				GameObject.FindGameObjectWithTag("GameController").GetComponent<ScreenController>().MenuObject.GoToScreen(0);
+				Map.GetComponent<MapController> ().highlightPointer(_item.name);
 			});
 			NoSeen.SetActive(true);
 			Seen.SetActive(false);
