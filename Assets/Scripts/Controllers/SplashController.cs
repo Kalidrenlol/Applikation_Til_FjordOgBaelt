@@ -16,12 +16,6 @@ public class SplashController : MonoBehaviour {
 		SetDefaultLogo();
 		CheckPlayer();
 		FadeInImage();
-
-		if (PlayerPrefs.GetInt("ShowTutorial") != 0) {
-			print("Er færdig med tutorial");
-		} else {
-			print("Viser tutorial");
-		}
 	}
 
 	void CheckPlayer() {
@@ -30,7 +24,6 @@ public class SplashController : MonoBehaviour {
 			print("Gammel spiller");
 		} else {
 			isNewPlayer = true;
-			PlayerPrefs.SetInt("ShowTutorial", 0);
 			print("Ny spiller");
 		}
 
@@ -45,7 +38,7 @@ public class SplashController : MonoBehaviour {
 		yield return new WaitForSeconds(1f);
 
 		if (isNewPlayer) {
-			SceneManager.LoadScene("Introduction");
+			SceneManager.LoadScene("Language");
 		} else {
 			SceneManager.LoadScene("Main");
 		}

@@ -1,0 +1,10 @@
+{ 
+	"items":[
+				{"key":"introduction_welcome","value":"Hello! What is your name?"},
+				{"key":"introduction_press","value":"Press here"},
+				{"key":"introduction_next","value":"Continue"},
+				{"key":"introduction_hello","value":"Hello "},
+				{"key":"introduction_intro1","value":"! \nWelcome to Fjord&Bælt!"},
+				{"key":"introduction_intro2","value":"In FjordBælt we have a lot animals, who all needs your help\n\nSee if you can find them!"}
+			]
+}

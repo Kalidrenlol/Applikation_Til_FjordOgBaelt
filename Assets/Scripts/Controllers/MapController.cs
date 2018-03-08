@@ -27,6 +27,8 @@ public class MapController : MonoBehaviour {
 	private Color selectedColor = new Color32 (186, 255, 201, 255);
 	private Color PointerFoundColor  = new Color32(154, 184, 244, 255);
 
+	private int previousPointer = 0;
+
 	void Start () {
 		animFirst = mapFirst.GetComponent<Animator> ();
 		animGround = mapGround.GetComponent<Animator> ();
@@ -114,6 +116,8 @@ public class MapController : MonoBehaviour {
 
 	public void highlightPointer(string pointer) {
 		for (int i = 0; i < pointers.Length; i++) {
+			pointers [previousPointer].gameObject.GetComponent<Animator> ().SetBool("highlight", false);
+
 			if (pointers [i].name == pointer) {
 				if (pointers [i].name == "Animal_Killerwhale") {
 					changeFloor ("1");
@@ -123,6 +127,7 @@ public class MapController : MonoBehaviour {
 					changeFloor ("0");
 				}
 				pointers [i].gameObject.GetComponent<Animator> ().SetBool("highlight", true);
+				previousPointer = i;
 				break;
 			}
 		}
