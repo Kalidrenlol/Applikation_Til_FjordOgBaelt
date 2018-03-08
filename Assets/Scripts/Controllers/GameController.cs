@@ -106,7 +106,7 @@ public class GameController : MonoBehaviour {
 		Handheld.Vibrate();
 
 		#endif
-
+		Debug.Log (_scannedTarget);
 		Animal animal = GetComponent<AnimalsController>().GetAnimal(_scannedTarget);
 
 		ShowCamera(false);

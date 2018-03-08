@@ -268,7 +268,7 @@ namespace SVGImporter.Rendering
                     }
                 }
 
-                if (type == EventType.mouseDrag)
+                if (type == EventType.MouseDrag)
                 {
                     OnMouseDrag(vrTrs);
                     GUI.changed = true;
@@ -276,7 +276,7 @@ namespace SVGImporter.Rendering
                 }
 
                 // Cancel Operation
-                if (Event.current.type == EventType.keyDown && Event.current.keyCode == KeyCode.Escape)
+                if (Event.current.type == EventType.KeyDown && Event.current.keyCode == KeyCode.Escape)
                 {
                     vrTrs.SetTransform(origVrTransform);
                     Reset();
@@ -286,7 +286,7 @@ namespace SVGImporter.Rendering
                 }
             }
 
-            if (type == EventType.repaint)
+            if (type == EventType.Repaint)
             {
                 RenderTransformationGizmos(vrTrs);
             }
