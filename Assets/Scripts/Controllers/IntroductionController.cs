@@ -39,11 +39,11 @@ public class IntroductionController : MonoBehaviour {
 	void IntroUpdate() {
 		switch (introCounter) {
 		case 1:
-			introText_1.text = LocalizationManager.instance.GetLocalizedValue ("introduction_hello") + PlayerName + LocalizationManager.instance.GetLocalizedValue ("introduction_intro1");
+			introText_1.text = "Hej " + PlayerName + "! \nVelkommen til Fjord & Bælt!";
 			introCounter += 1;
 				break;
 		case 2:
-			introText_1.text = LocalizationManager.instance.GetLocalizedValue ("introduction_intro2");
+			introText_1.text = "I Fjord & Bælt har vi mange dyr, som alle har brug for din hjælp!\n\nSe om du kan finde dem!";
 			introCounter += 1;
 				break;
 		case 3:
