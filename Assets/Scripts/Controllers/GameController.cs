@@ -38,7 +38,8 @@ public class GameController : MonoBehaviour {
 
 	public void Update() {
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
-			GetComponent<AnimalsController>().DiscoverAnimal("Crab");
+			//GetComponent<AnimalsController>().DiscoverAnimal("Crab");
+			LoadGame("Plaice");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {

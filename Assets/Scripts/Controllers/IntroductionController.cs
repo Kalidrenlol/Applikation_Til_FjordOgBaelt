@@ -9,9 +9,12 @@ public class IntroductionController : MonoBehaviour {
 	
 	[SerializeField] Button nextBtn;
 	[SerializeField] Text introText_1;
+	[SerializeField] Text welcomeText;
+	[SerializeField] Text welcomeSignText;
 	[SerializeField] InputField inputNameField;
 	[SerializeField] Canvas introPage;
 	[SerializeField] Canvas greetingPage;
+	[SerializeField] Canvas languagePage;
 	[SerializeField] string PlayerName;
 	[SerializeField] GameObject waterBobblePrefab;
 
@@ -26,10 +29,8 @@ public class IntroductionController : MonoBehaviour {
 
 	void Start() {
 		introPage.gameObject.SetActive (false);
-		greetingPage.gameObject.SetActive (true);
-
-		SpawnInitialBobblesRandom();
-		StartCoroutine(CreateWaterBobble());
+		greetingPage.gameObject.SetActive (false);
+		languagePage.gameObject.SetActive (true);
 
 		var se = new InputField.SubmitEvent();
 		se.AddListener(SubmitName);
@@ -39,11 +40,11 @@ public class IntroductionController : MonoBehaviour {
 	void IntroUpdate() {
 		switch (introCounter) {
 		case 1:
-			introText_1.text = "Hej " + PlayerName + "! \nVelkommen til Fjord & Bælt!";
+			introText_1.text = LocalizationManager.instance.GetLocalizedValue("introduction_hello") + PlayerName + LocalizationManager.instance.GetLocalizedValue("introduction_intro1");
 			introCounter += 1;
 				break;
 		case 2:
-			introText_1.text = "I Fjord & Bælt har vi mange dyr, som alle har brug for din hjælp!\n\nSe om du kan finde dem!";
+			introText_1.text = LocalizationManager.instance.GetLocalizedValue("introduction_intro2");
 			introCounter += 1;
 				break;
 		case 3:
@@ -58,29 +59,25 @@ public class IntroductionController : MonoBehaviour {
 		PlayerPrefs.SetString("Playername", PlayerName);
 		greetingPage.gameObject.SetActive (false);
 		introPage.gameObject.SetActive (true);
-		SpawnInitialBobblesRandom();
 		IntroUpdate();
 	}
 
 	IEnumerator CreateWaterBobble() {
-		yield return new WaitForSeconds(Random.Range(2f,5f));
-		GameObject bobble = Instantiate(waterBobblePrefab, GameObject.FindGameObjectWithTag("Canvas").transform.Find("WaterBobbles"));
-		float posx = Random.Range(0,Screen.width);
-		bobble.transform.position = new Vector3(posx, 0, 0);
-		float size = Random.Range(0.7f, 1.1f);
-		bobble.transform.localScale = new Vector3(size, size, 0);
-		StartCoroutine(CreateWaterBobble());
+		yield return new WaitForSeconds (Random.Range (2f, 5f));
+		GameObject bobble = Instantiate (waterBobblePrefab, GameObject.FindGameObjectWithTag ("Canvas").transform.Find ("WaterBobbles"));
+		float posx = Random.Range (0, Screen.width);
+		bobble.transform.position = new Vector3 (posx, 0, 0);
+		float size = Random.Range (0.7f, 1.1f);
+		bobble.transform.localScale = new Vector3 (size, size, 0);
+		StartCoroutine (CreateWaterBobble ());
 	}
 
-	public void SpawnInitialBobblesRandom()
-	{
-		for (int i = 0; i < 6; i++) {
-			Vector3 screenPosition = new Vector3 (Random.Range (0, Screen.width), Random.Range (0, Screen.height), 0);
-			GameObject bobble = Instantiate(waterBobblePrefab, GameObject.FindGameObjectWithTag("Canvas").transform.Find("WaterBobbles"));
-			bobble.transform.position = screenPosition;
-			float size = Random.Range(0.7f, 1.1f);
-			bobble.transform.localScale = new Vector3(size, size, 0);
-			bobbleCounter++;
-		}
+	public void LoadLanguage(string json) {
+		LocalizationManager.instance.LoadLocalizedText (json);
+		welcomeText.text = LocalizationManager.instance.GetLocalizedValue ("introduction_welcome");
+		welcomeSignText.text = LocalizationManager.instance.GetLocalizedValue ("introduction_press");
+		greetingPage.gameObject.SetActive (true);
+		languagePage.gameObject.SetActive (false);
+		StartCoroutine(CreateWaterBobble());
 	}
 }
