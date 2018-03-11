@@ -12,6 +12,10 @@ public class SplashController : MonoBehaviour {
 
 	bool isNewPlayer;
 
+	void Awake() {
+		Application.targetFrameRate = 60;
+	}
+
 	void Start () {
 		SetDefaultLogo();
 		CheckPlayer();

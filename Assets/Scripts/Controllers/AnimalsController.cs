@@ -15,7 +15,6 @@ public class AnimalsController : MonoBehaviour {
 	[Header("Image Target")]
 	List<GameObject> imageTargets = new List<GameObject>();
 	[SerializeField] Transform imageTargetParent;
-	//[SerializeField] GameObject imageTargetPrefab;
 
 	[HideInInspector] public int lastCount;
 	public GameObject starPrefab;
