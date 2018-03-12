@@ -27,19 +27,9 @@ public class ScreenController : MonoBehaviour {
 	public SVGImage iconTrophy;
 
 	 public HorizontalScrollSnap MenuObject;
-	[HideInInspector] public GameObject tutorialGO;
 
 	[Header("Color Block")]
 	public ColorBlock standardColorBlock;
-
-
-	void Awake() {
-		/*tutorialGO = (GameObject) Instantiate(TutorialPrefab, GameObject.FindGameObjectWithTag("Canvas").transform);
-
-		if (PlayerPrefs.GetInt("ShowTutorial") != 0) {
-			tutorialGO.SetActive(false);
-		}*/
-	}
 
 	void Start() {
 		DeactivateAll();

@@ -7,12 +7,12 @@ using UnityEngine.UI.Extensions;
 public class BottomButton : MonoBehaviour {
 
 	GameObject gameController; 
-	//GameObject screenController;
+	GameObject screenController;
 	public int screenNo;
 
 	void Start () {
 		gameController = GameObject.FindGameObjectWithTag("GameController");
-		//screenController = GameObject.FindGameObjectWithTag("ScreenController");
+		screenController = GameObject.FindGameObjectWithTag("ScreenController");
 		GetComponent<Button>().onClick.AddListener(delegate {
 			GoToPage(screenNo);
 		});
@@ -35,7 +35,7 @@ public class BottomButton : MonoBehaviour {
 
 	public void GoToPage(int _page) {
 		gameController.GetComponent<ScreenController>().GoToPage(_page);
-
+		//UpdateColor ();
 		Navigation custom = new Navigation();
 		custom.mode = Navigation.Mode.None;
 		GetComponent<Button>().navigation = custom;

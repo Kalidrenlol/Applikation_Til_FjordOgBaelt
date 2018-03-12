@@ -76,6 +76,10 @@ namespace UnityEngine.UI.Extensions
         [Tooltip("Pixel size to buffer arround Mask Area. (optional)")]
         public float MaskBuffer = 1;
 
+		public GameObject b1;
+		public GameObject b2; 
+		public GameObject b3; 
+
         public int CurrentPage
         {
             get
@@ -123,6 +127,8 @@ namespace UnityEngine.UI.Extensions
         private SelectionChangeEndEvent m_OnSelectionChangeEndEvent = new SelectionChangeEndEvent();
         public SelectionChangeEndEvent OnSelectionChangeEndEvent { get { return m_OnSelectionChangeEndEvent; } set { m_OnSelectionChangeEndEvent = value; } }
 
+		GameObject gameController;
+
         // Use this for initialization
         void Awake()
         {
@@ -146,6 +152,8 @@ namespace UnityEngine.UI.Extensions
             {
                 StartingScreen = 0;
             }
+
+			b2.transform.GetChild(0).GetComponent<Image>().color = Color.red;
 
             _screensContainer = _scroll_rect.content;
 
@@ -463,6 +471,20 @@ namespace UnityEngine.UI.Extensions
         /// </summary>
         internal void ScreenChange()
         {
+			if (_currentPage == 0) {
+				b1.transform.GetChild(0).GetComponent<Image>().color = Color.red;
+				b2.transform.GetChild(0).GetComponent<Image>().color = Color.black;
+				b3.transform.GetChild(0).GetComponent<Image>().color = Color.black;
+			} else if (_currentPage == 1) {
+				b1.transform.GetChild(0).GetComponent<Image>().color = Color.black;
+				b2.transform.GetChild(0).GetComponent<Image>().color = Color.red;
+				b3.transform.GetChild(0).GetComponent<Image>().color = Color.black;
+			} else if (_currentPage == 2) {
+				b1.transform.GetChild(0).GetComponent<Image>().color = Color.black;
+				b2.transform.GetChild(0).GetComponent<Image>().color = Color.black;
+				b3.transform.GetChild(0).GetComponent<Image>().color = Color.red;
+			}
+
             OnSelectionPageChangedEvent.Invoke(_currentPage);
         }
 

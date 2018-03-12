@@ -28,12 +28,6 @@ public class AnimalView : MonoBehaviour{
 		anim.SetBool("Show", _bool);
 		GameObject.FindGameObjectWithTag("GameController").GetComponent<ScreenController>().TopBar.GetComponent<Animator>().SetBool("Show", !_bool);
 		List<string> animalsSeen = GameObject.FindGameObjectWithTag("GameController").GetComponent<AnimalsController>().GetAnimalSeen();
-
-		if (!_bool && PlayerPrefs.GetInt("ShowTutorial") == 7 && animalsSeen.Count > 0) {
-			GameObject tut = GameObject.FindGameObjectWithTag("GameController").GetComponent<ScreenController>().tutorialGO;
-			tut.SetActive(true);
-			tut.GetComponent<TutorialController>().GoToState(10);
-		}
 	}
 
 	public void Setup(Animal ani) {
