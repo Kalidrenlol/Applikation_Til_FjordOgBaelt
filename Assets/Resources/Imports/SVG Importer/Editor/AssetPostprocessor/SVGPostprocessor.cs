@@ -11,7 +11,6 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Linq;
-#pragma warning disable 0618
 
 namespace SVGImporter 
 {

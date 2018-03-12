@@ -31,12 +31,21 @@ public class LocalizationManager : MonoBehaviour {
 			dataAsJson= File.ReadAllText (filePath);
 		#endif
 
-		#if UNITY_IPHONE
+		/*#if UNITY_IPHONE
 			Debug.Log("Iphone");
-		#endif
+			filePath =  Application.dataPath + "/Raw/" + filename;
+		Debug.Log("Android");
+		WWW reader = new WWW (filePath);
+		while (!reader.isDone) {}
+		dataAsJson = reader.text;
+		#endif*/
 
 		#if UNITY_IOS
 			Debug.Log("IOS");
+			filePath =  Application.dataPath + "/Raw/" + filename;
+			WWW reader = new WWW (filePath);
+			while (!reader.isDone) {}
+			dataAsJson = reader.text;
 		#endif
 
 		#if UNITY_ANDROID

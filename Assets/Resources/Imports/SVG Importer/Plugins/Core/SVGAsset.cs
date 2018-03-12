@@ -1,7 +1,7 @@
 // Copyright (C) 2015 Jaroslav Stehlik - All Rights Reserved
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
-#pragma warning disable 0219
+
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Serialization;
@@ -1601,7 +1601,7 @@ namespace SVGImporter
 
                 int vertexCount = _sharedMesh.vertexCount;
                 UnityEditor.MeshUtility.SetMeshCompression(_sharedMesh, GetModelImporterMeshCompression(_meshCompression));
-                
+                if(_optimizeMesh) ;
                 if(_generateNormals)
                 {
                     if(!_antialiasing)
