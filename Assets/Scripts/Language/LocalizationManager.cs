@@ -1,7 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using LitJson;
 
 public class LocalizationManager : MonoBehaviour {
 
@@ -11,6 +12,8 @@ public class LocalizationManager : MonoBehaviour {
 	private bool isReady = false;
 	private string missingTextString = "Localized text not found";
 	private string filePath;
+    private JsonData jsonTest;
+    
 	private string dataAsJson;
 
 	void Awake () {
@@ -42,10 +45,20 @@ public class LocalizationManager : MonoBehaviour {
 
 		#if UNITY_IOS
 			Debug.Log("IOS");
-			filePath =  Application.dataPath + "/Raw/" + filename;
+            filePath = Application.dataPath + "/Raw/" + fileName;
+            jsonTest = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/Raw/" + fileName));
+        for (int i = 0; i < jsonTest[0].Count; i++) {
+            print("KIG HER: --- " + jsonTest[0][i]["key"]);
+            print("KIG HER: --- " + jsonTest[0][i]["value"]);
+        }
+            
+            Debug.Log("Fil fundet: " + filePath);
 			WWW reader = new WWW (filePath);
 			while (!reader.isDone) {}
+        print("1");
 			dataAsJson = reader.text;
+        print(reader.text);
+        print("2");
 		#endif
 
 		#if UNITY_ANDROID
@@ -56,11 +69,15 @@ public class LocalizationManager : MonoBehaviour {
 		#endif
 
 		Debug.Log (filePath);
+        print("3");
 
 		LocalizationData loadedData = JsonUtility.FromJson<LocalizationData> (dataAsJson);
 
-		for (int i = 0; i < loadedData.items.Length; i++) {
+		/*for (int i = 0; i < loadedData.items.Length; i++) {
 			localizedText.Add (loadedData.items [i].key, loadedData.items [i].value);   
+		}*/
+		for (int i = 0; i < jsonTest[0].Count; i++) {
+			localizedText.Add (jsonTest[0][i]["key"].ToString(), jsonTest[0][i]["value"].ToString());   
 		}
 
 		if (File.Exists (filePath)) {
