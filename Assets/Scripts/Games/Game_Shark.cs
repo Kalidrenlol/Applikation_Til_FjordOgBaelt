@@ -9,7 +9,5 @@ public class Game_Shark : MonoBehaviour {
 
 	void Start() {
 		GetComponent<InGameController>().animalImg.vectorGraphics = noTooth;
-
 	}
-
 }

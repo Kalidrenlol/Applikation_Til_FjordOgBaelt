@@ -9,16 +9,13 @@ public class DebugController : MonoBehaviour {
 	[SerializeField] GameObject OtherScreens;
 	[SerializeField] GameObject HorizontalContent;
 	[SerializeField] GameObject TaskScreen;
-    [SerializeField] GameObject TutorialScreen;
 	[SerializeField] GameObject AnimalView;
 
-	// Use this for initialization
 	void Awake () {
 		GetComponent<ScreenController>().ScreenPrize.SetActive(true);
 		GetComponent<ScreenController>().ScreenSettings.SetActive(true);
 		OtherScreens.SetActive(true);
 		TaskScreen.SetActive(false);
-        TutorialScreen.SetActive(false);
 		AnimalView.SetActive(true);
 		foreach(Transform child in HorizontalContent.transform) {
 			child.gameObject.SetActive(true);
@@ -26,11 +23,11 @@ public class DebugController : MonoBehaviour {
 	}
 
 	#if UNITY_EDITOR
-	[MenuItem("Genveje/Delete All PlayerPrefs")]
-	static public void DeleteAllPlayerPrefs() {
-		PlayerPrefs.DeleteAll();
-		print("PlayerPrefs slettet");
-	}
+		[MenuItem("Genveje/Delete All PlayerPrefs")]
+		static public void DeleteAllPlayerPrefs() {
+			PlayerPrefs.DeleteAll();
+			print("PlayerPrefs slettet");
+		}
 	#endif
 
     public void DeleteAllePlayerPrefs() {

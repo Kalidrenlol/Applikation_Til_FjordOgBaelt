@@ -8,22 +8,18 @@ public class InGameController : MonoBehaviour {
 
 	public string animalName;
 	Animal animal;
-	[SerializeField] Button btnBack;
 	[SerializeField] Button btnBag;
 	[SerializeField] GameObject bagPrefab;
 	[SerializeField] GameObject bagItemPrefab;
 	public SVGImage animalImg;
 	[SerializeField] Transform canvas;
+	[SerializeField] GameObject ShowWinningPrefab;
 
 	GameObject tutorial;
 	GameObject gameController;
 
 	void Start () {
 		gameController = GameObject.FindGameObjectWithTag("GameController");
-		tutorial = GameObject.FindGameObjectWithTag("Tutorial");
-		btnBack.onClick.AddListener(delegate {
-			Destroy(transform.parent.gameObject);	
-		});
 
 		btnBag.onClick.AddListener(delegate {
 			GameObject bag = Instantiate(bagPrefab, canvas);
@@ -51,9 +47,23 @@ public class InGameController : MonoBehaviour {
 			tutorial.GetComponent<TutorialController>().Game_Shark(3);
 		}
 	}
+		
+	public void ShowWinning() {
+		GameObject showWinning = Instantiate(ShowWinningPrefab, GameObject.FindGameObjectWithTag("GameCanvas").transform);
+		showWinning.GetComponent<Animator>().SetTrigger("Correct");
+		showWinning.GetComponent<ResultController>().Setup("Shark", true);
+		showWinning.GetComponent<ResultController>().resultBtn.onClick.AddListener(GoToMainScene);
+	}
 
-	public void Success() {
-		tutorial.SetActive(true);
-		tutorial.GetComponent<TutorialController>().Game_Shark(4);
+	void GoToMainScene() {
+		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
+		controller.GetComponent<ScreenController>().ScreenTask.SetActive(false);
+		controller.GetComponent<ScreenController>().GoToPage(1);
+		controller.GetComponent<AnimalsController>().DiscoverAnimal("Shark");
+		DestroyGame ();
+	}
+
+	public void DestroyGame() {
+		Destroy(transform.gameObject);
 	}
 }

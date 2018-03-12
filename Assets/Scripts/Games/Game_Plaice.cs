@@ -17,13 +17,6 @@ public class Game_Plaice : MonoBehaviour {
 	[SerializeField] Transform dotParent;
 	[SerializeField] GameObject ShowWinningPrefab;
 
-	GameObject tutorialGO;
-
-	void Awake() {
-		tutorialGO = GameObject.FindGameObjectWithTag("Tutorial");
-		tutorialGO.SetActive (false);
-	}
-
 	void Start() {
 		correctColor = colors[correctColorIndex];
 
@@ -49,10 +42,6 @@ public class Game_Plaice : MonoBehaviour {
 		}
 	}
 
-	public void ShowTutorial() {
-		tutorialGO.SetActive (true);
-	}
-
 	public void PlaySplash() {
 		GetComponent<AudioSource> ().Play ();
 	}
@@ -60,8 +49,12 @@ public class Game_Plaice : MonoBehaviour {
 	void Paint(Transform child) {
 		child.GetChild(0).GetComponent<SVGImage>().color = GameObject.FindGameObjectWithTag("InGameController").GetComponent<Game_Plaice>().selectedColor;
 		if (EverythingPainted()) {
-			tutorialGO.SetActive(true);
-			tutorialGO.GetComponent<TutorialController>().Game_Plaice(EverythingCorrect());
+			if (EverythingCorrect()
+			) {
+				GameObject.FindGameObjectWithTag("InGameController").GetComponent<Animator>().SetTrigger("Correct");
+			} else {
+				Debug.Log ("Wrong");
+			}
 		}
 	}
 
@@ -101,5 +94,4 @@ public class Game_Plaice : MonoBehaviour {
 	public void DestroyGame() {
 		Destroy(transform.gameObject);
 	}
-
 }

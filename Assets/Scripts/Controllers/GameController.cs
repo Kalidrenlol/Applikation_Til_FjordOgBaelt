@@ -12,12 +12,7 @@ public class GameController : MonoBehaviour {
 
 	[SerializeField] GameObject[] GamePrefabs;
 	public GameObject LoadedGame;
-
 	bool flash = false;
-
-	void Awake() {
-		
-	}
 
 	void Start() {
 		ShowCamera(false);
@@ -43,19 +38,19 @@ public class GameController : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
-			GetComponent<AnimalsController>().DiscoverAnimal("HarbourPorpoise");
+			LoadGame("HarbourPorpoise");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
-			GetComponent<AnimalsController>().DiscoverAnimal("Crab2");
+			LoadGame("Spermwhale");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
-			GetComponent<AnimalsController>().DiscoverAnimal("Shark");
+			LoadGame("Seal");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha5)) {
-			GetComponent<AnimalsController>().DiscoverAnimal("Killerwhale");
+			LoadGame("Shark");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha6)) {
