@@ -6,6 +6,7 @@ public class Tooth : MonoBehaviour {
 
 	public int whitelevel;
 	public bool isClean;
+	public GameObject controller;
 
 	void Start () {
 		whitelevel = 115;
