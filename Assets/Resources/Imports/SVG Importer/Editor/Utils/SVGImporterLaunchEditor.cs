@@ -10,6 +10,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 
+#pragma warning disable CS0618
+
 namespace SVGImporter
 {
     using Utils;

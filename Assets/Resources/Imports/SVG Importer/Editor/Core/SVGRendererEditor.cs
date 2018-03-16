@@ -8,7 +8,7 @@ using UnityEditorInternal;
 using System;
 using System.Collections;
 using System.Reflection;
-
+#pragma warning disable CS0618
 namespace SVGImporter
 {
     [CanEditMultipleObjects]

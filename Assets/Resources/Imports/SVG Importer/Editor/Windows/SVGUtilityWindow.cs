@@ -8,6 +8,7 @@ using System.Reflection;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEditor;
+#pragma warning disable CS0649
 
 namespace SVGImporter
 {

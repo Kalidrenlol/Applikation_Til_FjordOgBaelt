@@ -9,7 +9,7 @@ public class Game_Seal : MonoBehaviour {
 
 	void Start () {
 		if (GameObject.FindGameObjectWithTag ("GameController").GetComponent<ItemController> ().GetItem ("Feather").HasSeen) {
-			ShowWinning ();
+			//ShowWinning ();
 		}
 	}
 

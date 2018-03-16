@@ -11,7 +11,7 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Linq;
-
+#pragma warning disable CS0618
 namespace SVGImporter 
 {
     public class SVGPostprocessor : AssetPostprocessor

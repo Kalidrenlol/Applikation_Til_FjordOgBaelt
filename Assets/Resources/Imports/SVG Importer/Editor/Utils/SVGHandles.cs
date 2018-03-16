@@ -6,6 +6,9 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 
+#pragma warning disable CS0618
+#pragma warning disable CS0649
+
 namespace SVGImporter.Rendering
 {
     using Utils;
