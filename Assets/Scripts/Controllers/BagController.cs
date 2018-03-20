@@ -35,7 +35,17 @@ public class BagController : MonoBehaviour {
 			CloseBag ();
 			gameSealController.GetComponent<InGameControllerSeal> ().isBagOpen = false;
 			break;
+		case "Vertebra":
+			GameObject gameSpermwhaleController = GameObject.FindGameObjectWithTag("InGameController");
+			gameSpermwhaleController.GetComponent<InGameControllerSpermwhale> ().ChooseVertebra ();
+			CloseBag ();
+			gameSpermwhaleController.GetComponent<InGameControllerSpermwhale> ().isBagOpen = false;
+			break;
+		default:
+			print ("Wrong item");
+			break;
 		}
+
 	}
 
 	public void CloseBag() {

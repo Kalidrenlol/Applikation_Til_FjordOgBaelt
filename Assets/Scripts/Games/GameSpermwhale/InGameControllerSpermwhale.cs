@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using SVGImporter;
 
 public class InGameControllerSpermwhale : MonoBehaviour {
 
@@ -10,17 +11,22 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 	public Transform canvas;
 	public GameObject bag;
 	public GameObject bagPrefab;
+	public GameObject choosenItem;
+	public GameObject choosenItemPrefab;
+	public GameObject puzzle;
+	public GameObject pieces;
 	public bool isBagOpen = false;
 	public bool showWinning = false;
 	public int correctPiecesPlaced;
 
 	void Start () {
 		correctPiecesPlaced = 0;
+		pieces.SetActive (false);
 
 		btnBag.onClick.AddListener(delegate {
 			if(isBagOpen == false) {
 				bag = Instantiate(bagPrefab, canvas);
-				bag.transform.SetSiblingIndex(4);
+				bag.transform.SetSiblingIndex(3);
 				isBagOpen = true;
 			} 
 			else if(isBagOpen == true) {
@@ -43,6 +49,17 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 
 	public void DestroyGame() {
 		Destroy(transform.parent.gameObject);
+	}
+
+	public void ChooseVertebra() {
+		choosenItem = Instantiate(choosenItemPrefab, btnBag.transform);
+		print ("Vertebra choosen");
+	}
+
+	public void gameSetup() {
+		puzzle.transform.GetChild (0).gameObject.GetComponent<SVGImage> ().color = new Color32(255,255,255,1);
+		Destroy (choosenItem);
+		pieces.SetActive (true);
 	}
 		
 	public void ShowWinning() {

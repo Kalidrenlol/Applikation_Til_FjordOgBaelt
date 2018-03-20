@@ -10,6 +10,13 @@ public class DragDropPiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 	Vector3 startPosition;
 	public GameObject correctPlace;
 	public GameObject controller;
+	public int delay;
+	public Animator animator;
+
+	void Start() {
+		animator = GetComponent<Animator> ();
+		animator.StopPlayback();
+	}
 
 	public void OnBeginDrag (PointerEventData eventData)
 	{
@@ -25,7 +32,8 @@ public class DragDropPiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 	public void OnEndDrag (PointerEventData eventData)
 	{
 		if (gameObject.GetComponent<Collider2D> ().IsTouching (correctPlace.GetComponent<Collider2D> ())) {
-			correctPlace.GetComponent<Image> ().color = gameObject.GetComponent<Image> ().color;
+			correctPlace.GetComponent<Image> ().sprite = gameObject.GetComponent<Image> ().sprite;
+			correctPlace.GetComponent<Image> ().color = new Color32(255,255,255,255);
 			controller.GetComponent<InGameControllerSpermwhale> ().UpdateProgress ();
 			Destroy ();
 		} else {
