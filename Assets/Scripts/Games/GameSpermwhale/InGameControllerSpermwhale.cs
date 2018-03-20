@@ -3,14 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Game_Spermwhale : MonoBehaviour {
+public class InGameControllerSpermwhale : MonoBehaviour {
 
 	[SerializeField] GameObject ShowWinningPrefab;
+	public Button btnBag;
+	public Transform canvas;
+	public GameObject bag;
+	public GameObject bagPrefab;
+	public bool isBagOpen = false;
+	public bool showWinning = false;
+	public int correctPiecesPlaced;
 
 	void Start () {
-		if (GameObject.FindGameObjectWithTag ("GameController").GetComponent<ItemController> ().GetItem ("Vertebra").HasSeen) {
+		correctPiecesPlaced = 0;
+
+		btnBag.onClick.AddListener(delegate {
+			if(isBagOpen == false) {
+				bag = Instantiate(bagPrefab, canvas);
+				bag.transform.SetSiblingIndex(4);
+				isBagOpen = true;
+			} 
+			else if(isBagOpen == true) {
+				bag.GetComponent<BagController>().CloseBag();
+				isBagOpen = false;
+			}
+		});	
+	}
+
+	void Update() {
+		if (correctPiecesPlaced == 9 && showWinning == false) {
 			ShowWinning ();
+			showWinning = true;
 		}
+	}
+
+	public void UpdateProgress() {
+		correctPiecesPlaced++;
 	}
 
 	public void DestroyGame() {

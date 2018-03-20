@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using SVGImporter;
 using UnityEngine.SceneManagement;
 
-public class Game_Plaice : MonoBehaviour {
+public class InGameControllerPlaice : MonoBehaviour {
 
 	public Color[] colors;
 	public Color selectedColor = Color.white;
@@ -42,16 +42,13 @@ public class Game_Plaice : MonoBehaviour {
 		}
 	}
 
-	public void PlaySplash() {
-		GetComponent<AudioSource> ().Play ();
-	}
-
 	void Paint(Transform child) {
-		child.GetChild(0).GetComponent<SVGImage>().color = GameObject.FindGameObjectWithTag("InGameController").GetComponent<Game_Plaice>().selectedColor;
+		child.GetChild(0).GetComponent<SVGImage>().color = GameObject.FindGameObjectWithTag("InGameController").GetComponent<InGameControllerPlaice>().selectedColor;
 		if (EverythingPainted()) {
 			if (EverythingCorrect()
 			) {
-				GameObject.FindGameObjectWithTag("InGameController").GetComponent<Animator>().SetTrigger("Correct");
+				GameObject.FindGameObjectWithTag("InGameController").transform.parent.GetComponent<Animator>().SetTrigger("Correct");
+				ShowWinning ();
 			} else {
 				Debug.Log ("Wrong");
 			}
@@ -92,6 +89,6 @@ public class Game_Plaice : MonoBehaviour {
 	}
 
 	public void DestroyGame() {
-		Destroy(transform.gameObject);
+		Destroy(transform.parent.gameObject);
 	}
 }

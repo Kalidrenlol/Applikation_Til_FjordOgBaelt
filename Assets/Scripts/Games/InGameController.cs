@@ -23,9 +23,10 @@ public class InGameController : MonoBehaviour {
 
 		btnBag.onClick.AddListener(delegate {
 			GameObject bag = Instantiate(bagPrefab, canvas);
-			bag.GetComponent<BagController>().animal = gameController.GetComponent<AnimalsController>().GetAnimal("Shark");
+			bag.transform.parent = btnBag.transform;
+			//bag.GetComponent<BagController>().animal = gameController.GetComponent<AnimalsController>().GetAnimal("Shark");
 		});
-		animal = gameController.GetComponent<AnimalsController>().GetAnimal(animalName);
+		//animal = gameController.GetComponent<AnimalsController>().GetAnimal(animalName);
 	}
 
 	public void GetItem(Item item) {
