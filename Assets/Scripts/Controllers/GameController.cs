@@ -54,7 +54,7 @@ public class GameController : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha6)) {
-			GetComponent<AnimalsController>().DiscoverAnimal("Starfish");
+			LoadGame("Killerwhale");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha7)) {

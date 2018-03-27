@@ -7,7 +7,7 @@ using SVGImporter;
 public class InGameControllerSpermwhale : MonoBehaviour {
 
 	[SerializeField] GameObject ShowWinningPrefab;
-	public Button btnBag;
+	public GameObject btnBag;
 	public Transform canvas;
 	public GameObject bag;
 	public GameObject bagPrefab;
@@ -15,6 +15,7 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 	public GameObject choosenItemPrefab;
 	public GameObject puzzle;
 	public GameObject pieces;
+	public GameObject InitialPiece;
 	public bool isBagOpen = false;
 	public bool showWinning = false;
 	public int correctPiecesPlaced;
@@ -23,7 +24,7 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 		correctPiecesPlaced = 0;
 		pieces.SetActive (false);
 
-		btnBag.onClick.AddListener(delegate {
+		btnBag.GetComponent<Button>().onClick.AddListener(delegate {
 			if(isBagOpen == false) {
 				bag = Instantiate(bagPrefab, canvas);
 				bag.transform.SetSiblingIndex(3);
@@ -52,7 +53,7 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 	}
 
 	public void ChooseVertebra() {
-		choosenItem = Instantiate(choosenItemPrefab, btnBag.transform);
+		choosenItem = Instantiate(choosenItemPrefab, btnBag.GetComponent<Button>().transform);
 		print ("Vertebra choosen");
 	}
 
@@ -60,8 +61,16 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 		puzzle.transform.GetChild (0).gameObject.GetComponent<SVGImage> ().color = new Color32(255,255,255,1);
 		Destroy (choosenItem);
 		pieces.SetActive (true);
+		puzzle.GetComponent<Image> ().color = new Color32 (255, 255, 255, 255);
+		Destroy (btnBag);
+		StartCoroutine (DelayedAnimation());
 	}
-		
+
+	IEnumerator DelayedAnimation() {
+		yield return new WaitForSeconds(5);
+		InitialPiece.GetComponent<Animator>().SetTrigger ("animate");
+	}
+
 	public void ShowWinning() {
 		GameObject showWinning = Instantiate(ShowWinningPrefab, GameObject.FindGameObjectWithTag("GameCanvas").transform);
 		showWinning.GetComponent<Animator>().SetTrigger("Correct");

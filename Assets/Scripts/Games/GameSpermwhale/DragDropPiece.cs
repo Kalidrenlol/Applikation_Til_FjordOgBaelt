@@ -12,10 +12,10 @@ public class DragDropPiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 	public GameObject controller;
 	public int delay;
 	public Animator animator;
+	public GameObject next;
 
 	void Start() {
 		animator = GetComponent<Animator> ();
-		animator.StopPlayback();
 	}
 
 	public void OnBeginDrag (PointerEventData eventData)
@@ -44,5 +44,13 @@ public class DragDropPiece : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 		
 	public void Destroy() {
 		Destroy(gameObject);
+	}
+
+	public void AnimationStart() {
+		next.GetComponent<Animator>().SetTrigger ("animate");
+	}
+
+	public void AnimationDestroy() {
+		Destroy (animator);
 	}
 }
