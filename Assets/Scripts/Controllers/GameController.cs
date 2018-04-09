@@ -33,12 +33,13 @@ public class GameController : MonoBehaviour {
 
 	public void Update() {
 		if (Input.GetKeyDown(KeyCode.Alpha1)) {
-			//GetComponent<AnimalsController>().DiscoverAnimal("Crab");
-			LoadGame("Plaice");
+			//LoadGame("Plaice");
+			ShowAnimal("Starfish2");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
-			LoadGame("HarbourPorpoise");
+			LoadGame("Porpoise1");
+			LoadGame("Porpoise2");
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
@@ -58,8 +59,12 @@ public class GameController : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha7)) {
+			LoadGame("Seagull");
+		}
+
+		if (Input.GetKeyDown(KeyCode.Alpha8)) {
 			GetComponent<AnimalsController>().DiscoverAnimal("Crab");
-			GetComponent<AnimalsController>().DiscoverAnimal("Crab2");
+			GetComponent<AnimalsController>().DiscoverAnimal("Starfish2");
 			GetComponent<AnimalsController>().DiscoverAnimal("HarbourPorpoise");
 			GetComponent<AnimalsController>().DiscoverAnimal("HarbourPorpoise2");
 			GetComponent<AnimalsController>().DiscoverAnimal("Plaice");
@@ -71,11 +76,6 @@ public class GameController : MonoBehaviour {
 			GetComponent<AnimalsController>().DiscoverAnimal("Spermwhale");
 			GetComponent<AnimalsController>().DiscoverAnimal("Starfish");
 		}
-
-		if (Input.GetKeyDown (KeyCode.Alpha8)) {
-			GetComponent<ItemController> ().DiscoverItem ("Feather");
-		}
-
 
 		if (Input.GetKeyDown (KeyCode.Alpha9)) {
 			GetComponent<ItemController> ().DiscoverItem ("Anchor");
