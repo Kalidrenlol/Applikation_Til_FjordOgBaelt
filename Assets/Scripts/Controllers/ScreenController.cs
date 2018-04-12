@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Vuforia;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
 using UnityEngine.SceneManagement;
@@ -109,6 +110,7 @@ public class ScreenController : MonoBehaviour {
 		Debug.Log("ShowCamera");
 		GameUI.SetActive(!_bool);
 		CameraUI.SetActive(_bool);
+		SetAutofocus();
 	}
 
 	public string CheckCurrentPage() {
@@ -135,4 +137,18 @@ public class ScreenController : MonoBehaviour {
 		HorizontalScrollGO.SetActive(false);
 	}
 
+
+	private void SetAutofocus()
+    {
+    print("Setting Auto focus");
+        if(CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO))
+        {
+            Debug.Log("Autofocus set");
+        }
+        else
+        {
+            // never actually seen a device that doesn't support this, but just in case
+            Debug.Log("this device doesn't support auto focus");
+        }
+    }
 }

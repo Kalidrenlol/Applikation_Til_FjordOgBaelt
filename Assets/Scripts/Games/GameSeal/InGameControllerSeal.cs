@@ -84,7 +84,7 @@ public class InGameControllerSeal : MonoBehaviour {
 	public void ShowWinning() {
 		GameObject showWinning = Instantiate(ShowWinningPrefab, GameObject.FindGameObjectWithTag("GameCanvas").transform);
 		showWinning.GetComponent<Animator>().SetTrigger("Correct");
-		showWinning.GetComponent<ResultController>().Setup("Seal", true);
+		showWinning.GetComponent<ResultController>().Setup("Seal2", true);
 		showWinning.GetComponent<ResultController>().resultBtn.onClick.AddListener(GoToMainScene);
 	}
 
@@ -92,7 +92,7 @@ public class InGameControllerSeal : MonoBehaviour {
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
 		controller.GetComponent<ScreenController>().ScreenTask.SetActive(false);
 		controller.GetComponent<ScreenController>().GoToPage(1);
-		controller.GetComponent<AnimalsController>().DiscoverAnimal("Seal");
+		controller.GetComponent<AnimalsController>().DiscoverAnimal("Seal2");
 		DestroyGame ();
 	}
 

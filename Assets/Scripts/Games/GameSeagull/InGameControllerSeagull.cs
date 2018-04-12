@@ -28,7 +28,7 @@ public class InGameControllerSeagull : MonoBehaviour {
 	public void ShowWinning() {
 		GameObject showWinning = Instantiate(ShowWinningPrefab, GameObject.FindGameObjectWithTag("GameCanvas").transform);
 		showWinning.GetComponent<Animator>().SetTrigger("Correct");
-		showWinning.GetComponent<ResultController>().Setup("SeaGull", true);
+		showWinning.GetComponent<ResultController>().Setup("Seagull", true);
 		showWinning.GetComponent<ResultController>().resultBtn.onClick.AddListener(GoToMainScene);
 	}
 
@@ -36,7 +36,7 @@ public class InGameControllerSeagull : MonoBehaviour {
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
 		controller.GetComponent<ScreenController>().ScreenTask.SetActive(false);
 		controller.GetComponent<ScreenController>().GoToPage(1);
-		controller.GetComponent<AnimalsController>().DiscoverAnimal("SeaGull");
+		controller.GetComponent<AnimalsController>().DiscoverAnimal("Seagull");
 		DestroyGame ();
 	}
 
