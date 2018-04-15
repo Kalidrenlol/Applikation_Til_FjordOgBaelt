@@ -54,7 +54,6 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 
 	public void ChooseVertebra() {
 		choosenItem = Instantiate(choosenItemPrefab, btnBag.GetComponent<Button>().transform);
-		print ("Vertebra choosen");
 	}
 
 	public void gameSetup() {

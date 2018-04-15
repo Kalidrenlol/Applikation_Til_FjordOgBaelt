@@ -41,6 +41,12 @@ public class BagController : MonoBehaviour {
 			CloseBag ();
 			gameSpermwhaleController.GetComponent<InGameControllerSpermwhale> ().isBagOpen = false;
 			break;
+		case "Tooth":
+			GameObject gameSharkController = GameObject.FindGameObjectWithTag("InGameController");
+			gameSharkController.GetComponent<InGameControllerShark> ().ChooseTooth ();
+			CloseBag ();
+			gameSharkController.GetComponent<InGameControllerShark> ().isBagOpen = false;
+			break;
 		default:
 			print ("Wrong item");
 			break;

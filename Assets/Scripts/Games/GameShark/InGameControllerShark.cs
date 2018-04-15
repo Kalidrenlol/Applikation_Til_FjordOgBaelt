@@ -14,6 +14,8 @@ public class InGameControllerShark : MonoBehaviour {
 	public GameObject bagPrefab;
 	public GameObject choosenItem;
 	public GameObject choosenItemPrefab;
+	public GameObject shark;
+	public SVGAsset sharkTeeth;
 
 	public bool isBagOpen = false;
 	public bool showWinning = false;
@@ -30,6 +32,21 @@ public class InGameControllerShark : MonoBehaviour {
 				isBagOpen = false;
 			}
 		});	
+	}
+
+	public void ChooseTooth () {
+		choosenItem = Instantiate(choosenItemPrefab, btnBag.GetComponent<Button>().transform);
+	}
+
+	public void GameSetup ()
+	{
+		shark.GetComponent<SVGImage>().vectorGraphics = sharkTeeth;
+		Destroy (choosenItem);
+		Destroy (btnBag);
+		if (showWinning == false) { 
+			ShowWinning ();
+			showWinning = true;
+		}
 	}
 		
 	public void ShowWinning() {
@@ -48,6 +65,6 @@ public class InGameControllerShark : MonoBehaviour {
 	}
 
 	public void DestroyGame() {
-		Destroy(transform.gameObject);
+		Destroy(transform.parent.gameObject);
 	}
 }
