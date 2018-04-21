@@ -114,9 +114,6 @@ public class ScreenController : MonoBehaviour {
 	}
 
 	public string CheckCurrentPage() {
-		//ColorBlock _customBlock = standardColorBlock;
-		//_customBlock.normalColor = standardColorBlock.pressedColor;
-
 		if (ScreenPrize.GetComponent<Animator>().GetBool("Show")) {
 			return "Prize";
 		} else if (ScreenSettings.GetComponent<Animator>().GetBool("Show")) {
@@ -137,17 +134,10 @@ public class ScreenController : MonoBehaviour {
 		HorizontalScrollGO.SetActive(false);
 	}
 
-
-	private void SetAutofocus()
-    {
-    print("Setting Auto focus");
-        if(CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO))
-        {
+	private void SetAutofocus() {
+        if(CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO)) {
             Debug.Log("Autofocus set");
-        }
-        else
-        {
-            // never actually seen a device that doesn't support this, but just in case
+        } else {
             Debug.Log("this device doesn't support auto focus");
         }
     }
