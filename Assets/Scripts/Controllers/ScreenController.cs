@@ -110,7 +110,6 @@ public class ScreenController : MonoBehaviour {
 		Debug.Log("ShowCamera");
 		GameUI.SetActive(!_bool);
 		CameraUI.SetActive(_bool);
-		SetAutofocus();
 	}
 
 	public string CheckCurrentPage() {
@@ -133,12 +132,4 @@ public class ScreenController : MonoBehaviour {
 		ScreenTask.SetActive(false);
 		HorizontalScrollGO.SetActive(false);
 	}
-
-	private void SetAutofocus() {
-        if(CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO)) {
-            Debug.Log("Autofocus set");
-        } else {
-            Debug.Log("this device doesn't support auto focus");
-        }
-    }
 }

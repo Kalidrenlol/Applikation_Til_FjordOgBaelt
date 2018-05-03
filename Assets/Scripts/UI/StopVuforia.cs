@@ -6,6 +6,6 @@ using Vuforia;
 public class StopVuforia : MonoBehaviour {
 		
 	void Start () {
-		VuforiaBehaviour.Instance.enabled = false;
+		//VuforiaBehaviour.Instance.enabled = false;
 	}
 }
