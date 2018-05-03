@@ -84,7 +84,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
-
+		print(mTrackableBehaviour.TrackableName);
+		print(name);
 		if (mTrackableBehaviour.TrackableName == name) {
 			GameObject.FindGameObjectWithTag("CameraUI").GetComponent<CameraUIController>().StartAnimation(mTrackableBehaviour.TrackableName);
 		}

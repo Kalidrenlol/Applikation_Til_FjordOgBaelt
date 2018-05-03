@@ -72,7 +72,7 @@ public class InGameControllerStarfish2 : MonoBehaviour {
 		byte[] bytes = photo.EncodeToPNG();
 		SavePictureToGallery( bytes, "imgname.png" ); 
 		ShowWinning();
-
+		backCam.Stop();
 	}
 
 	#if !UNITY_EDITOR && UNITY_ANDROID
@@ -124,7 +124,7 @@ public class InGameControllerStarfish2 : MonoBehaviour {
 	public void ShowWinning() {
 		GameObject showWinning = Instantiate(ShowWinningPrefab, GameObject.FindGameObjectWithTag("GameCanvas").transform);
 		showWinning.GetComponent<Animator>().SetTrigger("Correct");
-		showWinning.GetComponent<ResultController>().Setup("Shark", true);
+		showWinning.GetComponent<ResultController>().Setup("Starfish2", true);
 		showWinning.GetComponent<ResultController>().resultBtn.onClick.AddListener(GoToMainScene);
 	}
 
@@ -132,7 +132,7 @@ public class InGameControllerStarfish2 : MonoBehaviour {
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
 		controller.GetComponent<ScreenController>().ScreenTask.SetActive(false);
 		controller.GetComponent<ScreenController>().GoToPage(1);
-		controller.GetComponent<AnimalsController>().DiscoverAnimal("Shark");
+		controller.GetComponent<AnimalsController>().DiscoverAnimal("Starfish2");
 		DestroyGame ();
 	}
 
