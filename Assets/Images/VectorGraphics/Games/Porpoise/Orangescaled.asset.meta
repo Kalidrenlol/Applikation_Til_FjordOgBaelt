@@ -1,0 +1,67 @@
+fileFormatVersion: 2
+guid: f909555bf1b61394a944f7f712505cbd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n
+    \  xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n
+    \  xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  version=\"1.1\"\n   preserveAspectRatio=\"xMidYMid meet\"\n   viewBox=\"0 0
+    640 640\"\n   width=\"640\"\n   height=\"640\"\n   id=\"svg46\"\n   sodipodi:docname=\"Orangescaled.svg\"\n
+    \  inkscape:version=\"0.92.2 (5c3e80d, 2017-08-06)\">\n  <metadata\n     id=\"metadata50\">\n
+    \   <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n
+    \       <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <sodipodi:namedview\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n
+    \    borderopacity=\"1\"\n     objecttolerance=\"10\"\n     gridtolerance=\"10\"\n
+    \    guidetolerance=\"10\"\n     inkscape:pageopacity=\"0\"\n     inkscape:pageshadow=\"2\"\n
+    \    inkscape:window-width=\"1920\"\n     inkscape:window-height=\"1027\"\n     id=\"namedview48\"\n
+    \    showgrid=\"false\"\n     inkscape:zoom=\"0.36875\"\n     inkscape:cx=\"320\"\n
+    \    inkscape:cy=\"320\"\n     inkscape:window-x=\"-8\"\n     inkscape:window-y=\"-8\"\n
+    \    inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"svg46\" />\n
+    \ <defs\n     id=\"defs6\">\n    <path\n       d=\"M566.57 381.66C566.57 517.84
+    456.18 628.23 320 628.23C183.82 628.23 73.43 517.84 73.43 381.66C73.43 245.49
+    183.82 135.1 320 135.1C456.18 135.1 566.57 245.49 566.57 381.66\"\n       id=\"b2Mv14elc6\"
+    />\n    <path\n       d=\"M334.16 163.42C334.16 163.42 325.42 53.51 354.14 31.05C355.89
+    32.17 369.89 41.16 371.64 42.28C371.64 42.28 344.17 62.26 344.17 165.94C344.17
+    165.94 339.17 175.91 334.16 163.42\"\n       id=\"b7RU9Xa2H\" />\n    <path\n
+    \      d=\"M266.87 16.6C312.78 32.8 334.89 88.64 334.89 88.64C334.89 88.64 282.62
+    118.31 236.74 102.11C190.87 85.94 168.76 30.07 168.76 30.07C168.76 30.07 220.99
+    0.43 266.87 16.6\"\n       id=\"aIUD4CxKv\" />\n    <path\n       d=\"M215.3 293.83C211.58
+    318.9 192.52 336.85 172.74 333.9C152.94 330.96 139.89 308.24 143.64 283.16C147.36
+    258.09 166.42 240.14 186.2 243.09C206 246.03 219.05 268.75 215.3 293.83\"\n       id=\"b3hYK5WxkX\"
+    />\n  </defs>\n  <g\n     id=\"g44\"\n     transform=\"matrix(0.20237176,0,0,0.16195281,-14.758914,538.17545)\">\n
+    \   <g\n       id=\"g42\">\n      <g\n         id=\"g40\">\n        <g\n           id=\"g14\">\n
+    \         <use\n             xlink:href=\"#b2Mv14elc6\"\n             id=\"use8\"\n
+    \            style=\"opacity:1;fill:#f36d17;fill-opacity:1\"\n             x=\"0\"\n
+    \            y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g12\">\n            <use\n               xlink:href=\"#b2Mv14elc6\"\n
+    \              id=\"use10\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g22\">\n          <use\n             xlink:href=\"#b7RU9Xa2H\"\n
+    \            id=\"use16\"\n             style=\"opacity:1;fill:#559532;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g20\">\n            <use\n               xlink:href=\"#b7RU9Xa2H\"\n
+    \              id=\"use18\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g30\">\n          <use\n             xlink:href=\"#aIUD4CxKv\"\n
+    \            id=\"use24\"\n             style=\"opacity:1;fill:#559532;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g28\">\n            <use\n               xlink:href=\"#aIUD4CxKv\"\n
+    \              id=\"use26\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g38\">\n          <use\n             xlink:href=\"#b3hYK5WxkX\"\n
+    \            id=\"use32\"\n             style=\"opacity:1;fill:#e8aa7f;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g36\">\n            <use\n               xlink:href=\"#b3hYK5WxkX\"\n
+    \              id=\"use34\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n      </g>\n
+    \   </g>\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

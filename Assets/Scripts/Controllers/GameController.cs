@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.Alpha8)) {
-			ShowAnimal ("Seagull");
+			ShowAnimal ("SeaGull");
 		}
 
 		if (Input.GetKeyDown (KeyCode.Alpha9)) {

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e2205d414e082eb4bb57645c41bdee97
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" width="100" height="100"><defs><path
+    d="M86.32 36.7L43.04 37.88L42.65 16.76L4.01 53.31L43.81 87.96L43.43 66.83C69.51
+    66.26 84 65.95 86.9 65.89C88.84 65.89 90.57 63.75 90.57 61.38C90.53 59.36 90.23
+    43.22 90.19 41.2C90.19 38.83 88.45 36.7 86.32 36.7C86.32 36.7 86.32 36.7 86.32
+    36.7" id="cnO8DWouF"></path></defs><g><g><g><use xlink:href="#cnO8DWouF" opacity="1"
+    fill="#ffffff" fill-opacity="1"></use><g><use xlink:href="#cnO8DWouF" opacity="1"
+    fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use></g></g></g></g></svg>'
+  assetBundleName: 
+  assetBundleVariant: 

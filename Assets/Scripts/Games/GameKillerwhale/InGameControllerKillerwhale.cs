@@ -6,29 +6,68 @@ using UnityEngine.EventSystems;
 
 public class InGameControllerKillerwhale : MonoBehaviour {
 
-	public GameObject slider;
 	public GameObject guessBtn;
+	public GameObject plusBtn;
+	public GameObject minusBtn;
+	public int gameState;
+	public GameObject kwSmall;
+	public GameObject kwMedium;
+	public GameObject kwLarge;
+	public bool showWinning = false;
 	[SerializeField] GameObject ShowWinningPrefab;
 
 	void Start () {
+		int gameState = 0;
 
 		guessBtn.GetComponent<Button>().onClick.AddListener(delegate {
 			CheckIfCorrect();
 		});
+
+		plusBtn.GetComponent<Button>().onClick.AddListener(delegate {
+			ChangeSize("plus");
+		});
+
+		minusBtn.GetComponent<Button>().onClick.AddListener(delegate {
+			ChangeSize("minus");
+		});
 	}
 
 	void Update () {
-		print (slider.GetComponent<Slider>().value);
+		
 	}
 
 	public void CheckIfCorrect ()
 	{
-		if (slider.GetComponent<Slider> ().value == 4) {
-			ShowWinning ();
-		} else {
-			print("WRONG");
+		if (gameState == 1 && showWinning == false) {
+			ShowWinning();
+			showWinning = true;
 		}
 	} 
+
+	public void ChangeSize (string value)
+	{
+		if (gameState == 0 && value == "plus") {
+			kwMedium.SetActive(false);
+			kwLarge.SetActive(true);
+			gameState++;
+			plusBtn.SetActive(false);
+		} else if(gameState == 0 && value == "minus") {
+			kwMedium.SetActive(false);
+			kwSmall.SetActive(true);
+			gameState--;
+			minusBtn.SetActive(false);
+		} else if(gameState == -1 && value == "plus") {
+			kwMedium.SetActive(true);
+			kwSmall.SetActive(false);
+			gameState++;
+			minusBtn.SetActive(true);
+		} else if(gameState == 1 && value == "minus") {
+			kwMedium.SetActive(true);
+			kwLarge.SetActive(false);
+			gameState--;
+			plusBtn.SetActive(true);
+		}
+	}
 
 	public void ShowWinning() {
 		GameObject showWinning = Instantiate(ShowWinningPrefab, GameObject.FindGameObjectWithTag("GameCanvas").transform);

@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 3764acff68edd354faada716d34dbe6d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n
+    \  id=\"svg1901\"\n   inkscape:version=\"0.92.2 (5c3e80d, 2017-08-06)\"\n   sodipodi:docname=\"button.svg\">\n
+    \ <defs\n     id=\"defs1895\" />\n  <sodipodi:namedview\n     id=\"base\"\n     pagecolor=\"#ffffff\"\n
+    \    bordercolor=\"#666666\"\n     borderopacity=\"1.0\"\n     inkscape:pageopacity=\"0.0\"\n
+    \    inkscape:pageshadow=\"2\"\n     inkscape:zoom=\"0.98994949\"\n     inkscape:cx=\"237.60496\"\n
+    \    inkscape:cy=\"-131.77072\"\n     inkscape:document-units=\"mm\"\n     inkscape:current-layer=\"layer1\"\n
+    \    showgrid=\"false\"\n     inkscape:window-width=\"1920\"\n     inkscape:window-height=\"1057\"\n
+    \    inkscape:window-x=\"1912\"\n     inkscape:window-y=\"-8\"\n     inkscape:window-maximized=\"1\"
+    />\n  <metadata\n     id=\"metadata1898\">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n
+    \       <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n
+    \   <path\n       d=\"M 100,295.54108 C 100,296.34349 99.261428,297 98.358737,297
+    H 1.6412708 C 0.7385719,297 0,296.34349 0,295.54108 V 278.45892 C 0,277.65651
+    0.7385719,277 1.6412708,277 H 98.358737 C 99.261428,277 100,277.65651 100,278.45892
+    Z\"\n       style=\"fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.30948198\"\n
+    \      id=\"path1234\"\n       inkscape:connector-curvature=\"0\" />\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

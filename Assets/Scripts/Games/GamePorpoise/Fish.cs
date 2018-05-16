@@ -28,8 +28,6 @@ public class Fish : MonoBehaviour {
 
 	void OnTriggerStay2D (Collider2D ol)
 	{
-		print ("COLLISION");
-
 		if (fresh) {
 			controller.GetComponent<InGameControllerPorpoise2> ().UpdateProgress (1);
 		} else  {

@@ -16,26 +16,11 @@ public class BottomButton : MonoBehaviour {
 		GetComponent<Button>().onClick.AddListener(delegate {
 			GoToPage(screenNo);
 		});
-
 		screenNo = transform.GetSiblingIndex() - 1;
 	}
 
-	/*public void UpdateColor() {
-		Color _color;
-
-		bool show = (gameController.GetComponent<ScreenController>().CheckCurrentPage() == "Page") ? true : false;
-		if (screenController.GetComponent<HorizontalScrollSnap>().CurrentPage == screenNo && show) {
-			_color = gameController.GetComponent<ScreenController>().standardColorBlock.pressedColor;
-		} else {			
-			_color = gameController.GetComponent<ScreenController>().standardColorBlock.normalColor;
-		}
-
-		transform.GetChild(0).GetComponent<Image>().color = _color;
-	}*/
-
 	public void GoToPage(int _page) {
 		gameController.GetComponent<ScreenController>().GoToPage(_page);
-		//UpdateColor ();
 		Navigation custom = new Navigation();
 		custom.mode = Navigation.Mode.None;
 		GetComponent<Button>().navigation = custom;

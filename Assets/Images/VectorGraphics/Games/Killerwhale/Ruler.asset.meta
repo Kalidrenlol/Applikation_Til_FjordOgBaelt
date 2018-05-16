@@ -1,0 +1,50 @@
+fileFormatVersion: 2
+guid: f3c44196671842547800c3a8c73ac5cc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n
+    \  id=\"svg1320\"\n   inkscape:version=\"0.92.2 (5c3e80d, 2017-08-06)\"\n   sodipodi:docname=\"ruler.svg\">\n
+    \ <defs\n     id=\"defs1314\" />\n  <sodipodi:namedview\n     id=\"base\"\n     pagecolor=\"#ffffff\"\n
+    \    bordercolor=\"#666666\"\n     borderopacity=\"1.0\"\n     inkscape:pageopacity=\"0.0\"\n
+    \    inkscape:pageshadow=\"2\"\n     inkscape:zoom=\"1.4\"\n     inkscape:cx=\"180.18217\"\n
+    \    inkscape:cy=\"233.84933\"\n     inkscape:document-units=\"mm\"\n     inkscape:current-layer=\"layer1\"\n
+    \    showgrid=\"false\"\n     inkscape:window-width=\"1920\"\n     inkscape:window-height=\"1057\"\n
+    \    inkscape:window-x=\"1912\"\n     inkscape:window-y=\"-8\"\n     inkscape:window-maximized=\"1\"
+    />\n  <metadata\n     id=\"metadata1317\">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n
+    \       <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title />\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n  <g\n
+    \    inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n
+    \   <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path1063\"\n
+    \      style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 9.005419,278.55114 v 9.32315\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1067\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 14.656843,278.60028 v 4.80894\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1071\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 20.04336,278.60028 v 4.80894\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1075\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 25.429876,278.60028 v 4.80894\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1079\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 30.816391,278.60028 v 4.80894\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1083\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 36.379335,278.55114 v 9.32315\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1087\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 42.03076,278.60028 v 4.80894\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1091\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 47.417144,278.60028 v 4.80894\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1095\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 52.80379,278.60028 v 4.80894\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1099\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 58.190438,278.60028 v 4.80894\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n
+    \      id=\"path1103\"\n       style=\"fill:none;stroke:#231f20;stroke-width:2.51343966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"m 63.753248,278.55114 v 9.32315\" />\n    <path\n       style=\"fill:none;stroke:#231f20;stroke-width:2.16084719;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1\"\n
+    \      d=\"M 1.0810542,295.90204 V 278.07969 H 71.704656 v 17.82235\"\n       id=\"path1125\"\n
+    \      inkscape:connector-curvature=\"0\"\n       sodipodi:nodetypes=\"cccc\"
+    />\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

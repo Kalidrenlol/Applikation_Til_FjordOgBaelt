@@ -12,7 +12,7 @@ public class InGameControllerPorpoise2 : MonoBehaviour {
 	public GameObject ButtonUp;
 	public GameObject Porpoise;
 	public GameObject FishGood;
-	public GameObject FishBad;
+	public GameObject[] Trash;
 	public GameObject Slider;
 	public float speed;
 	public bool facingRight;
@@ -74,17 +74,20 @@ public class InGameControllerPorpoise2 : MonoBehaviour {
     }
 
 	public void SpawnFish () {
-		int i = Random.Range (0, 3);
-		GameObject co;
+		if(!showWinning) {
+			int i = Random.Range (0, 3);
+			GameObject co;
 
-		if (i > 0) {
-			co = Instantiate (FishGood) as GameObject;
-		} else {
-			co = Instantiate (FishBad) as GameObject;
+			if (i > 0) {
+				co = Instantiate (FishGood) as GameObject;
+			} else {
+				int j  = Random.Range (0, Trash.Length);
+				co = Instantiate (Trash[j]) as GameObject;
+			}
+
+			co.transform.parent = Slider.transform.parent;
+			co.transform.position = new Vector3(Random.Range(0, Screen.width),Slider.transform.position.y-50, 0);
 		}
-	
-		co.transform.parent = Slider.transform.parent;
-		co.transform.position = new Vector3(Random.Range(0, Screen.width),Slider.transform.position.y, 0);
 	}
 
 	public void UpdateProgress (int i) {

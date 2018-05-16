@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: b0cd575b14e086d44af90182b7561ed0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n
+    \  xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n
+    \  xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  version=\"1.1\"\n   preserveAspectRatio=\"xMidYMid meet\"\n   viewBox=\"0 0
+    640 640\"\n   width=\"640\"\n   height=\"640\"\n   id=\"svg181\"\n   sodipodi:docname=\"Paperscaled.svg\"\n
+    \  inkscape:version=\"0.92.2 (5c3e80d, 2017-08-06)\">\n  <metadata\n     id=\"metadata185\">\n
+    \   <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n
+    \       <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <sodipodi:namedview\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n
+    \    borderopacity=\"1\"\n     objecttolerance=\"10\"\n     gridtolerance=\"10\"\n
+    \    guidetolerance=\"10\"\n     inkscape:pageopacity=\"0\"\n     inkscape:pageshadow=\"2\"\n
+    \    inkscape:window-width=\"1920\"\n     inkscape:window-height=\"1027\"\n     id=\"namedview183\"\n
+    \    showgrid=\"false\"\n     inkscape:zoom=\"0.7375\"\n     inkscape:cx=\"185.05774\"\n
+    \    inkscape:cy=\"406.51874\"\n     inkscape:window-x=\"-8\"\n     inkscape:window-y=\"-8\"\n
+    \    inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"svg181\" />\n
+    \ <defs\n     id=\"defs21\">\n    <path\n       d=\"M52.67 590L592.93 589.37L592.89
+    558.77L61.26 559.38L52.67 590\"\n       id=\"agokv7hlu\" />\n    <path\n       d=\"M52.67
+    590C71.64 589.98 73.9 557.08 73.9 557.08C105.71 557.04 264.75 556.85 551.01 556.51L550.49
+    110.67L32.05 111.29C32.36 384.93 32.54 536.96 32.57 567.36C34.6 576.25 39.82 590.03
+    52.67 590\"\n       id=\"akGQ9P8rf\" />\n    <path\n       d=\"M592.76 561.96L74.31
+    562.56L73.75 75.05L592.19 74.46L592.76 561.96\"\n       id=\"bk8Chz6o\" />\n    <path\n
+    \      d=\"M130.88 189.81L130.8 126.77L147.38 126.77C155.21 140.62 159.57 148.31
+    160.44 149.85C164.17 156.48 167.91 164.33 170.71 171.42C170.73 171.42 170.96 171.42
+    170.99 171.42C170.05 163.11 169.76 154.6 169.74 145.16C169.74 143.93 169.74 137.79
+    169.72 126.74L182.76 126.72L182.83 189.74L167.93 189.76C159.87 175.18 155.39 167.07
+    154.5 165.45C150.77 158.73 146.66 150.61 143.58 143.22C143.55 143.23 143.33 143.31
+    143.3 143.32C143.68 151.64 143.88 160.51 143.89 170.81C143.89 172.07 143.9 178.4
+    143.91 189.79L130.88 189.81\"\n       id=\"a77nmWeOv0\" />\n    <path\n       d=\"M232.42
+    163.03L209.33 163.06L209.35 178.02L235.14 178L235.16 189.69L195.12 189.74L195.04
+    126.72L233.78 126.67L233.79 138.36L209.3 138.38L209.32 151.49L232.41 151.44L232.42
+    163.03\"\n       id=\"n1cy1KH0c9\" />\n    <path\n       d=\"M255.64 189.65L240.67
+    126.65L255.85 126.63C258.71 142.23 260.31 150.89 260.62 152.62C262.03 160.08 263.34
+    168.23 264.37 174.59C264.39 174.59 264.54 174.59 264.56 174.59C265.58 167.76 267.06
+    160.18 268.63 152.43C268.98 150.71 270.74 142.1 273.91 126.6L288.99 126.6C292.03
+    142.52 293.71 151.37 294.05 153.14C295.46 160.52 296.49 167.25 297.43 174.27C297.45
+    174.27 297.6 174.27 297.61 174.27C298.54 167.25 299.92 159.86 301.22 152.38C301.56
+    150.66 303.26 142.06 306.31 126.58L320.75 126.55L304.61 189.6L289.25 189.6C286.05
+    173.34 284.27 164.31 283.91 162.5C282.7 156.15 281.67 150.25 280.91 143.06C280.89
+    143.06 280.74 143.06 280.72 143.06C279.62 150.15 278.6 156.15 277.12 162.5C276.72
+    164.31 274.74 173.35 271.19 189.63L255.64 189.65\"\n       id=\"ac9OOjwcN\" />\n
+    \   <path\n       d=\"M327.87 174.91C331.69 176.84 337.56 178.8 343.61 178.8C350.13
+    178.8 353.57 176.09 353.56 171.98C353.56 168.04 350.58 165.79 343.03 163.1C332.6
+    159.48 325.8 153.68 325.79 144.51C325.77 133.77 334.7 125.52 349.51 125.5C356.58
+    125.5 361.8 126.99 365.53 128.65C365.21 129.81 362.69 139.02 362.37 140.18C359.86
+    138.95 355.39 137.19 349.24 137.19C343.1 137.19 340.12 140 340.12 143.28C340.13
+    147.29 343.67 149.08 351.77 152.14C362.86 156.25 368.08 162.04 368.09 170.92C368.1
+    181.49 360.01 190.47 342.78 190.49C335.62 190.49 328.54 188.64 325 186.68C325.19
+    185.89 326.15 181.97 327.87 174.91\"\n       id=\"b4kgNWsbVa\" />\n    <path\n
+    \      d=\"M550.93 176.44L395.13 176.61L395.09 139.28L550.89 139.09L550.93 176.44\"\n
+    \      id=\"dtqBsTdRE\" />\n    <path\n       d=\"M574.25 223.57L107.65 224.12L107.62
+    202.68L574.23 202.12L574.25 223.57\"\n       id=\"b4tnjlaW4H\" />\n    <path\n
+    \      d=\"M356.85 385.55L109.37 385.84L109.2 236.58L356.68 236.29L356.85 385.55\"\n
+    \      id=\"bbFLb8q09P\" />\n    <path\n       d=\"M574.29 252.97L369.71 253.2L369.69
+    236.27L574.27 236.03L574.29 252.97\"\n       id=\"a1wawGuMsr\" />\n    <path\n
+    \      d=\"M574.34 297.08L369.76 297.31L369.74 280.38L574.32 280.15L574.34 297.08\"\n
+    \      id=\"d9TfecGLqI\" />\n    <path\n       d=\"M574.39 341.21L369.81 341.42L369.79
+    324.5L574.37 324.26L574.39 341.21\"\n       id=\"ckha7ADSG\" />\n    <path\n       d=\"M574.44
+    385.31L369.86 385.54L369.84 368.61L574.42 368.38L574.44 385.31\"\n       id=\"c462aht9BZ\"
+    />\n    <path\n       d=\"M560.3 472.97L114.84 473.49L114.77 412.04L560.22 411.52L560.3
+    472.97\"\n       id=\"a16aPqO5L\" />\n    <path\n       d=\"M300.99 529.79L114.91
+    530.02L114.87 495.6L300.95 495.4L300.99 529.79\"\n       id=\"a5K5GFVku\" />\n
+    \   <path\n       d=\"M560.35 529.51L367.85 529.71L367.81 495.31L560.31 495.09L560.35
+    529.51\"\n       id=\"a51kUi6cAM\" />\n    <path\n       d=\"M301.2 564.91L114.95
+    565.13L114.93 548.2L301.18 547.98L301.2 564.91\"\n       id=\"d2sx3aWweB\" />\n
+    \   <path\n       d=\"M560.39 564.6L374.14 564.82L374.12 547.89L560.37 547.67L560.39
+    564.6\"\n       id=\"b1vjd4auCs\" />\n  </defs>\n  <g\n     id=\"g179\"\n     transform=\"matrix(0.1779734,0,0,0.19359608,-5.6149139,525.68156)\">\n
+    \   <g\n       id=\"g177\">\n      <g\n         id=\"g175\">\n        <g\n           id=\"g29\">\n
+    \         <use\n             xlink:href=\"#agokv7hlu\"\n             id=\"use23\"\n
+    \            style=\"opacity:1;fill:#dbdad8;fill-opacity:1\"\n             x=\"0\"\n
+    \            y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g27\">\n            <use\n               xlink:href=\"#agokv7hlu\"\n
+    \              id=\"use25\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g37\">\n          <use\n             xlink:href=\"#akGQ9P8rf\"\n
+    \            id=\"use31\"\n             style=\"opacity:1;fill:#8f8e8e;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g35\">\n            <use\n               xlink:href=\"#akGQ9P8rf\"\n
+    \              id=\"use33\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g45\">\n          <use\n             xlink:href=\"#bk8Chz6o\"\n
+    \            id=\"use39\"\n             style=\"opacity:1;fill:#dbdad8;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g43\">\n            <use\n               xlink:href=\"#bk8Chz6o\"\n
+    \              id=\"use41\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g53\">\n          <g\n             id=\"g51\">\n            <use\n
+    \              xlink:href=\"#a77nmWeOv0\"\n               id=\"use49\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g61\">\n          <g\n             id=\"g59\">\n            <use\n
+    \              xlink:href=\"#n1cy1KH0c9\"\n               id=\"use57\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g69\">\n          <g\n             id=\"g67\">\n            <use\n
+    \              xlink:href=\"#ac9OOjwcN\"\n               id=\"use65\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g77\">\n          <g\n             id=\"g75\">\n            <use\n
+    \              xlink:href=\"#b4kgNWsbVa\"\n               id=\"use73\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g85\">\n          <use\n             xlink:href=\"#dtqBsTdRE\"\n
+    \            id=\"use79\"\n             style=\"opacity:1;fill:#5f7f80;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g83\">\n            <use\n               xlink:href=\"#dtqBsTdRE\"\n
+    \              id=\"use81\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g93\">\n          <use\n             xlink:href=\"#b4tnjlaW4H\"\n
+    \            id=\"use87\"\n             style=\"opacity:1;fill:#8f8e8e;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g91\">\n            <use\n               xlink:href=\"#b4tnjlaW4H\"\n
+    \              id=\"use89\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g101\">\n          <use\n             xlink:href=\"#bbFLb8q09P\"\n
+    \            id=\"use95\"\n             style=\"opacity:1;fill:#5f7f80;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g99\">\n            <use\n               xlink:href=\"#bbFLb8q09P\"\n
+    \              id=\"use97\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g109\">\n          <use\n             xlink:href=\"#a1wawGuMsr\"\n
+    \            id=\"use103\"\n             style=\"opacity:1;fill:#8f8e8e;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g107\">\n            <use\n               xlink:href=\"#a1wawGuMsr\"\n
+    \              id=\"use105\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g117\">\n          <use\n             xlink:href=\"#d9TfecGLqI\"\n
+    \            id=\"use111\"\n             style=\"opacity:1;fill:#8f8e8e;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g115\">\n            <use\n               xlink:href=\"#d9TfecGLqI\"\n
+    \              id=\"use113\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g125\">\n          <use\n             xlink:href=\"#ckha7ADSG\"\n
+    \            id=\"use119\"\n             style=\"opacity:1;fill:#8f8e8e;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g123\">\n            <use\n               xlink:href=\"#ckha7ADSG\"\n
+    \              id=\"use121\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g133\">\n          <use\n             xlink:href=\"#c462aht9BZ\"\n
+    \            id=\"use127\"\n             style=\"opacity:1;fill:#8f8e8e;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g131\">\n            <use\n               xlink:href=\"#c462aht9BZ\"\n
+    \              id=\"use129\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g141\">\n          <use\n             xlink:href=\"#a16aPqO5L\"\n
+    \            id=\"use135\"\n             style=\"opacity:1;fill:#d45b33;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g139\">\n            <use\n               xlink:href=\"#a16aPqO5L\"\n
+    \              id=\"use137\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g149\">\n          <use\n             xlink:href=\"#a5K5GFVku\"\n
+    \            id=\"use143\"\n             style=\"opacity:1;fill:#5f7f80;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g147\">\n            <use\n               xlink:href=\"#a5K5GFVku\"\n
+    \              id=\"use145\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g157\">\n          <use\n             xlink:href=\"#a51kUi6cAM\"\n
+    \            id=\"use151\"\n             style=\"opacity:1;fill:#5f7f80;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g155\">\n            <use\n               xlink:href=\"#a51kUi6cAM\"\n
+    \              id=\"use153\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g165\">\n          <use\n             xlink:href=\"#d2sx3aWweB\"\n
+    \            id=\"use159\"\n             style=\"opacity:1;fill:#8f8e8e;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g163\">\n            <use\n               xlink:href=\"#d2sx3aWweB\"\n
+    \              id=\"use161\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n        <g\n
+    \          id=\"g173\">\n          <use\n             xlink:href=\"#b1vjd4auCs\"\n
+    \            id=\"use167\"\n             style=\"opacity:1;fill:#8f8e8e;fill-opacity:1\"\n
+    \            x=\"0\"\n             y=\"0\"\n             width=\"100%\"\n             height=\"100%\"
+    />\n          <g\n             id=\"g171\">\n            <use\n               xlink:href=\"#b1vjd4auCs\"\n
+    \              id=\"use169\"\n               style=\"opacity:1;fill-opacity:0;stroke:#000000;stroke-width:1;stroke-opacity:0\"\n
+    \              x=\"0\"\n               y=\"0\"\n               width=\"100%\"\n
+    \              height=\"100%\" />\n          </g>\n        </g>\n      </g>\n
+    \   </g>\n  </g>\n  <use\n     style=\"opacity:1;fill:#5f7f80;fill-opacity:1\"\n
+    \    xlink:href=\"#dtqBsTdRE\"\n     id=\"use79-5\"\n     x=\"0\"\n     y=\"0\"\n
+    \    width=\"100%\"\n     height=\"100%\"\n     transform=\"matrix(0.1779734,0,0,0.19359608,-56.581154,525.3234)\"
+    />\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

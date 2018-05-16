@@ -8,11 +8,14 @@ public class InGameControllerCrab : MonoBehaviour {
 
 	[SerializeField] GameObject ShowWinningPrefab;
 	[SerializeField] public List<GameObject> TileMap;
+	public GameObject startIndicator;
 	public int PlayerPosition;
 	public SVGAsset BorderPath;
 	public SVGAsset CrabWon;
 	public bool Rotated = false;
 	public bool GameWon = false;
+	public GameObject GameEnd1;
+	public GameObject GameEnd2;
 	float timeLeft = 5.0f;
 
   	void Start () { }
@@ -21,6 +24,9 @@ public class InGameControllerCrab : MonoBehaviour {
 	{
 		if (GameWon) {
 			timeLeft -= Time.deltaTime;
+			GameEnd1.SetActive(false);
+			GameEnd2.SetActive(false);
+
 			if (timeLeft < 0) {
 				ShowWinning();
 				GameWon = false;
@@ -30,7 +36,39 @@ public class InGameControllerCrab : MonoBehaviour {
 
     public void MoveLeft ()
 	{
+		if (startIndicator.activeSelf) {
+			startIndicator.SetActive(false);
+		}
+
 		if (Rotated) {
+			if (PlayerPosition < 20) {
+				if (PlayerPosition != 17 && PlayerPosition != 14 && PlayerPosition != 8 && PlayerPosition != 6 && PlayerPosition != 0) {
+					TileMap [PlayerPosition + 5].GetComponent<SVGImage> ().vectorGraphics = TileMap [PlayerPosition].GetComponent<SVGImage> ().vectorGraphics;
+					TileMap [PlayerPosition + 5].transform.Rotate (0, 0, 90);
+					PlayerPosition = PlayerPosition + 5;
+					TileMap [PlayerPosition - 5].GetComponent<SVGImage> ().vectorGraphics = BorderPath;
+					TileMap [PlayerPosition - 5].transform.Rotate (0, 0, -90);
+				}
+			}
+		} else {
+			if (PlayerPosition > 0) {
+				if (PlayerPosition != 5 && PlayerPosition != 10 && PlayerPosition != 15 && PlayerPosition != 20 && PlayerPosition != 23 && PlayerPosition != 12 &&  PlayerPosition != 6  &&  PlayerPosition != 14) {
+					TileMap [PlayerPosition - 1].GetComponent<SVGImage> ().vectorGraphics = TileMap [PlayerPosition].GetComponent<SVGImage> ().vectorGraphics;
+					PlayerPosition = PlayerPosition - 1;
+					TileMap [PlayerPosition + 1].GetComponent<SVGImage> ().vectorGraphics = BorderPath;
+				}
+			}
+		}
+	}
+
+	public void MoveRight ()
+	{
+		if (startIndicator.activeSelf) {
+			startIndicator.SetActive(false);
+		}
+
+		if (Rotated) {
+
 			if (PlayerPosition > 4) {
 				if (PlayerPosition == 9) {
 					TileMap [PlayerPosition - 5].GetComponent<SVGImage> ().vectorGraphics = CrabWon;
@@ -49,29 +87,6 @@ public class InGameControllerCrab : MonoBehaviour {
 				}
 			}
 		} else {
-			if (PlayerPosition > 0) {
-				if (PlayerPosition != 5 && PlayerPosition != 10 && PlayerPosition != 15 && PlayerPosition != 20 && PlayerPosition != 23 && PlayerPosition != 12 &&  PlayerPosition != 6  &&  PlayerPosition != 14) {
-					TileMap [PlayerPosition - 1].GetComponent<SVGImage> ().vectorGraphics = TileMap [PlayerPosition].GetComponent<SVGImage> ().vectorGraphics;
-					PlayerPosition = PlayerPosition - 1;
-					TileMap [PlayerPosition + 1].GetComponent<SVGImage> ().vectorGraphics = BorderPath;
-				}
-			}
-		}
-	}
-
-	public void MoveRight ()
-	{
-		if (Rotated) {
-			if (PlayerPosition < 20) {
-				if (PlayerPosition != 17 && PlayerPosition != 14 && PlayerPosition != 8 && PlayerPosition != 6 && PlayerPosition != 0) {
-					TileMap [PlayerPosition + 5].GetComponent<SVGImage> ().vectorGraphics = TileMap [PlayerPosition].GetComponent<SVGImage> ().vectorGraphics;
-					TileMap [PlayerPosition + 5].transform.Rotate (0, 0, 90);
-					PlayerPosition = PlayerPosition + 5;
-					TileMap [PlayerPosition - 5].GetComponent<SVGImage> ().vectorGraphics = BorderPath;
-					TileMap [PlayerPosition - 5].transform.Rotate (0, 0, -90);
-				}
-			}
-		} else {
 			if (PlayerPosition < TileMap.Count - 1) {
 				if (PlayerPosition != 4 && PlayerPosition != 9 && PlayerPosition != 14 && PlayerPosition != 19 && PlayerPosition != 21 && PlayerPosition != 18 && PlayerPosition != 10 && PlayerPosition != 2 && PlayerPosition != 12) {
 					TileMap [PlayerPosition + 1].GetComponent<SVGImage> ().vectorGraphics = TileMap [PlayerPosition].GetComponent<SVGImage> ().vectorGraphics;
@@ -83,6 +98,10 @@ public class InGameControllerCrab : MonoBehaviour {
 	}
 
 	public void Rotate () {
+		if (startIndicator.activeSelf) {
+			startIndicator.SetActive(false);
+		}
+
 		if (Rotated) {
 			TileMap [PlayerPosition].transform.Rotate(0, 0, -90);
 			Rotated = false;
