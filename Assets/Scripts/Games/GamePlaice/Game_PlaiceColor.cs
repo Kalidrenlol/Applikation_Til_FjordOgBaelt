@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using SVGImporter;
 
 public class Game_PlaiceColor : MonoBehaviour {
 
-	[SerializeField] Image imgColor;
-	public Image selected;
+	[SerializeField] SVGImage imgColor;
+	public SVGImage selected;
 	public Color color;
 
 	public void Setup(Color _color) {

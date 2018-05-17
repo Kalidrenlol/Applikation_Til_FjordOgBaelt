@@ -9,15 +9,22 @@ public class InGameControllerSeagull : MonoBehaviour {
 	[SerializeField] GameObject ShowWinningPrefab;
 	public int correctBirdsPlaced;
 	public bool showWinning = false;
+	float timeLeft = 2.0f;
+	public bool GameWon = false;
 
 	void Start () {
 
 	}
 
 	void Update () {
+
 		if (correctBirdsPlaced == 3 && showWinning == false) {
-			ShowWinning ();
-			showWinning = true;
+			timeLeft -= Time.deltaTime;
+
+			if (timeLeft < 0) {
+				ShowWinning();
+				showWinning = true;
+			}
 		}
 	}
 

@@ -1,0 +1,38 @@
+fileFormatVersion: 2
+guid: af6a452000b1ce04abc772f4af140121
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created
+    with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n
+    \  xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n
+    \  xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n
+    \  xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n
+    \  width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n
+    \  id=\"svg2665\"\n   sodipodi:docname=\"decor4.svg\"\n   inkscape:version=\"0.92.2
+    (5c3e80d, 2017-08-06)\">\n  <defs\n     id=\"defs2659\" />\n  <sodipodi:namedview\n
+    \    id=\"base\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n     borderopacity=\"1.0\"\n
+    \    inkscape:pageopacity=\"0.0\"\n     inkscape:pageshadow=\"2\"\n     inkscape:zoom=\"0.35\"\n
+    \    inkscape:cx=\"-64.285714\"\n     inkscape:cy=\"560\"\n     inkscape:document-units=\"mm\"\n
+    \    inkscape:current-layer=\"layer1\"\n     showgrid=\"false\"\n     inkscape:window-width=\"1920\"\n
+    \    inkscape:window-height=\"1057\"\n     inkscape:window-x=\"1912\"\n     inkscape:window-y=\"-8\"\n
+    \    inkscape:window-maximized=\"1\" />\n  <metadata\n     id=\"metadata2662\">\n
+    \   <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n
+    \       <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\"
+    />\n        <dc:title></dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n
+    \ <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n
+    \   <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path1097\"\n
+    \      style=\"fill:#f2d342;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.49561584\"\n
+    \      d=\"m 61.764859,292.2942 c 0,2.59866 -5.026733,4.7058 -11.229947,4.7058
+    -6.203152,0 -11.229886,-2.10714 -11.229886,-4.7058 0,-2.59868 5.026734,-4.70582
+    11.229886,-4.70582 6.203214,0 11.229947,2.10714 11.229947,4.70582\" />\n    <path\n
+    \      inkscape:connector-curvature=\"0\"\n       id=\"path1101\"\n       style=\"fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.49561584\"\n
+    \      d=\"M 100,291.64061 59.264317,272.74723 c 0.03032,-0.15178 0.09398,-0.29803
+    0.09398,-0.4528 v -7.05874 c 0,-2.58819 -4.331505,-4.70583 -9.625634,-4.70583
+    -5.294068,0 -9.625634,2.11764 -9.625634,4.70583 v 7.05874 c 0,0.38379 0.121874,0.75189
+    0.301351,1.10954 C 32.660822,276.97725 2.7892814,290.7308 0,291.64061 Z\" />\n
+    \   <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path1103\"\n
+    \      style=\"fill:#fcf7f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.49561584\"\n
+    \      d=\"M 52.584339,275.25683 H 46.310548 V 197 h 6.273791 z\" />\n  </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

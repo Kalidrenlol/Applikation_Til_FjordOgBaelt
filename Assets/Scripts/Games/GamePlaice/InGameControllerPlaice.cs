@@ -33,6 +33,8 @@ public class InGameControllerPlaice : MonoBehaviour {
 				}
 				selectedColor = go.GetComponent<Game_PlaiceColor>().Select();
 			});
+
+			go.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width/7, Screen.height/13);
 		}
 
 		foreach (Transform child in dotParent) {
@@ -45,12 +47,12 @@ public class InGameControllerPlaice : MonoBehaviour {
 	void Paint(Transform child) {
 		child.GetChild(0).GetComponent<SVGImage>().color = GameObject.FindGameObjectWithTag("InGameController").GetComponent<InGameControllerPlaice>().selectedColor;
 		if (EverythingPainted()) {
-			if (EverythingCorrect()
-			) {
+			if (EverythingCorrect()) {
 				GameObject.FindGameObjectWithTag("InGameController").transform.parent.GetComponent<Animator>().SetTrigger("Correct");
 				ShowWinning ();
 			} else {
 				Debug.Log ("Wrong");
+				GameObject.FindGameObjectWithTag("InGameController").transform.parent.GetComponent<Animator>().SetTrigger("Wrong");
 			}
 		}
 	}
