@@ -24,7 +24,7 @@ public class InGameControllerShark : MonoBehaviour {
 		btnBag.GetComponent<Button>().onClick.AddListener(delegate {
 			if(isBagOpen == false) {
 				bag = Instantiate(bagPrefab, canvas);
-				bag.transform.SetSiblingIndex(3);
+				bag.transform.SetSiblingIndex(5);
 				isBagOpen = true;
 			} 
 			else if(isBagOpen == true) {

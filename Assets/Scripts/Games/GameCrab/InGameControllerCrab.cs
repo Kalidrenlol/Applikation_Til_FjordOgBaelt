@@ -16,7 +16,7 @@ public class InGameControllerCrab : MonoBehaviour {
 	public bool GameWon = false;
 	public GameObject GameEnd1;
 	public GameObject GameEnd2;
-	float timeLeft = 5.0f;
+	float timeLeft = 2.0f;
 
   	void Start () { }
 

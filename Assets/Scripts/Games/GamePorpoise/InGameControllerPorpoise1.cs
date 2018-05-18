@@ -11,6 +11,7 @@ public class InGameControllerPorpoise1 : MonoBehaviour {
 	public GameObject Selection3;
 	public GameObject AnswerButton;
 	public GameObject Picture;
+	public GameObject InfoText;
 
 	public bool CorrectAnswer = false; 
 	public bool showWinning = false;
@@ -18,14 +19,24 @@ public class InGameControllerPorpoise1 : MonoBehaviour {
 	void Start () {
 		Selection1.GetComponent<Button>().onClick.AddListener(delegate {
 			ChangePicture("1");
+			if (InfoText.activeSelf) {
+				InfoText.SetActive(false);
+		}
 		});	
 
 		Selection2.GetComponent<Button>().onClick.AddListener(delegate {
 			ChangePicture("2");
+			if (InfoText.activeSelf) {
+				InfoText.SetActive(false);
+		}
 		});	
 
 		Selection3.GetComponent<Button>().onClick.AddListener(delegate {
 			ChangePicture("3");
+			if (InfoText.activeSelf) {
+				InfoText.SetActive(false);
+		}
+
 		});	
 
 		AnswerButton.GetComponent<Button>().onClick.AddListener(delegate {

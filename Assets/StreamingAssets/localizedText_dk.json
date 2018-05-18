@@ -2,7 +2,7 @@
     "items":[
                 {"key":"introduction_welcome","value":"Hej! Hvad er dit navn?"},
                 {"key":"introduction_press","value":"Tryk her"},
-                {"key":"introduction_next","value":"Forsæt"},
+                {"key":"introduction_next","value":"Fortsæt"},
                 {"key":"introduction_hello","value":"Hej "},
                 {"key":"introduction_intro1","value":"! \nVelkommen til Fjord&Bælt!"},
                 {"key":"introduction_intro2","value":"I Fjord&Bælt har vi mange dyr, som alle har brug for din hjælp!\n\nSe om du kan finde dem!"}

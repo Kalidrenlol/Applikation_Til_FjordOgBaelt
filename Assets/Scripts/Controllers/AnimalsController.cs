@@ -62,7 +62,7 @@ public class AnimalsController : MonoBehaviour {
 
 		foreach (GameObject ani in animals) {
 			if (ani.GetComponent<Animal> ().HasSeen) {			
-				sortedAnimals.Add (ani.GetComponent<Animal> ().seenIndex-1, ani);
+				//sortedAnimals.Add (ani.GetComponent<Animal> ().seenIndex-1, ani);
 			}
 		}
 

@@ -10,6 +10,8 @@ public class InGameControllerSeal : MonoBehaviour {
 	public GameObject BrushBubbles;
 	public GameObject SealClosed;
 	public GameObject SealOpen;
+	public GameObject InfoText;
+	public GameObject BagObject;
 	public Button btnBag;
 	public Transform canvas;
 	public GameObject bag;
@@ -34,6 +36,8 @@ public class InGameControllerSeal : MonoBehaviour {
 		SealClosed.GetComponent<Button> ().onClick.AddListener (() => {
 			SealClosed.SetActive(false);
 			SealOpen.SetActive(true);
+			BagObject.SetActive(true);
+			InfoText.GetComponent<Text>().text = "Sikker nogle beskidte tænder, kan du hjælpe sælen?";
 		});
 			
 		btnBag.onClick.AddListener(delegate {
@@ -51,11 +55,6 @@ public class InGameControllerSeal : MonoBehaviour {
 
 	void Update () {
 		foreach (Touch touch in Input.touches) {
-			/*if (touch.phase == TouchPhase.Began) { Debug.Log ("Began"); }
-			if (touch.phase == TouchPhase.Ended) { Debug.Log ("Ended");; }
-			if (touch.phase == TouchPhase.Stationary) { Debug.Log ("Stationary");}
-			if (touch.phase == TouchPhase.Canceled) { Debug.Log ("Canceled");}*/
-
 			if (dragging) {
 				ToothBrush.gameObject.transform.position = new Vector3(touch.position.x, touch.position.y);
 
@@ -106,6 +105,7 @@ public class InGameControllerSeal : MonoBehaviour {
 
 	public void ChooseToothBrush() {
 		ToothBrush.SetActive (true);
+		InfoText.SetActive(false);
 		StopBrushBobbles ();
 	}
 }

@@ -82,7 +82,6 @@ public class GameController : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.Q)) {
-			GetComponent<ItemController> ().DiscoverItem ("Anchor");
 			GetComponent<ItemController> ().DiscoverItem ("BucketFish");
 			GetComponent<ItemController> ().DiscoverItem ("Feather");
 			GetComponent<ItemController> ().DiscoverItem ("Tooth");
@@ -102,8 +101,6 @@ public class GameController : MonoBehaviour {
 			GetComponent<AnimalsController> ().DiscoverAnimal ("Shark");
 			GetComponent<AnimalsController> ().DiscoverAnimal ("Spermwhale");
 			GetComponent<AnimalsController> ().DiscoverAnimal ("Starfish");
-		}
-		if (Input.GetKeyDown (KeyCode.E)) {
 		}
 	}
 
