@@ -255,7 +255,7 @@ public class TutorialController : MonoBehaviour {
 			_text = "Sådan! Vi satte ryghvirvlen på plads i skelettet!";
 			btn.onClick.RemoveAllListeners();
 			btn.onClick.AddListener(delegate {
-				gameController.GetComponent<AnimalsController>().DiscoverAnimal("Spermwhale");
+				gameController.GetComponent<AnimalsController>().DiscoverAnimal("Spermwhale1");
 				Destroy(transform.parent.parent.gameObject);
 			});
 			break;

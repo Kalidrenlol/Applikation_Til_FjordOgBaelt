@@ -73,7 +73,7 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 	public void ShowWinning() {
 		GameObject showWinning = Instantiate(ShowWinningPrefab, GameObject.FindGameObjectWithTag("GameCanvas").transform);
 		showWinning.GetComponent<Animator>().SetTrigger("Correct");
-		showWinning.GetComponent<ResultController>().Setup("Spermwhale", true);
+		showWinning.GetComponent<ResultController>().Setup("Spermwhale1", true);
 		showWinning.GetComponent<ResultController>().resultBtn.onClick.AddListener(GoToMainScene);
 	}
 
@@ -81,7 +81,7 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
 		controller.GetComponent<ScreenController>().ScreenTask.SetActive(false);
 		controller.GetComponent<ScreenController>().GoToPage(1);
-		controller.GetComponent<AnimalsController>().DiscoverAnimal("Spermwhale");
+		controller.GetComponent<AnimalsController>().DiscoverAnimal("Spermwhale1");
 		DestroyGame ();
 	}
 }

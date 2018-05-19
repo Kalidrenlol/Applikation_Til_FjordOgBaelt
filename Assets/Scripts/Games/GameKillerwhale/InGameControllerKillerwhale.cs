@@ -72,7 +72,7 @@ public class InGameControllerKillerwhale : MonoBehaviour {
 	public void ShowWinning() {
 		GameObject showWinning = Instantiate(ShowWinningPrefab, GameObject.FindGameObjectWithTag("GameCanvas").transform);
 		showWinning.GetComponent<Animator>().SetTrigger("Correct");
-		showWinning.GetComponent<ResultController>().Setup("Killerwhale", true);
+		showWinning.GetComponent<ResultController>().Setup("Killerwhale1", true);
 		showWinning.GetComponent<ResultController>().resultBtn.onClick.AddListener(GoToMainScene);
 	}
 
@@ -80,7 +80,7 @@ public class InGameControllerKillerwhale : MonoBehaviour {
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
 		controller.GetComponent<ScreenController>().ScreenTask.SetActive(false);
 		controller.GetComponent<ScreenController>().GoToPage(1);
-		controller.GetComponent<AnimalsController>().DiscoverAnimal("Killerwhale");
+		controller.GetComponent<AnimalsController>().DiscoverAnimal("Killerwhale1");
 		DestroyGame ();
 	}
 

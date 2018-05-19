@@ -24,7 +24,8 @@ public class MapController : MonoBehaviour {
 
 	public GameObject[] pointers;
 
-	private Color selectedColor = new Color32 (186, 255, 201, 255);
+	private Color selectedColor = new Color32 (148, 255, 129, 255);
+	private Color notselectedColor = new Color32 (211, 213, 219, 255);
 	private Color PointerFoundColor  = new Color32(154, 184, 244, 255);
 
 	private int previousPointer = 0;
@@ -42,23 +43,23 @@ public class MapController : MonoBehaviour {
 			mapBasement.SetActive (true);
 			mapGround.SetActive (false);
 			mapFirst.SetActive (false);
-			buttonFirst.GetComponent<Image> ().color = Color.white;
-			buttonGround.GetComponent<Image> ().color = Color.white;
-			buttonBasement.GetComponent<Image> ().color = selectedColor;
+			buttonFirst.GetComponent<SVGImage> ().color = notselectedColor;
+			buttonGround.GetComponent<SVGImage> ().color = notselectedColor;
+			buttonBasement.GetComponent<SVGImage> ().color = selectedColor;
 		} else if (floor == "0") {
 			mapBasement.SetActive (false);
 			mapGround.SetActive (true);
 			mapFirst.SetActive (false);
-			buttonFirst.GetComponent<Image> ().color = Color.white;
-			buttonGround.GetComponent<Image> ().color = selectedColor;
-			buttonBasement.GetComponent<Image> ().color = Color.white;
+			buttonFirst.GetComponent<SVGImage> ().color = notselectedColor;
+			buttonGround.GetComponent<SVGImage> ().color = selectedColor;
+			buttonBasement.GetComponent<SVGImage> ().color = notselectedColor;
 		} else if (floor == "1") {
 			mapBasement.SetActive (false);
 			mapGround.SetActive (false);
 			mapFirst.SetActive (true);
-			buttonFirst.GetComponent<Image> ().color = selectedColor;
-			buttonGround.GetComponent<Image> ().color = Color.white;
-			buttonBasement.GetComponent<Image> ().color = Color.white;
+			buttonFirst.GetComponent<SVGImage> ().color = selectedColor;
+			buttonGround.GetComponent<SVGImage> ().color = notselectedColor;
+			buttonBasement.GetComponent<SVGImage> ().color = notselectedColor;
 		}
 	}
 

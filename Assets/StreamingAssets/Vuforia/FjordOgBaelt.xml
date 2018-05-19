@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="Spermwhale1" size="1.000000 0.549525" />
+    <ImageTarget name="Seagull1" size="1.000000 0.979003" />
     <ImageTarget name="Vertebra" size="1.000000 1.062030" />
     <ImageTarget name="Tooth" size="1.000000 0.977551" />
     <ImageTarget name="Anchor" size="1.000000 1.288372" />
     <ImageTarget name="BucketFish" size="1.000000 1.267470" />
-    <ImageTarget name="Spermwhale" size="1.000000 0.549525" />
     <ImageTarget name="Starfish2" size="1.000000 1.007692" />
     <ImageTarget name="Starfish" size="1.000000 0.991781" />
     <ImageTarget name="Seal2" size="1.000000 0.796875" />
     <ImageTarget name="Seal" size="1.000000 0.598522" />
-    <ImageTarget name="SeaGull" size="1.000000 0.979003" />
     <ImageTarget name="HarbourPorpoise2" size="1.000000 0.811414" />
     <ImageTarget name="HarbourPorpoise" size="1.000000 1.045822" />
     <ImageTarget name="Plaice" size="1.000000 0.836066" />

@@ -58,7 +58,7 @@ public class SettingsController : MonoBehaviour {
 
 		DebugAnimal[6].GetComponent<Button>().onClick.AddListener(delegate {
 			Controller.GetComponent<ScreenController> ().ShowSettings(false);
-			Controller.GetComponent<AnimalsController> ().DiscoverAnimal ("SeaGull");
+			Controller.GetComponent<AnimalsController> ().DiscoverAnimal ("Seagull1");
 		});
 
 		DebugAnimal[7].GetComponent<Button>().onClick.AddListener(delegate {
@@ -78,7 +78,7 @@ public class SettingsController : MonoBehaviour {
 
 		DebugAnimal[10].GetComponent<Button>().onClick.AddListener(delegate {
 			Controller.GetComponent<ScreenController> ().ShowSettings(false);
-			Controller.GetComponent<AnimalsController> ().DiscoverAnimal ("Spermwhale");
+			Controller.GetComponent<AnimalsController> ().DiscoverAnimal ("Spermwhale1");
 		});
 
 		DebugAnimal[11].GetComponent<Button>().onClick.AddListener(delegate {

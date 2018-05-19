@@ -62,7 +62,7 @@ public class GameController : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.Alpha8)) {
-			ShowAnimal ("SeaGull");
+			ShowAnimal ("Seagull1");
 		}
 
 		if (Input.GetKeyDown (KeyCode.Alpha9)) {
@@ -78,7 +78,7 @@ public class GameController : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.P)) {
-			ShowAnimal ("Spermwhale");
+			ShowAnimal ("Spermwhale1");
 		}
 
 		if (Input.GetKeyDown (KeyCode.Q)) {
@@ -95,11 +95,11 @@ public class GameController : MonoBehaviour {
 			GetComponent<AnimalsController> ().DiscoverAnimal ("HarbourPorpoise2");
 			GetComponent<AnimalsController> ().DiscoverAnimal ("Plaice");
 			GetComponent<AnimalsController> ().DiscoverAnimal ("Killerwhale");
-			GetComponent<AnimalsController> ().DiscoverAnimal ("SeaGull");
+			GetComponent<AnimalsController> ().DiscoverAnimal ("Seagull1");
 			GetComponent<AnimalsController> ().DiscoverAnimal ("Seal");
 			GetComponent<AnimalsController> ().DiscoverAnimal ("Seal2");
 			GetComponent<AnimalsController> ().DiscoverAnimal ("Shark");
-			GetComponent<AnimalsController> ().DiscoverAnimal ("Spermwhale");
+			GetComponent<AnimalsController> ().DiscoverAnimal ("Spermwhale1");
 			GetComponent<AnimalsController> ().DiscoverAnimal ("Starfish");
 		}
 	}
