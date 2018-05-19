@@ -16,13 +16,13 @@ public class Tooth : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D ol) {
 		controller.GetComponent<InGameControllerSeal> ().StartBrushBobbles ();
 		switch (collisionCounter) {
-			case 25: 
+			case 5: 
 				gameObject.GetComponent<Image>().color = new Color32 (199, 199, 88, 255);
 				break;
-			case 50: 
+			case 10: 
 				gameObject.GetComponent<Image>().color = new Color32 (234, 234, 169, 255);
 				break;
-			case 75: 
+			case 15: 
 				gameObject.GetComponent<Image>().color = new Color32 (255, 255, 255, 255);
 			controller.GetComponent<InGameControllerSeal>().UpdateProgress();
 				break;

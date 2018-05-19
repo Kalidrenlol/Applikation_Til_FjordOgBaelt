@@ -78,6 +78,10 @@ public class InGameControllerSeal1 : MonoBehaviour {
 	private void Update () {
 		if (Answer == 2 && showWinning == false) {
 			timeLeft -= Time.deltaTime;
+			AnswerB1.GetComponent<Button>().interactable = false;
+			AnswerB2.GetComponent<Button>().interactable = false;
+			AnswerB3.GetComponent<Button>().interactable = false;
+			AnswerB4.GetComponent<Button>().interactable = false;
 
 			if (timeLeft < 0) {
 				ShowWinning();

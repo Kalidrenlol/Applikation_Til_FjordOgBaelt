@@ -34,7 +34,9 @@ public class GameController : MonoBehaviour {
 	public void Update ()
 	{
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			ShowAnimal ("Crab");
+			//ShowAnimal ("Crab");
+			Item item = GetComponent<ItemController>().GetItem("Vertebra");
+			GetComponent<ScreenController> ().ShowOpenItem(item);
 		}
 
 		if (Input.GetKeyDown (KeyCode.Alpha2)) {

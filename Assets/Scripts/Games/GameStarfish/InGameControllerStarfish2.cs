@@ -2,124 +2,93 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using SVGImporter;
-using System.IO;
 
 public class InGameControllerStarfish2 : MonoBehaviour {
-
 	[SerializeField] GameObject ShowWinningPrefab;
-	[SerializeField] GameObject btnPic;
 
-	private bool camAvail;
-	private WebCamTexture backCam;
-	private Texture defaultBack;
-	public RawImage background;
-	public AspectRatioFitter fit;
+	public GameObject AnswerB1;
+	public GameObject AnswerB2;
+	public GameObject AnswerB3;
+	public GameObject AnswerB4;
+	public Color correct1;
+	public Color correct2;
+	public Color wrong1;
+	public Color wrong2;
+	public Color normal1;
+	public Color normal2;
+
+	public int Answer;
+
+	float timeLeft = 2.0f;
+	public bool showWinning = false;
 
 	void Start () {
-		defaultBack = background.texture;
-		WebCamDevice[] devices = WebCamTexture.devices;
+		AnswerB1.GetComponent<Button>().onClick.AddListener(delegate {
+			AnswerB1.GetComponent<SVGImage>().color = wrong1;
+			AnswerB1.transform.GetChild(0).GetComponent<SVGImage>().color = wrong2;
+			AnswerB2.GetComponent<SVGImage>().color = normal1;
+			AnswerB2.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			AnswerB3.GetComponent<SVGImage>().color = normal1;
+			AnswerB3.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			AnswerB4.GetComponent<SVGImage>().color = normal1;
+			AnswerB4.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			Answer = 1;
+		});
 
-		if (devices.Length == 0) {
-			Debug.Log ("No Camera");
-			camAvail = false;
-			return;
-		}
+		AnswerB2.GetComponent<Button>().onClick.AddListener(delegate {
+			AnswerB2.GetComponent<SVGImage>().color = wrong1;
+			AnswerB2.transform.GetChild(0).GetComponent<SVGImage>().color = wrong2;
+			AnswerB1.GetComponent<SVGImage>().color = normal1;
+			AnswerB1.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			AnswerB3.GetComponent<SVGImage>().color = normal1;
+			AnswerB3.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			AnswerB4.GetComponent<SVGImage>().color = normal1;
+			AnswerB4.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			Answer = 2;
+		});
 
-		for (int i = 0; i < devices.Length; i++) {
-			if (!devices [i].isFrontFacing) {
-				backCam = new WebCamTexture (devices [i].name, Screen.width, Screen.height);
-			}
-		}
+		AnswerB3.GetComponent<Button>().onClick.AddListener(delegate {
+			AnswerB3.GetComponent<SVGImage>().color = wrong1;
+			AnswerB3.transform.GetChild(0).GetComponent<SVGImage>().color = wrong2;
+			AnswerB2.GetComponent<SVGImage>().color = normal1;
+			AnswerB2.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			AnswerB1.GetComponent<SVGImage>().color = normal1;
+			AnswerB1.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			AnswerB4.GetComponent<SVGImage>().color = normal1;
+			AnswerB4.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			Answer = 3;
+		});
 
-		if (backCam == null) {
-			Debug.Log("Unable to find back camera");
-			return;
-		}
-
-		backCam.Play();
-		background.texture = backCam;
-
-		camAvail = true;
-
-		btnPic.GetComponent<Button>().onClick.AddListener(delegate {
-			Debug.Log("Picture Taken");
-			StartCoroutine (takePhotoIEnum());
+		AnswerB4.GetComponent<Button>().onClick.AddListener(delegate {
+			AnswerB4.GetComponent<SVGImage>().color = correct1;
+			AnswerB4.transform.GetChild(0).GetComponent<SVGImage>().color = correct2;
+			AnswerB1.GetComponent<SVGImage>().color = normal1;
+			AnswerB1.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			AnswerB3.GetComponent<SVGImage>().color = normal1;
+			AnswerB3.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			AnswerB2.GetComponent<SVGImage>().color = normal1;
+			AnswerB2.transform.GetChild(0).GetComponent<SVGImage>().color = normal2;
+			Answer = 4;
 		});
 	}
 
 	private void Update () {
-		if(!camAvail)
-			return;
+		if (Answer == 4 && showWinning == false) {
+			timeLeft -= Time.deltaTime;
 
-		float ratio = (float)backCam.width / (float)backCam.height;
-		fit.aspectRatio = ratio;
+			AnswerB1.GetComponent<Button>().interactable = false;
+			AnswerB2.GetComponent<Button>().interactable = false;
+			AnswerB3.GetComponent<Button>().interactable = false;
+			AnswerB4.GetComponent<Button>().interactable = false;
 
-		float scaleY = backCam.videoVerticallyMirrored ? -1f: 1f;
-		background.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
-
-		int orient = -backCam.videoRotationAngle;
-		background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
+			if (timeLeft < 0) {
+				ShowWinning();
+				showWinning = true;
+			}
+		}
 	}
-		
-	public IEnumerator takePhotoIEnum() {
-
-		yield return new WaitForEndOfFrame(); 
-
-		Texture2D photo = new Texture2D(backCam.width, backCam.height);
-		photo.SetPixels(backCam.GetPixels());
-		photo.Apply();
-		byte[] bytes = photo.EncodeToPNG();
-		SavePictureToGallery( bytes, "imgname.png" ); 
-		ShowWinning();
-		backCam.Stop();
-	}
-
-	#if !UNITY_EDITOR && UNITY_ANDROID
-	    private static AndroidJavaClass m_ajc = null;
-
-	    private static AndroidJavaClass AJC
-	    {
-	        get
-	        {
-	            if( m_ajc == null )
-	                m_ajc = new AndroidJavaClass( "com.simsoft.sshelper.SSHelper" );
-	 
-	            return m_ajc;
-	        }
-	    }
-	#endif
-	 
-    public static void SavePictureToGallery( byte[] bytes, string filename ) {
-        string path = Path.Combine( GetPicturesFolderPath(), filename );
-        if( !filename.EndsWith( ".png" ) )
-            path += ".png";
- 
-        Debug.Log( "Saving to: " + path );
- 
-        File.WriteAllBytes( path, bytes );
-	     
-		#if !UNITY_EDITOR && UNITY_ANDROID
-	        AndroidJavaObject context;
-	        using( AndroidJavaClass unityClass = new AndroidJavaClass( "com.unity3d.player.UnityPlayer" ) )
-	        {
-	            context = unityClass.GetStatic<AndroidJavaObject>( "currentActivity" );
-	        }
-	 
-	        AJC.CallStatic( "MediaScanFile", context, path );
-		#endif
-    }
-	 
-    public static string GetPicturesFolderPath()
-    {
-		#if UNITY_EDITOR
-	        return System.Environment.GetFolderPath( System.Environment.SpecialFolder.DesktopDirectory );
-		#elif UNITY_ANDROID
-	        return AJC.CallStatic<string>( "GetPicturesFolderPath", Application.productName );
-		#else
-	        return Application.persistentDataPath;
-		#endif
-    }
 
 	public void ShowWinning() {
 		GameObject showWinning = Instantiate(ShowWinningPrefab, GameObject.FindGameObjectWithTag("GameCanvas").transform);

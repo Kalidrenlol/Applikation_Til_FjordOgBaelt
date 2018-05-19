@@ -12,6 +12,7 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 	public GameObject bag;
 	public GameObject bagPrefab;
 	public GameObject choosenItem;
+	public GameObject InfoText;
 	public GameObject choosenItemPrefab;
 	public GameObject puzzle;
 	public GameObject pieces;
@@ -19,8 +20,15 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 	public bool isBagOpen = false;
 	public bool showWinning = false;
 	public int correctPiecesPlaced;
+	public GameObject hasNoItem;
 
 	void Start () {
+		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
+		foreach (Item item in controller.GetComponent<ItemController>().GetItems()) {
+			if (item.danishName == "Ryghvirvel" && item.HasSeen == false) {
+				hasNoItem.SetActive(true);
+			}
+		}
 		correctPiecesPlaced = 0;
 		pieces.SetActive (false);
 
@@ -54,6 +62,7 @@ public class InGameControllerSpermwhale : MonoBehaviour {
 
 	public void ChooseVertebra() {
 		choosenItem = Instantiate(choosenItemPrefab, btnBag.GetComponent<Button>().transform);
+		InfoText.GetComponent<Text>().text = "Saml kaskelothvalens ryghvirvel, da den er gået i stykker!";
 	}
 
 	public void gameSetup() {

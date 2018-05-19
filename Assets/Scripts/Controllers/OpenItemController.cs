@@ -8,7 +8,6 @@ public class OpenItemController : MonoBehaviour {
 
 	Item item;
 	public Button treasureClosedBtn;
-	public Button backButton;
 	public SVGImage treasureOpen;
 	public SVGImage itemImage;
 	public Text text;
@@ -19,11 +18,6 @@ public class OpenItemController : MonoBehaviour {
 		treasureClosedBtn.onClick.AddListener (delegate {
 			openTreasure ();
 		});
-
-		backButton.onClick.AddListener(delegate {
-			gameObject.SetActive(false);
-		});
-
 	}
 
 	public void Setup(Item _item) {
@@ -51,5 +45,9 @@ public class OpenItemController : MonoBehaviour {
 			controller.GetComponent<ScreenController>().GoToPage(2);
 			gameObject.SetActive(false);
 		});
+	}
+
+	public void DestroyGame() {
+		Destroy(transform.gameObject);
 	}
 }

@@ -16,22 +16,29 @@ public class InGameControllerShark : MonoBehaviour {
 	public GameObject choosenItemPrefab;
 	public GameObject shark;
 	public SVGAsset sharkTeeth;
-
 	public bool isBagOpen = false;
 	public bool showWinning = false;
+	public GameObject hasNoItem;
 
-	void Start () {
-		btnBag.GetComponent<Button>().onClick.AddListener(delegate {
-			if(isBagOpen == false) {
-				bag = Instantiate(bagPrefab, canvas);
-				bag.transform.SetSiblingIndex(5);
+	void Start ()
+	{
+		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
+		foreach (Item item in controller.GetComponent<ItemController>().GetItems()) {
+			if (item.danishName == "Hajtand" && item.HasSeen == false) {
+				hasNoItem.SetActive(true);
+			}
+		}
+
+		btnBag.GetComponent<Button> ().onClick.AddListener (delegate {
+			if (isBagOpen == false) {
+				bag = Instantiate (bagPrefab, canvas);
+				bag.transform.SetSiblingIndex (5);
 				isBagOpen = true;
-			} 
-			else if(isBagOpen == true) {
-				bag.GetComponent<BagController>().CloseBag();
+			} else if (isBagOpen == true) {
+				bag.GetComponent<BagController> ().CloseBag ();
 				isBagOpen = false;
 			}
-		});	
+		});
 	}
 
 	public void ChooseTooth () {

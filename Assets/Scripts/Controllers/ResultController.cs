@@ -16,19 +16,9 @@ public class ResultController : MonoBehaviour {
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
 		Animal ani = controller.GetComponent<AnimalsController>().GetAnimal(_name);
 		resultsAnimalImage.vectorGraphics = ani.assetOpen;
-
+		print(_name);
 		if (_correct) {
 			GetComponent<Animator>().SetTrigger("Correct");
-
-			foreach(Text text in statusTextWrapper.GetComponentsInChildren<Text>()){
-				text.text = "Rigtigt!";	
-			}
-
-			foreach(Text txt in achievementText.GetComponentsInChildren<Text>()) {
-				txt.text = "Du har hjulpet dyret";
-			}
-
-			resultBtn.GetComponentInChildren<Text>().text = "Sådan!";
 		}
 	}
 

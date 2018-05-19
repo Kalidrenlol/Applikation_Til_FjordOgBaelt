@@ -122,7 +122,7 @@ public class MapController : MonoBehaviour {
 			if (pointers [i].name == pointer) {
 				if (pointers [i].name == "Animal_Killerwhale") {
 					changeFloor ("1");
-				} else if(pointers [i].name == "Animal_Plaice" || pointers [i].name == "Animal_Seal2" || pointers [i].name == "BucketFish" || pointers [i].name == "Anchor" || pointers [i].name == "Tooth") {
+				} else if(pointers [i].name == "Animal_Plaice" || pointers [i].name == "Animal_Porpoise2" || pointers [i].name == "BucketFish" || pointers [i].name == "Tooth") {
 					changeFloor ("-1");
 				} else {
 					changeFloor ("0");

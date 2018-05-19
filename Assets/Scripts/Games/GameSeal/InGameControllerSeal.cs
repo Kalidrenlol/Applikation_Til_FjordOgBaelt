@@ -22,8 +22,16 @@ public class InGameControllerSeal : MonoBehaviour {
 	public bool isBagOpen = false;
 	public int teethBrushed;
 	public GameObject ShowWinningPrefab;
+	public GameObject hasNoItem;
 
 	void Start () {
+		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
+		foreach (Item item in controller.GetComponent<ItemController>().GetItems()) {
+			if (item.danishName == "Fjer" && item.HasSeen == false) {
+				hasNoItem.SetActive(true);
+			}
+		}
+
 		teethBrushed = 0;
 		ToothBrush.SetActive (false);
 
@@ -31,13 +39,14 @@ public class InGameControllerSeal : MonoBehaviour {
 			ToothBrush.GetComponent<SVGImage>().vectorGraphics = ToothBrushPaste.vectorGraphics;
 			dragging = true;
 			ToothBrush.GetComponent<Button>().onClick.RemoveAllListeners();
+			InfoText.GetComponent<Text>().text = "Du kan nu børste sælens tænder rene!";
 		});
 
 		SealClosed.GetComponent<Button> ().onClick.AddListener (() => {
 			SealClosed.SetActive(false);
 			SealOpen.SetActive(true);
 			BagObject.SetActive(true);
-			InfoText.GetComponent<Text>().text = "Sikker nogle beskidte tænder, kan du hjælpe sælen?";
+			InfoText.GetComponent<Text>().text = "Gør sælens tænder rene med noget fra din taske!";
 		});
 			
 		btnBag.onClick.AddListener(delegate {
@@ -104,8 +113,9 @@ public class InGameControllerSeal : MonoBehaviour {
 	}
 
 	public void ChooseToothBrush() {
+		BagObject.SetActive(false);
 		ToothBrush.SetActive (true);
-		InfoText.SetActive(false);
+		InfoText.GetComponent<Text>().text = "Tryk på tandbørsten igen for at putte tandpasta på!";
 		StopBrushBobbles ();
 	}
 }

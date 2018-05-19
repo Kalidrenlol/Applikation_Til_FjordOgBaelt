@@ -8,6 +8,7 @@ public class BagController : MonoBehaviour {
 	[SerializeField] GameObject itemPrefab;
 	[SerializeField] GameObject itemPrefabEmpty;
 	[SerializeField] Transform itemParent;
+	public GameObject InGameController;
 
 	void Start() {
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
@@ -25,27 +26,51 @@ public class BagController : MonoBehaviour {
 		}
 	}
 
-	void PickItem(Item item) {
-		print(item.englishName + " er valgt");
+	void PickItem (Item item)
+	{
+		print (item.englishName + " er valgt");
+		GameObject InGameController = GameObject.FindGameObjectWithTag ("InGameController");
 
-		switch(item.englishName) {
+		print (InGameController.transform.parent.name);
+
+		switch (item.englishName) {
 		case "Feather":
-			GameObject gameSealController = GameObject.FindGameObjectWithTag("InGameController");
-			gameSealController.GetComponent<InGameControllerSeal> ().ChooseToothBrush ();
-			CloseBag ();
-			gameSealController.GetComponent<InGameControllerSeal> ().isBagOpen = false;
+			if (InGameController.transform.parent.name == "Game_Seal2(Clone)") {
+				//GameObject gameSealController = GameObject.FindGameObjectWithTag("InGameController");
+				InGameController.GetComponent<InGameControllerSeal> ().ChooseToothBrush ();
+				CloseBag ();
+				InGameController.GetComponent<InGameControllerSeal> ().isBagOpen = false;
+			} else {
+				itemParent.GetChild(1).transform.GetChild(1).gameObject.SetActive(true);
+			}
 			break;
 		case "Vertebra":
-			GameObject gameSpermwhaleController = GameObject.FindGameObjectWithTag("InGameController");
-			gameSpermwhaleController.GetComponent<InGameControllerSpermwhale> ().ChooseVertebra ();
-			CloseBag ();
-			gameSpermwhaleController.GetComponent<InGameControllerSpermwhale> ().isBagOpen = false;
+			if (InGameController.transform.parent.name == "Game_Spermwhale1(Clone)") {
+				//GameObject gameSpermwhaleController = GameObject.FindGameObjectWithTag("InGameController");
+				InGameController.GetComponent<InGameControllerSpermwhale> ().ChooseVertebra ();
+				CloseBag ();
+				InGameController.GetComponent<InGameControllerSpermwhale> ().isBagOpen = false;
+			} else {
+				itemParent.GetChild(3).transform.GetChild(1).gameObject.SetActive(true);
+			}
 			break;
 		case "Tooth":
-			GameObject gameSharkController = GameObject.FindGameObjectWithTag("InGameController");
-			gameSharkController.GetComponent<InGameControllerShark> ().ChooseTooth ();
-			CloseBag ();
-			gameSharkController.GetComponent<InGameControllerShark> ().isBagOpen = false;
+			if (InGameController.transform.parent.name == "Game_Shark(Clone)") {
+				InGameController.GetComponent<InGameControllerShark> ().ChooseTooth ();
+				CloseBag ();
+				InGameController.GetComponent<InGameControllerShark> ().isBagOpen = false;
+			} else {
+				itemParent.GetChild(2).transform.GetChild(1).gameObject.SetActive(true);
+			}
+			break;
+		case "BucketFish":
+			if (InGameController.transform.parent.name == "Game_HarbourPorpose2(Clone)") {
+				//InGameController.GetComponent<InGameControllerShark> ().ChooseTooth ();
+				CloseBag ();
+				InGameController.GetComponent<InGameControllerShark> ().isBagOpen = false;
+			} else {
+				itemParent.GetChild(0).transform.GetChild(1).gameObject.SetActive(true);
+			}
 			break;
 		default:
 			print ("Wrong item");
