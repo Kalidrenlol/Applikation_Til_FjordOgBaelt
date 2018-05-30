@@ -23,7 +23,6 @@ public class GameController : MonoBehaviour {
 
 		if(_bool) {
 			flash = false;
-			GetComponent<ScreenController>().ShowTask(false);
 
 			if (LoadedGame) {
 				Destroy(LoadedGame);
@@ -34,9 +33,9 @@ public class GameController : MonoBehaviour {
 	public void Update ()
 	{
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			//ShowAnimal ("Crab");
-			Item item = GetComponent<ItemController>().GetItem("Vertebra");
-			GetComponent<ScreenController> ().ShowOpenItem(item);
+			ShowAnimal ("Crab");
+			//Item item = GetComponent<ItemController>().GetItem("Vertebra");
+			//GetComponent<ScreenController> ().ShowOpenItem(item);
 		}
 
 		if (Input.GetKeyDown (KeyCode.Alpha2)) {
@@ -130,9 +129,6 @@ public class GameController : MonoBehaviour {
 		if (animal != null) {
 			if (animal.HasGame) {
 				LoadGame (animal.englishName);
-			} else {
-				GetComponent<ScreenController> ().ShowTask ();
-				GetComponent<ScreenController> ().ScreenTask.GetComponent<TaskController> ().Setup (animal);		
 			}
 		} else {
 			Item item = GetComponent<ItemController>().GetItem(_scannedTarget);

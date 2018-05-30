@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using SVGImporter;
 
-public class SplashController : MonoBehaviour {
+public class StartupController : MonoBehaviour {
 
 	[SerializeField] SVGImage splashLogo;
 	[SerializeField] Text splashText;
@@ -40,9 +40,9 @@ public class SplashController : MonoBehaviour {
 		yield return new WaitForSeconds(1f);
 
 		if (isNewPlayer) {
-			SceneManager.LoadScene("Introduction");
+			SceneManager.LoadScene("IntroductionScene");
 		} else {
-			SceneManager.LoadScene("Main");
+			SceneManager.LoadScene("MainScene");
 		}
 	}
 

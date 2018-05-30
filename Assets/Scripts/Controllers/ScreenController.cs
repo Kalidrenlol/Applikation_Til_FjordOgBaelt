@@ -82,18 +82,9 @@ public class ScreenController : MonoBehaviour {
 		ScreenTask.SetActive(true);
 	}
 
-	public void ShowTask(bool _bool) {
-		ScreenTask.SetActive(_bool);
-	}
-
 	public void ShowOpenItem(Item _item) {
 		GameObject itemOpen = Instantiate(ItemOpenPrefab, GameUI.transform);
 		itemOpen.GetComponent<OpenItemController>().Setup(_item);
-	}
-
-	public void ScanAnimal(Animal animal) {
-		ScreenTask.GetComponent<TaskController>().Setup(animal);
-		ShowTask();
 	}
 
 	public void ShowAnimalView(Animal animal) {

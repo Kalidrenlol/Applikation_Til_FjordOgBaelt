@@ -48,7 +48,7 @@ public class IntroductionController : MonoBehaviour {
 			introCounter += 1;
 				break;
 		case 3:
-			SceneManager.LoadScene("Main");
+			SceneManager.LoadScene("MainScene");
 			break;
 		}
 	}
